@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idées de sujet — Data &amp; IA + Systèmes embarqués</title>
+<meta name="description" content="Idées de sujet de PFE générées à partir de l'actualité des dernières 24 heures, avec vérification d'antériorité.">
+<style>
+  :root {
+    --papier: #f4f1ea; --encre: #14120e; --sourdine: #6b665c;
+    --accent: #b23a1f; --trait: #d9d3c6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--papier); color: var(--encre);
+    font: 17px/1.55 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  }
+  .page { max-width: 860px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { border-bottom: 2px solid var(--encre); padding-bottom: 28px; margin-bottom: 56px; }
+  h1 { font-size: clamp(34px, 6vw, 62px); line-height: 0.98; letter-spacing: -0.02em; margin: 0 0 18px; }
+  .chapeau { font-size: 19px; max-width: 46ch; margin: 0; color: var(--encre); }
+  .meta { font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--sourdine); margin-top: 22px; }
+  article { padding: 40px 0; border-top: 1px solid var(--trait); }
+  article:first-of-type { border-top: none; }
+  h2 { font-size: clamp(24px, 3.4vw, 34px); line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 18px; }
+  .question { font-size: 20px; margin: 0 0 20px; }
+  p { margin: 0 0 16px; }
+  dl { margin: 22px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; font-size: 15px; }
+  dt { color: var(--sourdine); }
+  dd { margin: 0; }
+  .verdict { margin-top: 24px; padding: 16px 18px; background: #eae5d9; border-left: 3px solid var(--accent); font-size: 15px; }
+  .verdict b { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  footer { margin-top: 72px; padding-top: 24px; border-top: 2px solid var(--encre); font-size: 14px; color: var(--sourdine); }
+  @media (max-width: 560px) { dl { grid-template-columns: 1fr; gap: 2px 0; } dt { margin-top: 10px; } }
+</style>
+<main class="page">
+  <header>
+    <h1>Des idées de sujet, pas des vœux pieux.</h1>
+    <p class="chapeau">Chaque idée sort de l'actualité des dernières 24 heures, doit tenir en dix semaines à six, et son antériorité est vérifiée sur le web.</p>
+    <p class="meta">04/11/2026 · 3 idées · Data &amp; IA + Systèmes embarqués</p>
+  </header>
+    <article>
+    <h2>Bras préhenseur à vision frugale</h2>
+    <p class="question">« Comment permettre à un bras robotisé à moins de 100 € de saisir en temps réel des objets variés à l&#x27;aide d&#x27;une vision embarquée et d&#x27;un apprentissage frugal ? »</p>
+    <p>Un bras 4 DDL imprimé en 3D piloté par un STM32 en temps réel, couplé à un module ESP32-CAM qui exécute un détecteur d&#x27;objets quantifié INT8 en TFLite Micro. Le bras localise, aligne et saisit des objets courants en &lt;500 ms, avec asservissement en courant pour limiter l&#x27;effort et éviter le broyage.</p>
+    <dl><dt>Répartition</dt><dd>*Data &amp; IA* — collecte d&#x27;un dataset maison de 20-30 objets (~100 prises), entraînement d&#x27;un détecteur/classifieur léger, quantification INT8, déploiement TFLite Micro sur ESP32-CAM, active learning à partir des échecs de préhension, évaluation précision/latence par objet. *Systèmes embarqués* — conception mécanique et cinématique directe/inverse, firmware temps réel FreeRTOS sur STM32, asservissement position/courant des servos, lecture MPU6050 et ACS712 pour détection de blocage et butées logicielles, protocole UART/SPI STM32↔ESP32-CAM, gestion d&#x27;énergie et arrêt d&#x27;urgence.</dd><dt>Matériel</dt><dd>ESP32-CAM 12 € · STM32 Blue Pill 8 € · 2× MG996R + 2× SG90 18 € · MPU6050 4 € · ACS712 4 € · alim 5 V/3 A 8 € · structure PLA, tiges, visserie 20 € · câblage et breadboard 8 € — **total ≈ 82 €**.</dd><dt>Pourquoi maintenant</dt><dd>« Stringman, an $800 open-source room scale gripper robot »</dd><dt>Tags</dt><dd>data/IA · embarqué · TRL 5</dd></dl>
+    <div class="verdict"><b>Antériorité — PROCHE</b>Des préhenseurs 3D à guidage vision et des projets open source à ESP32-CAM/TFLite Micro existent séparément, mais pas l&#x27;intégration complète 4 DDL &lt;100 € avec détecteur INT8 embarqué.<br><a href="https://anubisrt.com/fr/case-studies/prehen" rel="noopener nofollow">https://anubisrt.com/fr/case-studies/prehen</a></div>
+  </article>
+  <article>
+    <h2>Boîtier autonome de sécurité réseau par IA embarquée</h2>
+    <p class="question">« Comment permettre à un particulier ou une petite structure de détecter en temps réel et de bloquer localement des comportements réseau anormaux avec un boîtier autonome à moins de 100 €, sans aucun cloud ? »</p>
+    <p>Boîtier local qui capture les flux d&#x27;un petit réseau (port miroir ou inline), extrait des features de type NetFlow, fait tourner un détecteur d&#x27;anomalies quantifié (autoencodeur ou Isolation Forest) sur Raspberry Pi Zero 2 W, et coupe le lien via relais + alerte OLED quand le score dépasse un seuil adaptatif. Un ESP32 co-processeur assure le chien de garde, l&#x27;affichage et l&#x27;actionneur temps réel indépendamment du Pi.</p>
+    <dl><dt>Répartition</dt><dd>*Data &amp; IA* — sélection et préparation du dataset public (CICIDS2017 ou UNSW-NB15), ingénierie des features, entraînement et évaluation d&#x27;un détecteur non supervisé, calibration du seuil et gestion des faux positifs, quantification TFLite et suivi de dérive. *Systèmes embarqués* — mise en place de la capture passive (interface USB-Ethernet, buffer, isolation CPU/pinning), firmware ESP32 pour watchdog, OLED, relais de coupure et protocole UART, ordonnancement temps réel côté Pi, boîtier, alimentation et journalisation locale chiffrée.</dd><dt>Matériel</dt><dd>Raspberry Pi Zero 2 W 20 € · ESP32 devkit 8 € · OLED 128×64 I2C 5 € · module relais 5 V 3 € · microSD 32 Go 8 € · adaptateur USB↔Ethernet 10 € · boîtier imprimé + alim 5 V 20 € — **total ≈ 74 €**.</dd><dt>Pourquoi maintenant</dt><dd>« Preparing for the Flipper One Kickstarter and opening pre-orders »</dd><dt>Tags</dt><dd>data/IA · embarqué · TRL 4</dd></dl>
+    <div class="verdict"><b>Antériorité — PROCHE</b>Des boîtiers de cybersécurité IA pour PME/TPE existent (Aiomi Box, appliances HFSecurity), mais sans l&#x27;objectif combiné &lt;100 €, 100 % local/sans cloud et détection d&#x27;anomalies NetFlow inline pour particuliers.<br><a href="https://aiomi.fr/aiomi-box-cybersecurite-pme" rel="noopener nofollow">https://aiomi.fr/aiomi-box-cybersecurite-pme</a></div>
+  </article>
+  <article>
+    <h2>Plateau de dames électronique à IA embarquée</h2>
+    <p class="question">« Comment permettre à un microcontrôleur à 10 € de jouer aux dames à un niveau de club amateur tout en guidant physiquement le joueur sur un plateau lumineux ? »</p>
+    <p>Plateau 8×8 avec 64 LED RGB et une matrice de 64 contacts qui détecte les coups, piloté par un ESP32-S3 qui exécute un réseau de valeur distillé par self-play puis quantifié INT8, et affiche ses propres coups en surlignant les cases. La machine joue à un niveau estimé et mesure sa force par des parties de calibration contre un moteur de référence.</p>
+    <dl><dt>Répartition</dt><dd>*Data &amp; IA* — génération de parties par self-play (MCTS ou RL), construction du dataset (état → valeur), entraînement et distillation d&#x27;un réseau de valeur compact, quantification INT8, calibration Elo contre moteurs publics, évaluation latence/force. *Systèmes embarqués* — design du plateau et routage de la matrice LED (bandeau WS2812), scan matriciel 8×8 des 64 cases avec anti-rebond, firmware temps réel de gestion des tours, protocole entre logique de jeu et interface physique, alimentation et gestion d&#x27;énergie.</dd><dt>Matériel</dt><dd>ESP32-S3 8 € · bandeau 64 LED WS2812 12 € · matrice tactile 8×8 10 € · plateau PMMA/impression 3D 15 € · alim 5 V/3 A 8 € · câblage et visserie 8 € — **total ≈ 61 €**.</dd><dt>Pourquoi maintenant</dt><dd>« Could a modern chess engine on a Pentium have defeated Kasparov in 1996? »</dd><dt>Tags</dt><dd>data/IA · embarqué · TRL 4 ---</dd></dl>
+    <div class="verdict"><b>Antériorité — PROCHE</b>Des plateaux électroniques commerciaux jouent déjà aux dames contre une IA, mais aucun ne correspond au projet documenté ESP32-S3 à 64 LED RGB, matrice de contacts et réseau INT8 distillé par self-play.<br><a href="https://www.amazon.fr/Yunseity-Échiquier-Intelligent-électronique-Rechargeable/dp/B0H5BPCD78" rel="noopener nofollow">https://www.amazon.fr/Yunseity-Échiquier-Intelligent-électronique-Rechargeable/dp/B0H5BPCD78</a></div>
+  </article>
+  <footer>Généré automatiquement depuis la presse technique et arXiv. Les liens d'antériorité sont des résultats de recherche, pas des validations.</footer>
+</main>
+</html>
