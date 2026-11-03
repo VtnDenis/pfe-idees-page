@@ -2,87 +2,136 @@
 <html lang="fr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Idées de sujet — Data &amp; IA + Systèmes embarqués</title>
-<meta name="description" content="Idées de sujet de PFE générées à partir de l'actualité des dernières 24 heures, avec vérification d'antériorité.">
+<title>Idées de projet — Data &amp; IA + Systèmes embarqués</title>
+<meta name="description" content="Trois idées de projet par heure, tirées de l'actualité des dernières 24 heures, avec vérification d'antériorité.">
 <style>
   :root {
     --papier: #f4f1ea; --encre: #14120e; --sourdine: #6b665c;
-    --accent: #b23a1f; --trait: #d9d3c6;
+    --accent: #b23a1f; --trait: #d9d3c6; --creux: #eae5d9;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0; background: var(--papier); color: var(--encre);
-    font: 17px/1.55 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font: 17px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    -webkit-font-smoothing: antialiased;
   }
-  .page { max-width: 860px; margin: 0 auto; padding: 56px 24px 96px; }
-  header { border-bottom: 2px solid var(--encre); padding-bottom: 28px; margin-bottom: 56px; }
-  h1 { font-size: clamp(34px, 6vw, 62px); line-height: 0.98; letter-spacing: -0.02em; margin: 0 0 18px; }
-  .chapeau { font-size: 19px; max-width: 46ch; margin: 0; color: var(--encre); }
-  .meta { font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--sourdine); margin-top: 22px; }
+  .page { max-width: 820px; margin: 0 auto; padding: 56px 24px 96px; }
+
+  header { border-bottom: 2px solid var(--encre); padding-bottom: 28px; margin-bottom: 52px; }
+  h1 { font-size: clamp(34px, 6vw, 60px); line-height: 0.98; letter-spacing: -0.025em; margin: 0 0 20px; }
+  .chapeau { font-size: 19px; max-width: 48ch; margin: 0 0 22px; }
+  .compte { font-size: 16px; color: var(--sourdine); margin: 0; }
+  .compte b { color: var(--accent); font-variant-numeric: tabular-nums; }
+
+  .quoi { margin: 0 0 56px; }
+  .quoi h2 { font-size: 15px; letter-spacing: .06em; text-transform: uppercase; color: var(--sourdine); margin: 0 0 16px; font-weight: 600; }
+  .quoi ol { margin: 0; padding-left: 20px; }
+  .quoi li { margin-bottom: 8px; }
+
+  h2 { font-size: clamp(24px, 3.2vw, 32px); letter-spacing: -0.015em; margin: 0 0 8px; }
   article { padding: 40px 0; border-top: 1px solid var(--trait); }
-  article:first-of-type { border-top: none; }
-  h2 { font-size: clamp(24px, 3.4vw, 34px); line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 18px; }
-  .accroche { font-size: 23px; line-height: 1.3; margin: 0 0 20px; letter-spacing: -0.01em; }
-  .fait { font-size: 15px; color: var(--sourdine); margin: 0 0 4px; }
-  .fait b { color: var(--encre); font-weight: 600; }
-  p { margin: 0 0 16px; }
-  dl { margin: 22px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; font-size: 15px; }
-  dt { color: var(--sourdine); }
-  dd { margin: 0; }
-  .verdict { margin-top: 24px; padding: 16px 18px; background: #eae5d9; border-left: 3px solid var(--accent); font-size: 15px; }
-  .verdict b { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  h3 { font-size: clamp(22px, 3vw, 29px); line-height: 1.14; letter-spacing: -0.015em; margin: 0 0 14px; }
+  .accroche { font-size: 21px; line-height: 1.35; margin: 0 0 14px; }
+  .resume { margin: 0 0 14px; }
+  .faits { font-size: 15px; color: var(--sourdine); margin: 0 0 12px; }
+  .faits .source { font-style: italic; }
+  .neuf { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+           color: var(--accent); vertical-align: middle; margin-left: 10px; }
+  .verdict { margin: 0; padding: 14px 16px; background: var(--creux);
+              border-left: 3px solid var(--accent); font-size: 15px; }
+  .verdict b { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+                color: var(--accent); margin-bottom: 6px; }
+
+  .plus-tot { margin-top: 64px; border-top: 2px solid var(--encre); padding-top: 28px; }
+  .liste { list-style: none; margin: 22px 0 0; padding: 0; }
+  .liste li { display: flex; justify-content: space-between; gap: 20px; padding: 11px 0;
+               border-bottom: 1px solid var(--trait); font-size: 16px; }
+  .liste .jour { color: var(--sourdine); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+  .rythme { list-style: none; display: flex; align-items: flex-end; gap: 12px; margin: 24px 0 0; padding: 0; height: 78px; }
+  .rythme li { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; }
+  .rythme .barre { width: 26px; background: var(--accent); display: block; }
+  .rythme em { font-size: 11px; color: var(--sourdine); font-style: normal; }
+  .rythme small { font-size: 11px; color: var(--sourdine); }
+
   a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-  footer { margin-top: 72px; padding-top: 24px; border-top: 2px solid var(--encre); font-size: 14px; color: var(--sourdine); }
-  @media (max-width: 560px) { dl { grid-template-columns: 1fr; gap: 2px 0; } dt { margin-top: 10px; } }
+  .alerte { margin-top: 64px; padding: 32px 0 0; border-top: 2px solid var(--encre); }
+  .alerte h2 { font-size: clamp(22px, 3vw, 28px); margin: 0 0 8px; }
+  .alerte p { margin: 0 0 18px; }
+  .bouton { display: inline-block; padding: 12px 22px; background: var(--accent); color: var(--papier);
+             text-decoration: none; font-size: 16px; }
+  .bouton:hover { background: var(--encre); }
+
+  footer { margin-top: 80px; padding-top: 24px; border-top: 2px solid var(--encre); font-size: 14px; color: var(--sourdine); }
+  @media (max-width: 560px) { .liste li { flex-direction: column; gap: 2px; } }
 </style>
 <main class="page">
   <header>
-    <h1>Des idées de sujet, pas des vœux pieux.</h1>
-    <p class="chapeau">Chaque idée sort de l'actualité des dernières 24 heures, doit tenir en dix semaines à six, et son antériorité est vérifiée sur le web.</p>
-    <p class="meta">04/11/2026 · 6 idées · Data &amp; IA + Systèmes embarqués</p>
+    <h1>Des idées de projet, vérifiées avant de coûter trois mois.</h1>
+    <p class="chapeau">Chaque heure, le site lit la presse technique et les dépôts arXiv des dernières 24 heures,
+    en tire trois idées de projet pour une équipe Data&nbsp;&amp;&nbsp;IA et Systèmes embarqués, puis vérifie
+    sur le web si quelque chose de similaire existe déjà.</p>
+    <p class="compte">Prochaines idées dans <b id="compte">—</b> · 3 par heure, 6 conservées</p>
   </header>
-    <article>
-    <h2>Le détecteur de paiements suspects</h2>
-    <p class="accroche">Un petit terminal de poche qui signale en un instant si une transaction semble risquée.</p>
-    <p>Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.</p>
-    <p class="fait"><b>Faisable ?</b> Oui, avec quelques dizaines d’euros de matériel et des données libres.</p><p class="fait"><b>D'où ça vient</b> « Show HN: Kairos – Open-source risk and fraud decisioning platform » ---</p>
-    <div class="verdict"><b>Antériorité — PROCHE</b>Le FNC-RF de la Banque de France (plateforme publique d&#x27;IBAN suspects, mai 2026) et plusieurs solutions SaaS de scoring de transactions en temps réel couvrent déjà l&#x27;aide à la décision anti-fraude, mais aucun boîtier autonome de poche effectuant le scoring localement sans transmission de données n&#x27;a été identifié.<br><a href="https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude" rel="noopener nofollow">https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude</a></div>
-  </article>
-  <article>
-    <h2>La pince qui apprend à attraper</h2>
-    <p class="accroche">Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.</p>
-    <p>Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.</p>
-    <p class="fait"><b>Faisable ?</b> Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.</p><p class="fait"><b>D'où ça vient</b> « Stringman, an $800 open-source room scale gripper robot »</p>
-    <div class="verdict"><b>Antériorité — RIEN TROUVÉ</b>aucune recherche exploitable (moteur indisponible).</div>
-  </article>
-  <article>
-    <h2>Le veilleur de données</h2>
-    <p class="accroche">Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.</p>
-    <p>Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.</p>
-    <p class="fait"><b>Faisable ?</b> Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible.</p><p class="fait"><b>D'où ça vient</b> « Postman silently auto-installs AI plugins and attempts to share all API data »</p>
-    <div class="verdict"><b>Antériorité — PROCHE</b>Des boîtiers/apps de surveillance réseau (Firewalla, Fingbox, Little Snitch/OpenSnitch) alertent déjà sur des communications sortantes inhabituelles, mais pas sous la forme exacte d’un petit objet de bureau autonome dédié.<br><a href="https://firewalla.com/" rel="noopener nofollow">https://firewalla.com/</a></div>
-  </article>
-  <article>
-    <h2>L’échiquier qui s’adapte au niveau du joueur</h2>
-    <p class="accroche">Un échiquier physique repère vos coups, éclaire des cases et durcit ou adoucit le jeu selon votre niveau.</p>
-    <p>L’actualité pose la question de ce qu’un petit système peut faire avec peu de moyens, à condition d’être bien pensé. Le problème visé est qu’un échiquier connecté coûte souvent cher ou reste limité à un écran, alors qu’un objet physique est plus simple à utiliser. C’est le moment car des capteurs et des composants courants permettent de fabriquer un plateau qui réagit vraiment. Côté données, l’équipe observe les coups du joueur et estime son niveau pour adapter la difficulté ; côté embarqué, l’autre moitié détecte les pièces, allume les cases et gère les réactions immédiates. Le prototype agit : il voit un coup, éclaire une réponse et change de niveau après quelques parties.</p>
-    <p class="fait"><b>Faisable ?</b> oui, avec quelques dizaines d&#x27;euros de matériel, sans abonnement.</p><p class="fait"><b>D'où ça vient</b> Could a modern chess engine on a Pentium have defeated Kasparov in 1996? ---</p>
-    <div class="verdict"><b>Antériorité — PROCHE</b>Des échiquiers connectés à détection de coups et LEDs existent déjà (ChessUp de Bryght Labs, Square Off, GoChess de Particula) avec entraînement/IA adaptative, même si l&#x27;adaptation fine au niveau pilotée par le plateau seul reste peu documentée.<br><a href="https://bryghtlabs.com/" rel="noopener nofollow">https://bryghtlabs.com/</a></div>
-  </article>
-  <article>
-    <h2>La prise qui coupe quand vos objets connectés en disent trop</h2>
-    <p class="accroche">Une petite boîte branchée entre un objet connecté et son alimentation le coupe automatiquement s’il se met à envoyer des données personnelles.</p>
-    <p>L’actualité rappelle que des outils courants peuvent installer des fonctions cachées et partager des données sans que l’utilisateur le voie. Le problème est qu’un objet connecté peut se mettre à communiquer davantage après une mise à jour, sans signal clair pour son propriétaire. C’est le moment car la vie privée devient un sujet grand public et qu’un petit boîtier local peut agir sans envoyer les données ailleurs. Côté données, l’équipe apprend ce qui ressemble à un comportement normal et repère les écarts ; côté embarqué, l’autre moitié surveille en direct, allume une alerte et coupe l’alimentation. Le prototype agit physiquement : il débranche l’objet et affiche ce qui a déclenché l’alerte.</p>
-    <p class="fait"><b>Faisable ?</b> oui, avec quelques dizaines d&#x27;euros de matériel, sans abonnement.</p><p class="fait"><b>D'où ça vient</b> Postman silently auto-installs AI plugins and attempts to share all API data</p>
-    <div class="verdict"><b>Antériorité — RIEN TROUVÉ</b>aucune recherche exploitable (moteur indisponible).</div>
-  </article>
-  <article>
-    <h2>Le petit trieur robotisé qui apprend à ranger</h2>
-    <p class="accroche">Un petit bras robotisé regarde des objets posés devant lui, les reconnaît et les range dans la bonne case, tout en s&#x27;arrêtant si une main approche.</p>
-    <p>L’actualité montre que des robots de préhension ouverts deviennent accessibles, mais les versions de bureau restent rares et peu adaptatives. Le problème à régler est simple : trier quelques objets sans caméra coûteuse ni réglage complexe, tout en restant sûr autour d’un humain. C’est le bon moment car on peut faire apprendre une petite reconnaissance d’objets sur place et piloter des mouvements simples en direct. Côté données, l’équipe collecte et étiquette quelques objets puis vérifie que la reconnaissance tient sur de nouvelles scènes ; côté embarqué, l’autre moitié gère la prise d’images, les mouvements et l’arrêt immédiat. Le prototype agit vraiment : il attrape et range quelques objets choisis.</p>
-    <p class="fait"><b>Faisable ?</b> oui, avec quelques dizaines d&#x27;euros de matériel, sans abonnement.</p><p class="fait"><b>D'où ça vient</b> Stringman, an $800 open-source room scale gripper robot</p>
-    <div class="verdict"><b>Antériorité — PROCHE</b>Des robots domestiques apprenant à ranger et des trieurs optiques existent, mais pas de petit bras de bureau low-cost avec reconnaissance sans caméra coûteuse et arrêt sur approche de main.<br><a href="https://www.youtube.com/watch?v=T4M6jTskpeg" rel="noopener nofollow">https://www.youtube.com/watch?v=T4M6jTskpeg</a></div>
-  </article>
-  <footer>Généré automatiquement depuis la presse technique et arXiv. Les liens d'antériorité sont des résultats de recherche, pas des validations.</footer>
+
+  <section class="quoi">
+    <h2>Comment s'en servir</h2>
+    <ol>
+      <li>Lisez l'accroche : si elle ne vous parle pas en une phrase, l'idée ne vaut pas trois mois de travail.</li>
+      <li>Regardez le verdict : « PROCHE » signifie que des produits existent, mais pas sous cette forme.</li>
+      <li>Vérifiez la faisabilité : une ligne suffit à savoir si le budget tient.</li>
+    </ol>
+    <ul class="rythme"><li><span class="barre" style="height:48px"></span><em>11/04</em><small>6</small></li></ul>
+  </section>
+
+  <section class="dernieres">
+          <article>
+        <h3>Le détecteur de paiements suspects <span class="neuf">nouveau</span></h3>
+        <p class="accroche">Un petit terminal de poche qui signale en un instant si une transaction semble risquée.</p>
+        <p class="resume">Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.</p>
+        <p class="faits"><span>Oui, avec quelques dizaines d’euros de matériel et des données libres.</span> · <span class="source">D’après : « Show HN: Kairos – Open-source risk and fraud decisioning platform » ---</span></p>
+        <p class="verdict"><b>PROCHE</b> Le FNC-RF de la Banque de France (plateforme publique d&#x27;IBAN suspects, mai 2026) et plusieurs solutions SaaS de scoring de transactions en temps réel couvrent déjà l&#x27;aide à la décision anti-fraude, mais aucun boîtier autonome de poche effectuant le scoring localement sans transmission de données n&#x27;a été identifié. <a href="https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude" rel="noopener nofollow">voir ce qui existe</a></p>
+      </article>
+      <article>
+        <h3>La pince qui apprend à attraper <span class="neuf">nouveau</span></h3>
+        <p class="accroche">Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.</p>
+        <p class="resume">Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.</p>
+        <p class="faits"><span>Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.</span> · <span class="source">D’après : « Stringman, an $800 open-source room scale gripper robot »</span></p>
+        <p class="verdict"><b>RIEN TROUVÉ</b> aucune recherche exploitable (moteur indisponible). </p>
+      </article>
+      <article>
+        <h3>Le veilleur de données <span class="neuf">nouveau</span></h3>
+        <p class="accroche">Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.</p>
+        <p class="resume">Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.</p>
+        <p class="faits"><span>Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible.</span> · <span class="source">D’après : « Postman silently auto-installs AI plugins and attempts to share all API data »</span></p>
+        <p class="verdict"><b>PROCHE</b> Des boîtiers/apps de surveillance réseau (Firewalla, Fingbox, Little Snitch/OpenSnitch) alertent déjà sur des communications sortantes inhabituelles, mais pas sous la forme exacte d’un petit objet de bureau autonome dédié. <a href="https://firewalla.com/" rel="noopener nofollow">voir ce qui existe</a></p>
+      </article>
+  </section>
+
+  <section class="plus-tot"><h2>Sorties plus tôt</h2><ul class="liste"><li><span class="titre">L’échiquier qui s’adapte au niveau du joueur</span><span class="jour">2026/11/04</span></li><li><span class="titre">La prise qui coupe quand vos objets connectés en disent trop</span><span class="jour">2026/11/04</span></li><li><span class="titre">Le petit trieur robotisé qui apprend à ranger</span><span class="jour">2026/11/04</span></li></ul></section>
+
+  
+
+  <footer>
+    Généré automatiquement : presse technique + arXiv, puis vérification d'antériorité par recherche web.
+    Les liens « voir ce qui existe » sont des résultats de recherche, pas des validations.
+    Méthode : double diamant, question « comment pourrait-on », et annonce à la manière d'un communiqué.
+  </footer>
 </main>
+<script>
+  // Prochaine fournée : le prochain multiple d'une heure, heure locale du visiteur.
+  (function () {
+    var cible = new Date();
+    cible.setMinutes(0, 0, 0);
+    cible.setHours(cible.getHours() + 1);
+    var el = document.getElementById('compte');
+    function tic() {
+      var reste = Math.max(0, cible - new Date());
+      var m = Math.floor(reste / 60000), s = Math.floor(reste % 60000 / 1000);
+      el.textContent = m + ' min ' + String(s).padStart(2, '0') + ' s';
+      if (reste <= 0) location.reload();
+    }
+    tic(); setInterval(tic, 1000);
+  })();
+</script>
 </html>

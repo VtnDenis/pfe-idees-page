@@ -4,41 +4,77 @@
     "L'accroche": "Un petit terminal de poche qui signale en un instant si une transaction semble risquée.",
     "Le résumé": "Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.",
     "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et des données libres.",
-    "D'où ça vient": "« Show HN: Kairos – Open-source risk and fraud decisioning platform » ---"
+    "D'où ça vient": "« Show HN: Kairos – Open-source risk and fraud decisioning platform » ---",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Le FNC-RF de la Banque de France (plateforme publique d'IBAN suspects, mai 2026) et plusieurs solutions SaaS de scoring de transactions en temps réel couvrent déjà l'aide à la décision anti-fraude, mais aucun boîtier autonome de poche effectuant le scoring localement sans transmission de données n'a été identifié.",
+      "LIEN": "https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude"
+    },
+    "jour": "2026-11-04"
   },
   {
     "titre": "La pince qui apprend à attraper",
     "L'accroche": "Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.",
     "Le résumé": "Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.",
     "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.",
-    "D'où ça vient": "« Stringman, an $800 open-source room scale gripper robot »"
+    "D'où ça vient": "« Stringman, an $800 open-source room scale gripper robot »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
   },
   {
     "titre": "Le veilleur de données",
     "L'accroche": "Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.",
     "Le résumé": "Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.",
     "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible.",
-    "D'où ça vient": "« Postman silently auto-installs AI plugins and attempts to share all API data »"
+    "D'où ça vient": "« Postman silently auto-installs AI plugins and attempts to share all API data »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des boîtiers/apps de surveillance réseau (Firewalla, Fingbox, Little Snitch/OpenSnitch) alertent déjà sur des communications sortantes inhabituelles, mais pas sous la forme exacte d’un petit objet de bureau autonome dédié.",
+      "LIEN": "https://firewalla.com/"
+    },
+    "jour": "2026-11-04"
   },
   {
     "titre": "L’échiquier qui s’adapte au niveau du joueur",
     "L'accroche": "Un échiquier physique repère vos coups, éclaire des cases et durcit ou adoucit le jeu selon votre niveau.",
     "Le résumé": "L’actualité pose la question de ce qu’un petit système peut faire avec peu de moyens, à condition d’être bien pensé. Le problème visé est qu’un échiquier connecté coûte souvent cher ou reste limité à un écran, alors qu’un objet physique est plus simple à utiliser. C’est le moment car des capteurs et des composants courants permettent de fabriquer un plateau qui réagit vraiment. Côté données, l’équipe observe les coups du joueur et estime son niveau pour adapter la difficulté ; côté embarqué, l’autre moitié détecte les pièces, allume les cases et gère les réactions immédiates. Le prototype agit : il voit un coup, éclaire une réponse et change de niveau après quelques parties.",
     "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
-    "D'où ça vient": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996? ---"
+    "D'où ça vient": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996? ---",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des échiquiers connectés à détection de coups et LEDs existent déjà (ChessUp de Bryght Labs, Square Off, GoChess de Particula) avec entraînement/IA adaptative, même si l'adaptation fine au niveau pilotée par le plateau seul reste peu documentée.",
+      "LIEN": "https://bryghtlabs.com/"
+    },
+    "jour": "2026-11-04"
   },
   {
     "titre": "La prise qui coupe quand vos objets connectés en disent trop",
     "L'accroche": "Une petite boîte branchée entre un objet connecté et son alimentation le coupe automatiquement s’il se met à envoyer des données personnelles.",
     "Le résumé": "L’actualité rappelle que des outils courants peuvent installer des fonctions cachées et partager des données sans que l’utilisateur le voie. Le problème est qu’un objet connecté peut se mettre à communiquer davantage après une mise à jour, sans signal clair pour son propriétaire. C’est le moment car la vie privée devient un sujet grand public et qu’un petit boîtier local peut agir sans envoyer les données ailleurs. Côté données, l’équipe apprend ce qui ressemble à un comportement normal et repère les écarts ; côté embarqué, l’autre moitié surveille en direct, allume une alerte et coupe l’alimentation. Le prototype agit physiquement : il débranche l’objet et affiche ce qui a déclenché l’alerte.",
     "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
-    "D'où ça vient": "Postman silently auto-installs AI plugins and attempts to share all API data"
+    "D'où ça vient": "Postman silently auto-installs AI plugins and attempts to share all API data",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
   },
   {
     "titre": "Le petit trieur robotisé qui apprend à ranger",
     "L'accroche": "Un petit bras robotisé regarde des objets posés devant lui, les reconnaît et les range dans la bonne case, tout en s'arrêtant si une main approche.",
     "Le résumé": "L’actualité montre que des robots de préhension ouverts deviennent accessibles, mais les versions de bureau restent rares et peu adaptatives. Le problème à régler est simple : trier quelques objets sans caméra coûteuse ni réglage complexe, tout en restant sûr autour d’un humain. C’est le bon moment car on peut faire apprendre une petite reconnaissance d’objets sur place et piloter des mouvements simples en direct. Côté données, l’équipe collecte et étiquette quelques objets puis vérifie que la reconnaissance tient sur de nouvelles scènes ; côté embarqué, l’autre moitié gère la prise d’images, les mouvements et l’arrêt immédiat. Le prototype agit vraiment : il attrape et range quelques objets choisis.",
     "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
-    "D'où ça vient": "Stringman, an $800 open-source room scale gripper robot"
+    "D'où ça vient": "Stringman, an $800 open-source room scale gripper robot",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des robots domestiques apprenant à ranger et des trieurs optiques existent, mais pas de petit bras de bureau low-cost avec reconnaissance sans caméra coûteuse et arrêt sur approche de main.",
+      "LIEN": "https://www.youtube.com/watch?v=T4M6jTskpeg"
+    },
+    "jour": "2026-11-04"
   }
 ]
