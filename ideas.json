@@ -1,23 +1,23 @@
 [
   {
-    "titre": "Le veilleur de réseau local",
-    "L'accroche": "Une petite boîte autonome surveille le réseau d’une maison ou d’une salle de cours et prévient quand un appareil se comporte de façon inhabituelle.",
-    "Le résumé": "L’idée vient de l’actualité autour du Flipper One, un outil ouvert de sécurité qui rend l’inspection de systèmes plus accessible. Avec la multiplication des objets connectés, un particulier ou une petite structure ne sait pas toujours repérer un appareil qui fait quelque chose d’anormal. C’est le bon moment car du calcul local et de l’apprentissage léger permettent de traiter les signaux sans tout envoyer à l’extérieur. Le prototype observe un réseau de test dont l’équipe est responsable, apprend ce qui est normal, puis affiche une alerte simple quand quelque chose change. Les étudiants en systèmes embarqués gèrent l’observation en temps réel et l’autonomie, tandis que ceux en données et IA apprennent les habitudes normales et produisent une alerte compréhensible.",
-    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
-    "D'où ça vient": "Preparing for the Flipper One Kickstarter and opening pre-orders"
+    "titre": "L’échiquier qui s’adapte au niveau du joueur",
+    "L'accroche": "Un échiquier physique repère vos coups, éclaire des cases et durcit ou adoucit le jeu selon votre niveau.",
+    "Le résumé": "L’actualité pose la question de ce qu’un petit système peut faire avec peu de moyens, à condition d’être bien pensé. Le problème visé est qu’un échiquier connecté coûte souvent cher ou reste limité à un écran, alors qu’un objet physique est plus simple à utiliser. C’est le moment car des capteurs et des composants courants permettent de fabriquer un plateau qui réagit vraiment. Côté données, l’équipe observe les coups du joueur et estime son niveau pour adapter la difficulté ; côté embarqué, l’autre moitié détecte les pièces, allume les cases et gère les réactions immédiates. Le prototype agit : il voit un coup, éclaire une réponse et change de niveau après quelques parties.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
+    "D'où ça vient": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996? ---"
   },
   {
-    "titre": "La pince qui trie les objets",
-    "L'accroche": "Un petit bras robotisé apprend à reconnaître des objets simples, les attrape et les range par catégorie.",
-    "Le résumé": "L’idée vient de Stringman, un robot-pince ouvert présenté comme un projet à l’échelle d’une pièce. Les robots capables d’attraper et de ranger des objets restent souvent chers ou difficiles à reproduire. Le moment est favorable car des plans ouverts et des méthodes d’apprentissage accessibles permettent de construire une version miniature. Le prototype montre une action réelle : il voit des objets posés devant lui, choisit une prise adaptée et les déplace dans le bon bac. Les étudiants en systèmes embarqués assurent le mouvement, les capteurs et la réaction en temps réel ; ceux en données et IA entraînent la reconnaissance des objets et l’évaluation des prises réussies.",
-    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "titre": "La prise qui coupe quand vos objets connectés en disent trop",
+    "L'accroche": "Une petite boîte branchée entre un objet connecté et son alimentation le coupe automatiquement s’il se met à envoyer des données personnelles.",
+    "Le résumé": "L’actualité rappelle que des outils courants peuvent installer des fonctions cachées et partager des données sans que l’utilisateur le voie. Le problème est qu’un objet connecté peut se mettre à communiquer davantage après une mise à jour, sans signal clair pour son propriétaire. C’est le moment car la vie privée devient un sujet grand public et qu’un petit boîtier local peut agir sans envoyer les données ailleurs. Côté données, l’équipe apprend ce qui ressemble à un comportement normal et repère les écarts ; côté embarqué, l’autre moitié surveille en direct, allume une alerte et coupe l’alimentation. Le prototype agit physiquement : il débranche l’objet et affiche ce qui a déclenché l’alerte.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
+    "D'où ça vient": "Postman silently auto-installs AI plugins and attempts to share all API data"
+  },
+  {
+    "titre": "Le petit trieur robotisé qui apprend à ranger",
+    "L'accroche": "Un petit bras robotisé regarde des objets posés devant lui, les reconnaît et les range dans la bonne case, tout en s'arrêtant si une main approche.",
+    "Le résumé": "L’actualité montre que des robots de préhension ouverts deviennent accessibles, mais les versions de bureau restent rares et peu adaptatives. Le problème à régler est simple : trier quelques objets sans caméra coûteuse ni réglage complexe, tout en restant sûr autour d’un humain. C’est le bon moment car on peut faire apprendre une petite reconnaissance d’objets sur place et piloter des mouvements simples en direct. Côté données, l’équipe collecte et étiquette quelques objets puis vérifie que la reconnaissance tient sur de nouvelles scènes ; côté embarqué, l’autre moitié gère la prise d’images, les mouvements et l’arrêt immédiat. Le prototype agit vraiment : il attrape et range quelques objets choisis.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
     "D'où ça vient": "Stringman, an $800 open-source room scale gripper robot"
-  },
-  {
-    "titre": "Le vérificateur de petits programmes d’apprentissage",
-    "L'accroche": "Un boîtier autonome teste si une mise à jour d’un petit programme d’apprentissage améliore vraiment son comportement ou seulement son apparence.",
-    "Le résumé": "L’idée vient de discussions récentes sur un petit modèle d’IA qui peut examiner ses propres réglages, et sur une annonce jugée trompeuse à ce sujet. Avec l’arrivée de programmes d’apprentissage sur des objets peu puissants, il devient difficile de savoir si une mise à jour apporte un vrai progrès. Le moment est bon car ces petits programmes deviennent courants et les promesses autour d’eux se multiplient. Le prototype fait passer une série d’épreuves simples avant et après une modification, puis affiche un verdict clair : progrès réel, recul ou simple effet d’apparence. Les étudiants en données et IA construisent des épreuves équitables et analysent les résultats ; ceux en systèmes embarqués font tourner ces épreuves dans les limites de temps et d’énergie de l’objet.",
-    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
-    "D'où ça vient": "Qwen 3.8 27B on my laptop can interpret model weights, too ; The 'Astra can read and write weights to improve Qwen' post is misleading ---"
   }
 ]
