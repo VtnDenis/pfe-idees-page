@@ -1,29 +1,23 @@
 [
   {
-    "titre": "Bras préhenseur à vision frugale",
-    "Question centrale": "« Comment permettre à un bras robotisé à moins de 100 € de saisir en temps réel des objets variés à l'aide d'une vision embarquée et d'un apprentissage frugal ? »",
-    "Abstract": "Un bras 4 DDL imprimé en 3D piloté par un STM32 en temps réel, couplé à un module ESP32-CAM qui exécute un détecteur d'objets quantifié INT8 en TFLite Micro. Le bras localise, aligne et saisit des objets courants en <500 ms, avec asservissement en courant pour limiter l'effort et éviter le broyage.",
-    "Répartition": "*Data & IA* — collecte d'un dataset maison de 20-30 objets (~100 prises), entraînement d'un détecteur/classifieur léger, quantification INT8, déploiement TFLite Micro sur ESP32-CAM, active learning à partir des échecs de préhension, évaluation précision/latence par objet. *Systèmes embarqués* — conception mécanique et cinématique directe/inverse, firmware temps réel FreeRTOS sur STM32, asservissement position/courant des servos, lecture MPU6050 et ACS712 pour détection de blocage et butées logicielles, protocole UART/SPI STM32↔ESP32-CAM, gestion d'énergie et arrêt d'urgence.",
-    "Matériel": "ESP32-CAM 12 € · STM32 Blue Pill 8 € · 2× MG996R + 2× SG90 18 € · MPU6050 4 € · ACS712 4 € · alim 5 V/3 A 8 € · structure PLA, tiges, visserie 20 € · câblage et breadboard 8 € — **total ≈ 82 €**.",
-    "Pourquoi maintenant": "« Stringman, an $800 open-source room scale gripper robot »",
-    "Tags": "data/IA · embarqué · TRL 5"
+    "titre": "Le veilleur de réseau local",
+    "L'accroche": "Une petite boîte autonome surveille le réseau d’une maison ou d’une salle de cours et prévient quand un appareil se comporte de façon inhabituelle.",
+    "Le résumé": "L’idée vient de l’actualité autour du Flipper One, un outil ouvert de sécurité qui rend l’inspection de systèmes plus accessible. Avec la multiplication des objets connectés, un particulier ou une petite structure ne sait pas toujours repérer un appareil qui fait quelque chose d’anormal. C’est le bon moment car du calcul local et de l’apprentissage léger permettent de traiter les signaux sans tout envoyer à l’extérieur. Le prototype observe un réseau de test dont l’équipe est responsable, apprend ce qui est normal, puis affiche une alerte simple quand quelque chose change. Les étudiants en systèmes embarqués gèrent l’observation en temps réel et l’autonomie, tandis que ceux en données et IA apprennent les habitudes normales et produisent une alerte compréhensible.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "D'où ça vient": "Preparing for the Flipper One Kickstarter and opening pre-orders"
   },
   {
-    "titre": "Boîtier autonome de sécurité réseau par IA embarquée",
-    "Question centrale": "« Comment permettre à un particulier ou une petite structure de détecter en temps réel et de bloquer localement des comportements réseau anormaux avec un boîtier autonome à moins de 100 €, sans aucun cloud ? »",
-    "Abstract": "Boîtier local qui capture les flux d'un petit réseau (port miroir ou inline), extrait des features de type NetFlow, fait tourner un détecteur d'anomalies quantifié (autoencodeur ou Isolation Forest) sur Raspberry Pi Zero 2 W, et coupe le lien via relais + alerte OLED quand le score dépasse un seuil adaptatif. Un ESP32 co-processeur assure le chien de garde, l'affichage et l'actionneur temps réel indépendamment du Pi.",
-    "Répartition": "*Data & IA* — sélection et préparation du dataset public (CICIDS2017 ou UNSW-NB15), ingénierie des features, entraînement et évaluation d'un détecteur non supervisé, calibration du seuil et gestion des faux positifs, quantification TFLite et suivi de dérive. *Systèmes embarqués* — mise en place de la capture passive (interface USB-Ethernet, buffer, isolation CPU/pinning), firmware ESP32 pour watchdog, OLED, relais de coupure et protocole UART, ordonnancement temps réel côté Pi, boîtier, alimentation et journalisation locale chiffrée.",
-    "Matériel": "Raspberry Pi Zero 2 W 20 € · ESP32 devkit 8 € · OLED 128×64 I2C 5 € · module relais 5 V 3 € · microSD 32 Go 8 € · adaptateur USB↔Ethernet 10 € · boîtier imprimé + alim 5 V 20 € — **total ≈ 74 €**.",
-    "Pourquoi maintenant": "« Preparing for the Flipper One Kickstarter and opening pre-orders »",
-    "Tags": "data/IA · embarqué · TRL 4"
+    "titre": "La pince qui trie les objets",
+    "L'accroche": "Un petit bras robotisé apprend à reconnaître des objets simples, les attrape et les range par catégorie.",
+    "Le résumé": "L’idée vient de Stringman, un robot-pince ouvert présenté comme un projet à l’échelle d’une pièce. Les robots capables d’attraper et de ranger des objets restent souvent chers ou difficiles à reproduire. Le moment est favorable car des plans ouverts et des méthodes d’apprentissage accessibles permettent de construire une version miniature. Le prototype montre une action réelle : il voit des objets posés devant lui, choisit une prise adaptée et les déplace dans le bon bac. Les étudiants en systèmes embarqués assurent le mouvement, les capteurs et la réaction en temps réel ; ceux en données et IA entraînent la reconnaissance des objets et l’évaluation des prises réussies.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "D'où ça vient": "Stringman, an $800 open-source room scale gripper robot"
   },
   {
-    "titre": "Plateau de dames électronique à IA embarquée",
-    "Question centrale": "« Comment permettre à un microcontrôleur à 10 € de jouer aux dames à un niveau de club amateur tout en guidant physiquement le joueur sur un plateau lumineux ? »",
-    "Abstract": "Plateau 8×8 avec 64 LED RGB et une matrice de 64 contacts qui détecte les coups, piloté par un ESP32-S3 qui exécute un réseau de valeur distillé par self-play puis quantifié INT8, et affiche ses propres coups en surlignant les cases. La machine joue à un niveau estimé et mesure sa force par des parties de calibration contre un moteur de référence.",
-    "Répartition": "*Data & IA* — génération de parties par self-play (MCTS ou RL), construction du dataset (état → valeur), entraînement et distillation d'un réseau de valeur compact, quantification INT8, calibration Elo contre moteurs publics, évaluation latence/force. *Systèmes embarqués* — design du plateau et routage de la matrice LED (bandeau WS2812), scan matriciel 8×8 des 64 cases avec anti-rebond, firmware temps réel de gestion des tours, protocole entre logique de jeu et interface physique, alimentation et gestion d'énergie.",
-    "Matériel": "ESP32-S3 8 € · bandeau 64 LED WS2812 12 € · matrice tactile 8×8 10 € · plateau PMMA/impression 3D 15 € · alim 5 V/3 A 8 € · câblage et visserie 8 € — **total ≈ 61 €**.",
-    "Pourquoi maintenant": "« Could a modern chess engine on a Pentium have defeated Kasparov in 1996? »",
-    "Tags": "data/IA · embarqué · TRL 4 ---"
+    "titre": "Le vérificateur de petits programmes d’apprentissage",
+    "L'accroche": "Un boîtier autonome teste si une mise à jour d’un petit programme d’apprentissage améliore vraiment son comportement ou seulement son apparence.",
+    "Le résumé": "L’idée vient de discussions récentes sur un petit modèle d’IA qui peut examiner ses propres réglages, et sur une annonce jugée trompeuse à ce sujet. Avec l’arrivée de programmes d’apprentissage sur des objets peu puissants, il devient difficile de savoir si une mise à jour apporte un vrai progrès. Le moment est bon car ces petits programmes deviennent courants et les promesses autour d’eux se multiplient. Le prototype fait passer une série d’épreuves simples avant et après une modification, puis affiche un verdict clair : progrès réel, recul ou simple effet d’apparence. Les étudiants en données et IA construisent des épreuves équitables et analysent les résultats ; ceux en systèmes embarqués font tourner ces épreuves dans les limites de temps et d’énergie de l’objet.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "D'où ça vient": "Qwen 3.8 27B on my laptop can interpret model weights, too ; The 'Astra can read and write weights to improve Qwen' post is misleading ---"
   }
 ]
