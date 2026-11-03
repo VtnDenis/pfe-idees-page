@@ -39,9 +39,30 @@
   <header>
     <h1>Des idées de sujet, pas des vœux pieux.</h1>
     <p class="chapeau">Chaque idée sort de l'actualité des dernières 24 heures, doit tenir en dix semaines à six, et son antériorité est vérifiée sur le web.</p>
-    <p class="meta">04/11/2026 · 3 idées · Data &amp; IA + Systèmes embarqués</p>
+    <p class="meta">04/11/2026 · 6 idées · Data &amp; IA + Systèmes embarqués</p>
   </header>
     <article>
+    <h2>Le détecteur de paiements suspects</h2>
+    <p class="accroche">Un petit terminal de poche qui signale en un instant si une transaction semble risquée.</p>
+    <p>Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.</p>
+    <p class="fait"><b>Faisable ?</b> Oui, avec quelques dizaines d’euros de matériel et des données libres.</p><p class="fait"><b>D'où ça vient</b> « Show HN: Kairos – Open-source risk and fraud decisioning platform » ---</p>
+    <div class="verdict"><b>Antériorité — PROCHE</b>Le FNC-RF de la Banque de France (plateforme publique d&#x27;IBAN suspects, mai 2026) et plusieurs solutions SaaS de scoring de transactions en temps réel couvrent déjà l&#x27;aide à la décision anti-fraude, mais aucun boîtier autonome de poche effectuant le scoring localement sans transmission de données n&#x27;a été identifié.<br><a href="https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude" rel="noopener nofollow">https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude</a></div>
+  </article>
+  <article>
+    <h2>La pince qui apprend à attraper</h2>
+    <p class="accroche">Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.</p>
+    <p>Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.</p>
+    <p class="fait"><b>Faisable ?</b> Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.</p><p class="fait"><b>D'où ça vient</b> « Stringman, an $800 open-source room scale gripper robot »</p>
+    <div class="verdict"><b>Antériorité — RIEN TROUVÉ</b>aucune recherche exploitable (moteur indisponible).</div>
+  </article>
+  <article>
+    <h2>Le veilleur de données</h2>
+    <p class="accroche">Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.</p>
+    <p>Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.</p>
+    <p class="fait"><b>Faisable ?</b> Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible.</p><p class="fait"><b>D'où ça vient</b> « Postman silently auto-installs AI plugins and attempts to share all API data »</p>
+    <div class="verdict"><b>Antériorité — PROCHE</b>Des boîtiers/apps de surveillance réseau (Firewalla, Fingbox, Little Snitch/OpenSnitch) alertent déjà sur des communications sortantes inhabituelles, mais pas sous la forme exacte d’un petit objet de bureau autonome dédié.<br><a href="https://firewalla.com/" rel="noopener nofollow">https://firewalla.com/</a></div>
+  </article>
+  <article>
     <h2>L’échiquier qui s’adapte au niveau du joueur</h2>
     <p class="accroche">Un échiquier physique repère vos coups, éclaire des cases et durcit ou adoucit le jeu selon votre niveau.</p>
     <p>L’actualité pose la question de ce qu’un petit système peut faire avec peu de moyens, à condition d’être bien pensé. Le problème visé est qu’un échiquier connecté coûte souvent cher ou reste limité à un écran, alors qu’un objet physique est plus simple à utiliser. C’est le moment car des capteurs et des composants courants permettent de fabriquer un plateau qui réagit vraiment. Côté données, l’équipe observe les coups du joueur et estime son niveau pour adapter la difficulté ; côté embarqué, l’autre moitié détecte les pièces, allume les cases et gère les réactions immédiates. Le prototype agit : il voit un coup, éclaire une réponse et change de niveau après quelques parties.</p>

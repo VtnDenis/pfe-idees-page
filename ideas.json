@@ -1,5 +1,26 @@
 [
   {
+    "titre": "Le détecteur de paiements suspects",
+    "L'accroche": "Un petit terminal de poche qui signale en un instant si une transaction semble risquée.",
+    "Le résumé": "Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et des données libres.",
+    "D'où ça vient": "« Show HN: Kairos – Open-source risk and fraud decisioning platform » ---"
+  },
+  {
+    "titre": "La pince qui apprend à attraper",
+    "L'accroche": "Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.",
+    "Le résumé": "Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.",
+    "D'où ça vient": "« Stringman, an $800 open-source room scale gripper robot »"
+  },
+  {
+    "titre": "Le veilleur de données",
+    "L'accroche": "Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.",
+    "Le résumé": "Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible.",
+    "D'où ça vient": "« Postman silently auto-installs AI plugins and attempts to share all API data »"
+  },
+  {
     "titre": "L’échiquier qui s’adapte au niveau du joueur",
     "L'accroche": "Un échiquier physique repère vos coups, éclaire des cases et durcit ou adoucit le jeu selon votre niveau.",
     "Le résumé": "L’actualité pose la question de ce qu’un petit système peut faire avec peu de moyens, à condition d’être bien pensé. Le problème visé est qu’un échiquier connecté coûte souvent cher ou reste limité à un écran, alors qu’un objet physique est plus simple à utiliser. C’est le moment car des capteurs et des composants courants permettent de fabriquer un plateau qui réagit vraiment. Côté données, l’équipe observe les coups du joueur et estime son niveau pour adapter la difficulté ; côté embarqué, l’autre moitié détecte les pièces, allume les cases et gère les réactions immédiates. Le prototype agit : il voit un coup, éclaire une réponse et change de niveau après quelques parties.",
