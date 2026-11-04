@@ -192,6 +192,15 @@
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 8px 0 20px; }
+  .usages { margin: 0 0 24px; padding: 20px 22px; background: var(--accent-doux); }
+  .usages h2 { font-size: 0.8125rem; letter-spacing: .07em; text-transform: uppercase;
+               color: var(--accent); font-family: var(--condense); margin: 0 0 10px; }
+  .usages ul { margin: 0; padding-left: 18px; }
+  .usages li { margin-bottom: 8px; }
+  .pour-qui { font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .pour-qui b { color: var(--encre); font-family: var(--condense); letter-spacing: .04em;
+                text-transform: uppercase; font-size: .75rem; }
   .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
   #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
            background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
@@ -224,6 +233,8 @@
     <h1>Le sismographe du jardin qui reconnaît les vrais tremblements</h1>
     <p class="accroche">Un petit boîtier posé dans votre jardin qui surveille les vibrations du sol et vous prévient quand c&#x27;est un vrai séisme et pas un camion qui passe.</p>
     <p class="resume">Une équipe de scientifiques vient de montrer qu&#x27;un immense canyon sur Mars bouge encore aujourd&#x27;hui, ce qui relance l&#x27;intérêt pour la surveillance des tremblements de terre. Aujourd&#x27;hui, en dehors des stations officielles, personne n&#x27;a de moyen simple de savoir si la secousse ressentie est un séisme ou du bruit. Des capteurs de mouvement bon marché et de petits modèles d&#x27;apprentissage sont maintenant capables de tourner directement sur un appareil de la taille d&#x27;une main. L&#x27;idée, c&#x27;est de construire un boîtier qui écoute le sol en continu, distingue un vrai séisme du bruit du quotidien, et prévient immédiatement. Ça donne à des particuliers ou à des petites communes une alerte locale, sans dépendre des grands réseaux nationaux.</p>
+    
+    
     <p class="meta">Oui, avec quelques dizaines d&#x27;euros de matériel. · D’après &quot;Giant Canyon on Mars Is Still Tectonically Active Today&quot;</p>
     <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b> Des sismomètres personnels comme Raspberry Shake et des méthodes de discrimination bruit anthropique/séisme existent déjà, mais pas exactement un boîtier de jardin grand public dédié à cette reconnaissance.</p>
     <p class="meta"><a href="https://raspberryshake.org/" rel="noopener nofollow">Voir ce qui existe déjà</a></p>

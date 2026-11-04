@@ -192,6 +192,15 @@
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 8px 0 20px; }
+  .usages { margin: 0 0 24px; padding: 20px 22px; background: var(--accent-doux); }
+  .usages h2 { font-size: 0.8125rem; letter-spacing: .07em; text-transform: uppercase;
+               color: var(--accent); font-family: var(--condense); margin: 0 0 10px; }
+  .usages ul { margin: 0; padding-left: 18px; }
+  .usages li { margin-bottom: 8px; }
+  .pour-qui { font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .pour-qui b { color: var(--encre); font-family: var(--condense); letter-spacing: .04em;
+                text-transform: uppercase; font-size: .75rem; }
   .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
   #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
            background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
@@ -224,6 +233,8 @@
     <h1>Le petit bras qui apprend en étant guidé</h1>
     <p class="accroche">Un petit bras apprend quelques gestes humains et les répète tout seul pour attraper ou déplacer un objet.</p>
     <p class="resume">Des travaux récents montrent qu&#x27;on peut guider les exemples donnés à un robot au lieu de tout filmer au hasard. L&#x27;idée est de construire un petit bras qui apprend en regardant quelques démonstrations humaines, puis agit seul sur une tâche simple. Le problème actuel est que les robots apprennent souvent avec beaucoup de données coûteuses et mal choisies. C&#x27;est le moment parce que les méthodes de guidage progressent et qu&#x27;un démonstrateur simple suffit à prouver l&#x27;idée. Le projet mélange bien deux côtés : apprendre les gestes à partir d&#x27;exemples, et les exécuter vite et sans danger.</p>
+    
+    
     <p class="meta">Oui, avec quelques dizaines d&#x27;euros de matériel. · D’après « GUILD: Guided Iterative Data Collection for Imitation Learning » ; « PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning »</p>
     <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b> Des projets open source et articles (LeRobot, ALOHA, imitation learning) font déjà apprendre à un bras des gestes de préhension à partir de quelques démonstrations humaines puis les rejouer seul, mais pas sous cette formulation exacte de projet d&#x27;école.</p>
     <p class="meta"><a href="https://github.com/huggingface/lerobot" rel="noopener nofollow">Voir ce qui existe déjà</a></p>

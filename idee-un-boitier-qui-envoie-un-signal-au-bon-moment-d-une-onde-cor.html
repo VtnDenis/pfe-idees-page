@@ -192,6 +192,15 @@
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 8px 0 20px; }
+  .usages { margin: 0 0 24px; padding: 20px 22px; background: var(--accent-doux); }
+  .usages h2 { font-size: 0.8125rem; letter-spacing: .07em; text-transform: uppercase;
+               color: var(--accent); font-family: var(--condense); margin: 0 0 10px; }
+  .usages ul { margin: 0; padding-left: 18px; }
+  .usages li { margin-bottom: 8px; }
+  .pour-qui { font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .pour-qui b { color: var(--encre); font-family: var(--condense); letter-spacing: .04em;
+                text-transform: uppercase; font-size: .75rem; }
   .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
   #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
            background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
@@ -224,6 +233,8 @@
     <h1>Un boîtier qui envoie un signal au bon moment d&#x27;une onde corporelle</h1>
     <p class="accroche">Un petit appareil qui observe une onde du corps et n&#x27;envoie une impulsion lumineuse qu&#x27;à l&#x27;instant précis du cycle le plus favorable.</p>
     <p class="resume">Pour certaines stimulations, envoyer un signal au bon moment d&#x27;une onde cérébrale change nettement l&#x27;effet obtenu, mais il faut prévoir ce moment à quelques millisecondes près sur un signal bruité. Une équipe de recherche vient de publier une méthode qui estime ce bon moment en direct, malgré les perturbations du signal. L&#x27;idée : un boîtier capte une onde du corps, estime en continu où en est le cycle, et déclenche un signal lumineux quand l&#x27;instant cible est atteint. Les deux majeures se partagent le vrai travail : côté Data &amp; IA on construit et entraîne l&#x27;estimateur, côté Systèmes embarqués on fait tenir la mesure, le calcul et le déclenchement dans une boucle temps réel irréprochable.</p>
+    
+    
     <p class="meta">oui, avec un capteur corporel simple et une carte d&#x27;entrée de gamme, pour quelques dizaines d&#x27;euros. · D’après A Bayesian Optimized Biquad Filter-Burg Model for Real-Time EEG Phase Estimation.</p>
     <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b> La stimulation en boucle fermée et à phase verrouillée existe déjà (RNS de NeuroPace, DBS adaptatif, travaux de recherche prédisant la phase d&#x27;une oscillation cérébrale), mais pas sous la forme d&#x27;un petit boîtier pédagogique autonome à impulsion lumineuse ; les résultats de recherche fournis, eux, ne portent que sur la physique générale des ondes.</p>
     <p class="meta"><a href="https://en.wikipedia.org/wiki/Responsive_neurostimulation" rel="noopener nofollow">Voir ce qui existe déjà</a></p>

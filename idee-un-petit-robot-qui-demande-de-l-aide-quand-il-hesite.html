@@ -192,6 +192,15 @@
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 8px 0 20px; }
+  .usages { margin: 0 0 24px; padding: 20px 22px; background: var(--accent-doux); }
+  .usages h2 { font-size: 0.8125rem; letter-spacing: .07em; text-transform: uppercase;
+               color: var(--accent); font-family: var(--condense); margin: 0 0 10px; }
+  .usages ul { margin: 0; padding-left: 18px; }
+  .usages li { margin-bottom: 8px; }
+  .pour-qui { font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .pour-qui b { color: var(--encre); font-family: var(--condense); letter-spacing: .04em;
+                text-transform: uppercase; font-size: .75rem; }
   .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
   #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
            background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
@@ -224,6 +233,8 @@
     <h1>Un petit robot qui demande de l&#x27;aide quand il hésite</h1>
     <p class="accroche">Un robot qui ne se trompe pas en silence : il s&#x27;arrête pile quand il n&#x27;est pas sûr et fait signe à son opérateur pour qu&#x27;il lui montre juste ce moment-là.</p>
     <p class="resume">Pour apprendre un geste à un robot, on lui montre souvent des dizaines de fois un parcours, dont beaucoup d&#x27;exemples inutiles, et le résultat reste approximatif. Une équipe de recherche vient de proposer un procédé où l&#x27;on ne montre au robot que les situations où il est vraiment perdu, en le laissant juger lui-même son incertitude. Le projet : un petit véhicule qui apprend à suivre un parcours simple, s&#x27;arrête et lève un signal lumineux quand il hésite, l&#x27;étudiant le guide alors seulement pour ces instants. Les étudiants Data &amp; IA construisent et entraînent l&#x27;estimateur d&#x27;hésitation, ceux en Systèmes embarqués font tenir ce jugement à bord, en temps réel, sans à-coups dans la conduite.</p>
+    
+    
     <p class="meta">oui, avec quelques dizaines d&#x27;euros de matériel courant. · D’après GUILD: Guided Iterative Data Collection for Imitation Learning.</p>
     <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="plein"></i></span><b>EXISTE</b> Le principe d’un robot qui demande une intervention humaine quand il hésite est déjà traité en recherche via l’imitation learning interactif (DAgger/HG-DAgger), même s’il ne s’agit pas d’un produit grand public identique.</p>
     <p class="meta"><a href="https://arxiv.org/abs/1810.02890" rel="noopener nofollow">Voir ce qui existe déjà</a></p>

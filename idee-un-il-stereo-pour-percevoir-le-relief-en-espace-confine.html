@@ -192,6 +192,15 @@
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 8px 0 20px; }
+  .usages { margin: 0 0 24px; padding: 20px 22px; background: var(--accent-doux); }
+  .usages h2 { font-size: 0.8125rem; letter-spacing: .07em; text-transform: uppercase;
+               color: var(--accent); font-family: var(--condense); margin: 0 0 10px; }
+  .usages ul { margin: 0; padding-left: 18px; }
+  .usages li { margin-bottom: 8px; }
+  .pour-qui { font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .pour-qui b { color: var(--encre); font-family: var(--condense); letter-spacing: .04em;
+                text-transform: uppercase; font-size: .75rem; }
   .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
   #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
            background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
@@ -224,6 +233,8 @@
     <h1>Un œil stéréo pour percevoir le relief en espace confiné</h1>
     <p class="accroche">Deux caméras miniatures qui, comme nos deux yeux, permettent à un petit système de mesurer la distance aux objets qui l&#x27;entourent, en temps réel.</p>
     <p class="resume">Les robots qui assistent les chirurgiens ont besoin de « voir en profondeur » pour manipuler sans risque dans un espace minuscule. Une actualité récente annonce le premier jeu de données public qui synchronise plusieurs caméras endoscopiques, signe que la perception 3D en milieu chirurgical devient un sujet chaud. Le problème à régler : mesurer des distances fiables sur de tout petits objets, avec un matériel bon marché et en direct. C&#x27;est le moment parce que les jeux de données publics et les modèles ouverts permettent désormais d&#x27;entraîner ce genre de système sans moyens industriels. L&#x27;équipe construirait un petit module à deux caméras synchronisées, avec un calcul embarqué sur place, qui affiche en direct une carte de profondeur de ce qu&#x27;il voit.</p>
+    
+    
     <p class="meta">oui, avec quelques dizaines d&#x27;euros de matériel. · D’après « iMED: A Multi-Endoscope Dataset for Surgical 3D Perception »</p>
     <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b> Le drone Stéréo2 de Multinnov existe pour l’inspection en espaces confinés avec vision stéréo, mais il ne cible pas explicitement la mesure de distance temps réel pour robots chirurgicaux.</p>
     <p class="meta"><a href="https://multinnov.com/drone-pour-espaces-confines-le-stereo2-de-multinnov/" rel="noopener nofollow">Voir ce qui existe déjà</a></p>

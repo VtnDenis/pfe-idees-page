@@ -192,6 +192,15 @@
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 8px 0 20px; }
+  .usages { margin: 0 0 24px; padding: 20px 22px; background: var(--accent-doux); }
+  .usages h2 { font-size: 0.8125rem; letter-spacing: .07em; text-transform: uppercase;
+               color: var(--accent); font-family: var(--condense); margin: 0 0 10px; }
+  .usages ul { margin: 0; padding-left: 18px; }
+  .usages li { margin-bottom: 8px; }
+  .pour-qui { font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .pour-qui b { color: var(--encre); font-family: var(--condense); letter-spacing: .04em;
+                text-transform: uppercase; font-size: .75rem; }
   .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
   #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
            background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
@@ -224,6 +233,8 @@
     <h1>Un petit bras qui apprend tout seul à attraper juste</h1>
     <p class="accroche">Un bras articulé de bureau qui apprend, rien qu&#x27;en s&#x27;entraînant, les gestes précis pour atteindre un objet posé devant lui, puis les exécute en direct.</p>
     <p class="resume">Régler à la main les gestes d&#x27;un bras robotisé est un travail d&#x27;expert, à refaire dès que la forme du bras ou l&#x27;objet change. Une équipe de recherche vient de montrer qu&#x27;on pouvait laisser le bras découvrir lui-même, par essais, les positions à adopter pour viser une cible avec une grande précision. L&#x27;idée : un petit bras posé sur une table, un objet à atteindre, une puce à bord qui corrige le geste en temps réel pendant que l&#x27;entraînement se fait hors ligne. Les deux majeures se partagent le travail : les étudiants Data &amp; IA entraînent le modèle à viser, ceux en Systèmes embarqués font tenir la commande du bras et la correction du geste en direct. C&#x27;est le bon moment parce que les cartes embarquées et les outils d&#x27;entraînement gratuits rendent cette expérience tenable en dix semaines.</p>
+    
+    
     <p class="meta">oui, avec quelques dizaines d&#x27;euros de matériel courant. · D’après PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning.</p>
     <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="plein"></i></span><b>EXISTE</b> L&#x27;apprentissage autonome de la préhension par un bras robotisé est un domaine de recherche très établi (apprentissage par renforcement, Levine/Google, MIT, EPFL), avec démos, articles et code disponibles.</p>
     <p class="meta"><a href="https://www.01net.com/actualites/ce-robot-du-mit-peut-manipuler-les-objets-aussi-bien-qu-un-humain-1520841.html" rel="noopener nofollow">Voir ce qui existe déjà</a></p>

@@ -192,6 +192,15 @@
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 8px 0 20px; }
+  .usages { margin: 0 0 24px; padding: 20px 22px; background: var(--accent-doux); }
+  .usages h2 { font-size: 0.8125rem; letter-spacing: .07em; text-transform: uppercase;
+               color: var(--accent); font-family: var(--condense); margin: 0 0 10px; }
+  .usages ul { margin: 0; padding-left: 18px; }
+  .usages li { margin-bottom: 8px; }
+  .pour-qui { font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .pour-qui b { color: var(--encre); font-family: var(--condense); letter-spacing: .04em;
+                text-transform: uppercase; font-size: .75rem; }
   .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
   #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
            background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
@@ -224,6 +233,8 @@
     <h1>Un petit bras robotique qui apprend à viser tout seul</h1>
     <p class="accroche">Un bras robotique qui apprend par lui-même à attraper un objet, de mieux en mieux, sans qu&#x27;on lui dicte chaque geste.</p>
     <p class="resume">Les robots industriels suivent des calculs très rigides pour atteindre un point précis ; ils sont exacts, mais fragiles dès que la situation change. À l&#x27;inverse, les nouveaux robots « intelligents » apprennent par essais, mais manquent souvent de précision. Des chercheurs viennent de montrer qu&#x27;on peut combiner les deux approches pour obtenir les deux qualités à la fois. Notre projet : un petit bras motorisé qui apprend à atteindre une cible en s&#x27;entraînant, puis se corrige tout seul quand on déplace l&#x27;objet.</p>
+    
+    
     <p class="meta">Oui, avec des petites pièces imprimées et quelques composants bon marché. · D’après « PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning »</p>
     <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b> Des bras open source comme le SO-ARM101/LeRobot existent avec vision et apprentissage par démonstration/IA, mais pas exactement un petit bras qui apprend seul à viser par essais-erreurs.</p>
     <p class="meta"><a href="https://ca.robotshop.com/fr/products/hiwonder-hiwonder-lerobot-so-arm101-bras-robotique-open-source-6-axes-avec-vision-ai-reconnaissance-ai-pour-programmation-intelligence-incarnee-kit-diy-non-assemble" rel="noopener nofollow">Voir ce qui existe déjà</a></p>
