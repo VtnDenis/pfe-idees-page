@@ -1,5 +1,35 @@
 [
   {
+    "titre": "Une lumière qui suit le rythme du cerveau",
+    "L'accroche": "Une petite lampe qui adapte sa couleur et son rythme, en direct, à l'état cérébral de la personne assise en face.",
+    "Le résumé": "Pour aider quelqu'un à se détendre, il faut un objet qui réagit à l'instant, pas une analyse faite une heure plus tard. Des chercheurs viennent de montrer qu'on peut estimer en direct un rythme cérébral précis avec des calculs légers, ce qui était réservé aux gros systèmes. Transposé à une lampe de chevet, cela donne une boucle complète : on mesure, on réagit, on apaise. C'est possible aujourd'hui parce que les capteurs de signaux corporels et les petites cartes sont devenus vraiment accessibles.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de capteur et une carte courante.",
+    "Cas d'usage": "Une étudiante stressée avant un examen s'assoit devant la lampe, et au bout de quelques minutes la lumière ralentit au rythme de sa respiration cérébrale. Un insomniaque pose la lampe sur sa table de nuit et la voit passer doucement vers un orange chaud quand son cerveau décroche.",
+    "Pour qui": "Une personne qui cherche un rituel de détente sans écran et sans abonnement.",
+    "D'où ça vient": "« A Bayesian Optimized Biquad Filter-Burg Model for Real-Time EEG Phase Estimation »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des prototypes et projets amateurs relient déjà un casque EEG (Muse, Emotiv) à une lampe connectée type Philips Hue, et le neurofeedback EEG temps réel est un domaine de recherche actif, mais aucun produit ne combine estimation embarquée légère d'un rythme cérébral précis et lampe grand public — et les résultats de recherche fournis ne parlent que de rythme circadien, donc à côté du sujet.",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Un petit robot qui apprend en regardant des vidéos",
+    "L'accroche": "Un mini robot qui regarde quelques vidéos de gestes humains et essaie ensuite de les imiter tout seul.",
+    "Le résumé": "Apprendre un geste à un robot demande aujourd'hui de le porter, de le filmer sous tous les angles ou de le piloter à la main. Des chercheurs viennent de montrer que de simples vidéos peuvent servir de source universelle pour comprendre une action, quelle que soit la personne qui la fait. Cela ouvre la porte à un robot qui apprendrait en regardant la vie quotidienne, comme un enfant. C'est jouable maintenant parce que les modèles qui extraient une action d'une vidéo sont devenus ouverts et légers.",
+    "Faisable ?": "oui, mais serré : il faudra se concentrer sur un ou deux gestes très simples.",
+    "Cas d'usage": "On montre au robot trois vidéos d'une main qui pousse une balle, et le lendemain il pousse la sienne. Un enfant filme son père qui range des cubes, et le robot essaie de ranger les mêmes cubes.",
+    "Pour qui": "Un enseignant ou un parent qui veut montrer un geste à un robot sans le programmer.",
+    "D'où ça vient": "« DreamX: Video Diffusion Model is a Universal Latent Action Learner »",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "Des systèmes comme Skild AI S1, GEN-1.5 ou Gemini 4 montrent déjà qu’un robot peut apprendre et imiter une tâche à partir d’une ou quelques vidéos.",
+      "LIEN": "https://courionai.com/fr/news/2026-08-26-skild-s1-robot-one-video/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Le petit bras qui apprend en étant guidé",
     "L'accroche": "Un petit bras apprend quelques gestes humains et les répète tout seul pour attraper ou déplacer un objet.",
     "Le résumé": "Des travaux récents montrent qu'on peut guider les exemples donnés à un robot au lieu de tout filmer au hasard. L'idée est de construire un petit bras qui apprend en regardant quelques démonstrations humaines, puis agit seul sur une tâche simple. Le problème actuel est que les robots apprennent souvent avec beaucoup de données coûteuses et mal choisies. C'est le moment parce que les méthodes de guidage progressent et qu'un démonstrateur simple suffit à prouver l'idée. Le projet mélange bien deux côtés : apprendre les gestes à partir d'exemples, et les exécuter vite et sans danger.",
