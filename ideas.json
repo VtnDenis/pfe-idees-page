@@ -1,5 +1,44 @@
 [
   {
+    "titre": "Œil qui parle sans Internet",
+    "L'accroche": "Un petit appareil posé sur une table décrit à voix haute ce qu'il a devant lui, sans jamais se connecter.",
+    "Le résumé": "Des modèles d'intelligence artificielle commencent à tenir sur de simples ordinateurs portables, sans passer par un serveur distant. Or la plupart des assistants qui savent reconnaître des objets dépendent du réseau, ce qui pose des questions de vie privée et de coût. Un appareil autonome, qui raconte ce qu'il voit à une personne malvoyante, rendrait ce service partout, même sans connexion. C'est le moment parce que ces modèles commencent à tenir sur de tout petits appareils.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« Qwen 3.8 27B on my laptop can interpret model weights, too »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des traducteurs vocaux hors ligne et assistants IA locaux existent, et des aides visuelles type OrCam MyEye parlent sans réseau, mais pas exactement un appareil de table autonome décrivant la scène.",
+      "LIEN": "https://www.commentcamarche.net/applis-sites/39109-ia-offlined/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Boîte à fuites",
+    "L'accroche": "Une petite boîte branchée sur le réseau de la maison prévient quand un appareil envoie au loin des choses qu'il ne devrait pas.",
+    "Le résumé": "Une application très populaire a été surprise à installer des choses sans prévenir et à vouloir envoyer des données personnelles vers l'extérieur. Aujourd'hui, ni un particulier ni une petite association ne peuvent voir ce qui sort réellement de leur réseau. Un boîtier bon marché peut surveiller les échanges en continu et signaler, sur place, ce qui ressemble à une fuite. C'est le moment parce que la reconnaissance se fait directement dans la boîte, sans que les données soient confiées à un tiers.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« Postman silently auto-installs AI plugins and attempts to share all API data »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des produits comme Firewalla et des projets de recherche/open source comme IoT Inspector surveillent déjà le trafic sortant des appareils domestiques et alertent, mais pas sous la forme exacte d’une “boîte à fuites” grand public dédiée aux fuites de données.",
+      "LIEN": "https://firewalla.com/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Sismographe de poche",
+    "L'accroche": "Un petit boîtier posé sur une étagère repère les tremblements de terre et apprend à faire la différence avec un camion qui passe au loin.",
+    "Le résumé": "Des scientifiques viennent de montrer qu'un immense canyon sur Mars bouge encore aujourd'hui, parce qu'on y enregistre de petits séismes. Sur Terre, les appareils qui détectent les secousses coûtent cher ou déclenchent sans arrêt à cause du bruit du quotidien. Une électronique bon marché peut désormais apprendre, en quelques heures, à reconnaître la signature d'un vrai séisme et à alerter avant les secousses les plus fortes. C'est le bon moment parce qu'un petit calculateur peut faire ce tri directement dans le boîtier, sans envoyer les mesures sur Internet.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« Giant canyon on Mars is still tectonically active »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des apps « Sismographe de Poche » et Pocket Seismograph transforment un smartphone en vibromètre/sismographe, mais aucun petit boîtier matériel distinguant séisme et camion n’a été trouvé.",
+      "LIEN": "https://apps.apple.com/us/app/sismographe-de-poche/id6766446046?l=fr-FR"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Des capteurs qui apprennent ensemble sans partager ce qu'ils voient",
     "L'accroche": "Deux ou trois petites boîtes qui s'entraînent chacune de leur côté puis partagent seulement ce qu'elles ont appris, jamais les données qu'elles ont vues.",
     "Le résumé": "Un article récent regrette qu'il n'existe aucun espace commun où partager les données après l'entraînement des grands modèles, ce qui concentre tout le pouvoir entre quelques acteurs. Dans le monde des objets connectés, le même problème se pose : chacun collecte des données chez lui, mais personne ne veut les envoyer à un serveur central. Or, des techniques récentes permettent à plusieurs appareils d'apprendre ensemble sans jamais échanger les données brutes. L'idée est de construire deux ou trois petites boîtes, chacune voyant des choses différentes, qui s'entraînent séparément puis combinent leurs apprentissages. Une fois réunies, chaque boîte sait reconnaître des choses qu'elle n'avait pourtant jamais vues — la démonstration parfaite pour montrer qu'on peut apprendre ensemble en gardant ses données pour soi.",

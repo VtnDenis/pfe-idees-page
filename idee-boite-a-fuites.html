@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boîte à fuites — Bulletin d’antériorité</title>
+<meta name="description" content="Des idées de projet tirées de l'actualité, vérifiées sur le web avant publication.">
+<style>@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("fontes/newsreader-200-800-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("fontes/newsreader-200-800-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fontes/ibm-plex-sans-condensed-400-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fontes/ibm-plex-sans-condensed-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fontes/ibm-plex-sans-condensed-500-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fontes/ibm-plex-sans-condensed-500-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fontes/ibm-plex-sans-condensed-600-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fontes/ibm-plex-sans-condensed-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  :root {
+    --papier: #F4F3EC; --encre: #171A15; --sourdine: #5B5F55; --accent: #A8271B;
+    --accent-doux: #EDE1D9; --filet: #BDBBAA; --sur-encre: #F4F3EC; --sur-encre-sourdine: #B9B8AA;
+    --serif: "Newsreader", "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --condense: "IBM Plex Sans Condensed", "Roboto Condensed", "Arial Narrow", Helvetica, Arial, sans-serif;
+    --t-display: clamp(2.125rem, 1.429rem + 2.857vw, 4rem);
+    --t-titre: clamp(1.5rem, 1.221rem + 1.143vw, 2.25rem);
+    --t-sous-titre: clamp(1.25rem, 1.064rem + 0.762vw, 1.75rem);
+    --t-accroche: clamp(1.0625rem, 1.0rem + 0.25vw, 1.25rem);
+    --t-corps: clamp(1.0625rem, 1.03rem + 0.15vw, 1.1875rem);
+    --t-meta: clamp(0.875rem, 0.86rem + 0.08vw, 0.9375rem);
+    --t-chiffre: clamp(2.25rem, 2.0rem + 1.2vw, 3rem);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--papier); color: var(--encre);
+         font-family: var(--serif); font-size: var(--t-corps); line-height: 1.55;
+         font-optical-sizing: auto; font-synthesis: none; overflow-wrap: anywhere; }
+  .page { max-width: 1152px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 56px) 64px; }
+  h1, h2 { font-weight: 400; text-wrap: balance; }
+  p { margin: 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .masthead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px;
+              font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine);
+              padding: 24px 0 12px; border-bottom: 1px solid var(--filet); }
+  header h1 { font-size: var(--t-display); line-height: 1.0; letter-spacing: -0.028em;
+              margin: 40px 0 6px; max-width: 20ch; }
+  header .suite { font-size: var(--t-sous-titre); line-height: 1.2; letter-spacing: -0.012em;
+                  margin: 0 0 24px; max-width: 24ch; }
+  header .chapeau { font-size: var(--t-accroche); line-height: 1.35; max-width: 48ch; margin: 0 0 32px; }
+
+  .fournee { background: var(--encre); color: var(--sur-encre); padding: 32px clamp(20px, 4vw, 40px);
+             display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+             gap: 12px; margin-bottom: 56px; position: relative; overflow: hidden; }
+  .progres { position: absolute; left: 0; bottom: 0; height: 3px; width: 0;
+             background: var(--accent); transition: width 900ms linear; }
+  .squelette { color: transparent; background: linear-gradient(90deg, #2b2f28 25%, #3a3f36 37%, #2b2f28 63%);
+               background-size: 400% 100%; animation: brillance 1.4s ease-in-out infinite;
+               min-width: 7rem; display: inline-block; border-radius: 0; }
+  @keyframes brillance { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+  @keyframes monte { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes parait { from { opacity: 0; } to { opacity: 1; } }
+  @view-transition { navigation: auto; }
+  .entrees li { animation: monte 480ms cubic-bezier(.2,.7,.2,1) both; }
+  article.detail { animation: monte 420ms cubic-bezier(.2,.7,.2,1) both; }
+  .entrees a { transition: background-color 180ms ease, padding-left 180ms ease; }
+  .entrees a:hover, .entrees a:focus-visible { padding-left: 10px; }
+  .bouton { transition: background-color 160ms ease, transform 160ms ease; }
+  .bouton:hover { transform: translateY(-1px); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .entrees a:hover { padding-left: 0; }
+  }
+  .fournee .libelle { font-family: var(--condense); font-size: var(--t-meta); color: var(--sur-encre-sourdine); }
+  .fournee .reste { font-family: var(--condense); font-size: var(--t-chiffre); font-weight: 600;
+                    line-height: 1; font-variant-numeric: tabular-nums; }
+
+  .liste h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 24px; }
+
+  .parcours-section { margin: 0 0 56px; }  .parcours-section h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 20px; }
+  .parcours { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+  .parcours li { position: relative; padding-top: 16px; border-top: 2px solid var(--encre);
+                 animation: monte 520ms cubic-bezier(.2,.7,.2,1) both; }
+  .parcours .etape { font-family: var(--condense); font-size: 0.8125rem; letter-spacing: .07em;
+                     text-transform: uppercase; color: var(--accent); }
+  .parcours .quoi { font-size: 1.0625rem; margin: 6px 0 0; }
+  .parcours .dit { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 4px 0 0; }
+  @media (min-width: 760px) {
+    .parcours { grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .parcours li { padding: 16px 22px 0 0; border-top: 2px solid var(--encre); }
+    .parcours li + li { border-left: 1px solid var(--filet); padding-left: 22px; }
+  }
+
+  .entrees { list-style: none; margin: 0; padding: 0; }
+  .entrees li { border-top: 1px solid var(--filet); }
+  .entrees a { display: block; padding: 20px 0; text-decoration: none; color: inherit; min-height: 48px; }
+  .entrees a:hover { background: var(--accent-doux); }
+  .entrees a:hover .titre { text-decoration: underline; text-decoration-color: var(--accent); }
+  .entrees .titre { display: block; font-size: 1.1875rem; letter-spacing: -0.012em; margin-bottom: 4px; }
+  .entrees .accroche { display: block; color: var(--sourdine); font-size: var(--t-accroche);
+                       line-height: 1.4; max-width: 60ch; margin-bottom: 8px; }
+  .entrees .mot { display: flex; align-items: center; gap: 8px; font-family: var(--condense);
+                  font-size: 0.8125rem; letter-spacing: .06em; color: var(--sourdine); }
+
+  .jauge { display: inline-flex; gap: 2px; }
+  .jauge i { width: 6px; height: 6px; display: block; border: 1px solid var(--filet); }
+  .jauge i.plein { background: var(--accent); border-color: var(--accent); }
+
+  article.detail { max-width: min(60ch, 40rem); padding: 40px 0 0; }
+  article.detail h1 { font-size: var(--t-titre); line-height: 1.08; letter-spacing: -0.02em; margin: 16px 0 16px; }
+  .accroche { font-size: var(--t-accroche); line-height: 1.4; margin: 0 0 20px; }
+  .resume { margin: 0 0 24px; }
+  .meta { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .verdict { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; padding: 14px 0;
+             border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet);
+             font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 20px; }
+  .verdict b { font-weight: 600; letter-spacing: .06em; color: var(--encre); }
+
+  .histogramme { margin: 64px 0 0; }
+  .barres { list-style: none; display: flex; align-items: flex-end; gap: 4px; height: 72px;
+            margin: 0 0 8px; padding: 0; border-bottom: 2px solid var(--encre); }
+  .barres li { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+  .barres .barre { width: 100%; background: var(--encre); display: block; }
+  .barres .aujourdhui .barre { background: var(--accent); }
+  .legende { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
+
+  .abonnement { margin-top: 96px; padding: 56px clamp(20px, 4vw, 40px); background: var(--accent-doux); }
+  .abonnement h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 8px; }
+  .abonnement .meta { margin: 0 0 20px; }
+  .bouton { display: block; font-family: var(--condense); font-size: var(--t-meta); text-align: center;
+            text-decoration: none; background: var(--encre); color: var(--papier); padding: 15px 24px; }
+  .bouton:hover { background: var(--accent); }
+  @media (min-width: 720px) { .bouton { display: inline-block; } }
+
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--filet);
+           font-family: var(--condense); font-size: 0.875rem; color: var(--sourdine); }
+
+  article.erreur { background: var(--accent); color: var(--papier); margin: 0 calc(-1 * clamp(20px, 5vw, 56px));
+                   padding: 88px clamp(20px, 5vw, 56px); min-height: 60vh; }
+  article.erreur h1 { font-size: var(--t-display); line-height: 1; letter-spacing: -0.028em; margin: 12px 0 16px; max-width: 16ch; }
+  article.erreur .accroche { color: var(--papier); opacity: .92; max-width: 34ch; }
+  article.erreur .meta { color: var(--papier); opacity: .8; }
+  article.erreur .bouton { background: var(--papier); color: var(--accent); display: inline-block; margin-top: 28px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+<main class="page">
+  <article class="detail">
+    <p class="meta"><a href="index.html">← Toutes les idées</a></p>
+    <h1>Boîte à fuites</h1>
+    <p class="accroche">Une petite boîte branchée sur le réseau de la maison prévient quand un appareil envoie au loin des choses qu&#x27;il ne devrait pas.</p>
+    <p class="resume">Une application très populaire a été surprise à installer des choses sans prévenir et à vouloir envoyer des données personnelles vers l&#x27;extérieur. Aujourd&#x27;hui, ni un particulier ni une petite association ne peuvent voir ce qui sort réellement de leur réseau. Un boîtier bon marché peut surveiller les échanges en continu et signaler, sur place, ce qui ressemble à une fuite. C&#x27;est le moment parce que la reconnaissance se fait directement dans la boîte, sans que les données soient confiées à un tiers.</p>
+    <p class="meta">oui, avec quelques dizaines d&#x27;euros de matériel. · D’après « Postman silently auto-installs AI plugins and attempts to share all API data »</p>
+    <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b> Des produits comme Firewalla et des projets de recherche/open source comme IoT Inspector surveillent déjà le trafic sortant des appareils domestiques et alertent, mais pas sous la forme exacte d’une “boîte à fuites” grand public dédiée aux fuites de données.</p>
+    <p class="meta"><a href="https://firewalla.com/" rel="noopener nofollow">Voir ce qui existe déjà</a></p>
+    <p class="meta">Publiée le 2026.11.04</p>
+  </article>
+  <footer>
+    Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité par recherche web.
+    Les liens de verdict sont des résultats de recherche, pas des validations.
+    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
+  </footer>
+</main>
+<script>
+  (function () {
+    var cible = new Date();
+    cible.setMinutes(0, 0, 0);
+    cible.setHours(cible.getHours() + 1);
+    var el = document.getElementById('compte');
+    var lib = document.getElementById('libelle');
+    var barre = document.getElementById('progres');
+    function deux(n) { return String(n).padStart(2, '0'); }
+    function tic() {
+      var reste = cible - new Date();
+      if (barre) barre.style.width = Math.min(100, Math.max(0, (1 - reste / 3600000) * 100)) + '%';
+      if (!el) return;
+      el.classList.remove('squelette');
+      if (reste <= 0) { el.textContent = 'Fournée en ligne'; if (lib) lib.textContent = 'Mise à jour'; return; }
+      var h = Math.floor(reste / 3600000), m = Math.round((reste % 3600000) / 60000);
+      if (m === 60) { h += 1; m = 0; }
+      el.textContent = (h > 0 ? h + ' h ' : '') + deux(m) + ' min';
+    }
+    tic();
+    setInterval(tic, 15000);
+
+    var lignes = document.querySelectorAll('.entrees li');
+    for (var i = 0; i < lignes.length; i++) {
+      lignes[i].style.animationDelay = Math.min(i * 55, 550) + 'ms';
+    }
+    var etapes = document.querySelectorAll('.parcours li');
+    for (var j = 0; j < etapes.length; j++) {
+      etapes[j].style.animationDelay = (j * 90) + 'ms';
+    }
+  })();
+</script>
+</html>
