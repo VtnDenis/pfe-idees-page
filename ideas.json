@@ -1,5 +1,44 @@
 [
   {
+    "titre": "Un robot qui apprend en te regardant faire",
+    "L'accroche": "Un petit bras qu'on pilote à la main pour lui montrer un geste, et qui le reproduit ensuite seul.",
+    "Le résumé": "Pour apprendre un geste à un robot, il faut lui montrer beaucoup d'exemples, souvent filmés au hasard par un humain qui ne sait pas quoi filmer. Une nouvelle étude propose de guider celui qui filme vers les moments les plus utiles, pour apprendre plus vite avec moins d'exemples. C'est le moment : ce genre de démonstration coûte très cher, et diviser ce coût ouvre la porte à des robots moins chers dans les ateliers et les maisons. Notre projet : un petit bras piloté à la main, dont on enregistre les mouvements, et qui apprend à les refaire seul avec un objet réel.",
+    "Faisable ?": "Oui, avec un petit bras imprimé et une caméra courante.",
+    "D'où ça vient": "« GUILD: Guided Iterative Data Collection for Imitation Learning »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Un petit bras robotique qui apprend à viser tout seul",
+    "L'accroche": "Un bras robotique qui apprend par lui-même à attraper un objet, de mieux en mieux, sans qu'on lui dicte chaque geste.",
+    "Le résumé": "Les robots industriels suivent des calculs très rigides pour atteindre un point précis ; ils sont exacts, mais fragiles dès que la situation change. À l'inverse, les nouveaux robots « intelligents » apprennent par essais, mais manquent souvent de précision. Des chercheurs viennent de montrer qu'on peut combiner les deux approches pour obtenir les deux qualités à la fois. Notre projet : un petit bras motorisé qui apprend à atteindre une cible en s'entraînant, puis se corrige tout seul quand on déplace l'objet.",
+    "Faisable ?": "Oui, avec des petites pièces imprimées et quelques composants bon marché.",
+    "D'où ça vient": "« PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des bras open source comme le SO-ARM101/LeRobot existent avec vision et apprentissage par démonstration/IA, mais pas exactement un petit bras qui apprend seul à viser par essais-erreurs.",
+      "LIEN": "https://ca.robotshop.com/fr/products/hiwonder-hiwonder-lerobot-so-arm101-bras-robotique-open-source-6-axes-avec-vision-ai-reconnaissance-ai-pour-programmation-intelligence-incarnee-kit-diy-non-assemble"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Un casque qui devine ton attention",
+    "L'accroche": "Un petit casque qui lit l'activité du cerveau et donne un retour immédiat pour aider à rester concentré.",
+    "Le résumé": "Des chercheurs viennent de publier une façon de suivre en temps réel un rythme bien précis du cerveau, celui qu'utilisent certains soins et appareils de relaxation. Aujourd'hui, ces appareils réagissent trop tard : le signal est lu après coup. Résultat, ils aident peu. Notre projet : un mini-casque portable qui mesure le cerveau en direct, s'adapte à la personne qui le porte et réagit instantanément — par exemple en changeant une lumière ou un son. Un objet réel, porté sur la tête, qui réagit vraiment.",
+    "Faisable ?": "Oui, avec un capteur cérébral d'entrée de gamme et une petite carte courante, en restant sous les cent euros.",
+    "D'où ça vient": "« A Bayesian Optimized Biquad Filter-Burg Model for Real-Time EEG Phase Estimation »",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "Le casque Neurable One utilise des capteurs EEG et une application pour suivre en temps réel attention, concentration et fatigue, avec des produits/startups comparables déjà commercialisés.",
+      "LIEN": "https://www.journaldugeek.com/2026/10/02/neurable-one-le-casque-qui-detecte-les-coups-de-mou-du-cerveau/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "La lumière qui apprend vos habitudes",
     "L'accroche": "Une petite lampe ou un petit écran ajuste sa lumière tout seul en observant la luminosité de la pièce et vos corrections, pour éviter l'éblouissement et la fatigue.",
     "Le résumé": "L'actualité montre qu'un navigateur célèbre ajoute un mode sombre qui s'adapte tout seul. Beaucoup de gens règlent encore leur écran ou leur lampe à la main, plusieurs fois par jour. L'idée est un objet physique qui apprend quand vous préférez une lumière douce ou forte, selon l'heure et la pièce. Il ajuste alors la lumière sans attendre. Le projet combine l'observation des habitudes et l'apprentissage côté données avec la réaction immédiate côté objet.",
@@ -217,45 +256,6 @@
       "VERDICT": "PROCHE",
       "RAISON": "Des boîtiers domestiques comme Firewalla, Bitdefender Box ou Cujo, ainsi que la stack open source Pi-hole/ntopng sur Raspberry Pi avec LED d'alerte, réalisent déjà exactement cette surveillance du trafic sortant avec signal visuel.",
       "LIEN": "https://firewalla.com"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "Le présentoir qui conseille sans connexion",
-    "L'accroche": "Un petit meuble de table apprend les goûts de la maison et propose une idée au bon moment, sans envoyer de données au dehors.",
-    "Le résumé": "Une actualité récente décrit les efforts d’une grande plateforme pour stocker et servir des recommandations à très grande échelle. L’idée inverse est de faire vivre une recommandation minuscule dans un objet local : il observe quelques usages simples, apprend les préférences, puis suggère une activité ou un contenu. Le problème réglé est de conseiller sans connexion et sans profiler les gens à distance. C’est le moment car les données libres et les petits calculateurs permettent de garder tout le traitement dans l’objet.",
-    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et un prototype simple à réaliser en dix semaines.",
-    "D'où ça vient": "« USDB: Scaling Storage for Next-Generation Recommender Systems at ByteDance » ---",
-    "verdict": {
-      "VERDICT": "PROCHE",
-      "RAISON": "Des assistants IA hors-ligne et systèmes de recommandation embarqués (edge AI) existent, mais pas un objet-meuble de table apprenant les goûts du foyer pour recommander localement sans connexion.",
-      "LIEN": "https://www.commentcamarche.net/applis-sites/39109-ia-offlined/"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "La boîte qui explique ses choix",
-    "L'accroche": "Un petit objet écoute un bruit ou voit un geste, donne son avis, puis affiche en clair pourquoi il a répondu cela.",
-    "Le résumé": "Une actualité récente revient sur la capacité d’un modèle à lire et interpréter ses propres poids, et sur les ambiguïtés que cela crée. L’idée est de construire un objet physique qui classe quelques situations simples et montre les raisons de son choix, pour rendre la décision compréhensible. Le problème réglé est la confiance : on voit pourquoi l’objet répond, au lieu de subir une boîte noire. C’est faisable maintenant car l’apprentissage sur de petits volumes et le calcul local sont devenus accessibles à un projet étudiant.",
-    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et un prototype simple à réaliser en dix semaines.",
-    "D'où ça vient": "« Qwen 3.8 27B on my laptop can interpret model weights, too »",
-    "verdict": {
-      "VERDICT": "RIEN TROUVÉ",
-      "RAISON": "Aucun résultat ne décrit un objet physique qui classe sons/gestes et affiche explicitement les raisons de son choix ; les liens portent sur une émission TV, une fiction ou France Travail.",
-      "LIEN": "https://sympas.net/2026/01/21/titre-la-boite-qui-decidait/"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "La pince qui attrape ce qu’on lui montre",
-    "L'accroche": "Un petit bras à pince apprend à reconnaître quelques objets posés devant lui et à les saisir sans les casser.",
-    "Le résumé": "Une actualité récente montre un robot open source à pince conçu pour attraper des objets à l’échelle d’une pièce. L’idée ici est d’en faire une version minuscule et abordable : l’objet regarde ce qu’on lui présente, choisit une façon simple de le prendre, puis agit. Le problème réglé est de faire coopérer une décision intelligente et un geste physique fiable, sans dépendre d’une connexion. C’est le moment car les petits composants et les données libres permettent de prototyper cela en dix semaines.",
-    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et un prototype simple à réaliser en dix semaines.",
-    "D'où ça vient": "« Stringman, an $800 open-source room scale gripper robot »",
-    "verdict": {
-      "VERDICT": "RIEN TROUVÉ",
-      "RAISON": "Les résultats ne portent que sur des machines à pince de fête foraine, la pince géante de SpaceX ou des gadgets Instagram, pas sur un petit bras open source apprenant à reconnaître puis saisir des objets.",
-      "LIEN": "—"
     },
     "jour": "2026-11-04"
   }
