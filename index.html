@@ -2,142 +2,202 @@
 <html lang="fr">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Idées de projet — Data &amp; IA + Systèmes embarqués</title>
-<meta name="description" content="Trois idées de projet par heure, tirées de l'actualité des dernières 24 heures, avec vérification d'antériorité.">
+<title>Bulletin d'antériorité — idées de projet vérifiées</title>
+<meta name="description" content="Trois idées de projet par heure, tirées de l'actualité et vérifiées sur le web avant publication.">
 <style>
   :root {
-    --papier: #f4f1ea; --encre: #14120e; --sourdine: #6b665c;
-    --accent: #b23a1f; --trait: #d9d3c6; --creux: #eae5d9;
+    --papier: #F4F3EC;
+    --encre: #171A15;
+    --sourdine: #5B5F55;
+    --accent: #A8271B;
+    --accent-doux: #EDE1D9;
+    --filet: #BDBBAA;
+    --sur-encre: #F4F3EC;
+    --sur-encre-sourdine: #B9B8AA;
+    --serif: "Newsreader", "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+    --condense: "IBM Plex Sans Condensed", "Roboto Condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --t-display: clamp(2.125rem, 1.429rem + 2.857vw, 4rem);
+    --t-titre: clamp(1.5rem, 1.221rem + 1.143vw, 2.25rem);
+    --t-sous-titre: clamp(1.25rem, 1.064rem + 0.762vw, 1.75rem);
+    --t-accroche: clamp(1.125rem, 1.032rem + 0.381vw, 1.375rem);
+    --t-corps: clamp(1.125rem, 1.079rem + 0.19vw, 1.25rem);
+    --t-meta: clamp(0.9375rem, 0.914rem + 0.095vw, 1rem);
+    --t-chiffre: clamp(2.5rem, 2.129rem + 1.524vw, 3.5rem);
   }
   * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0; background: var(--papier); color: var(--encre);
-    font: 16.5px/1.6 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    -webkit-font-smoothing: antialiased;
+    font-family: var(--serif); font-size: var(--t-corps); line-height: 1.55;
+    font-optical-sizing: auto; font-synthesis: none;
     overflow-wrap: anywhere;
   }
-  @media (min-width: 720px) { body { font-size: 17px; } }
-  .page { max-width: 820px; margin: 0 auto; padding: 32px 20px 64px; }
-  @media (min-width: 720px) { .page { padding: 56px 24px 96px; } }
+  .page { max-width: 1152px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 56px);
+           display: grid; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 960px) {
+    .page { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); column-gap: 24px; }
+    .page > header, .page > .fournee, .page > .precedentes, .page > .abonnement, .page > footer { grid-column: 1 / -1; }
+  }
+  h1, h2 { font-weight: 400; text-wrap: balance; }
+  p { margin: 0; text-wrap: pretty; }
 
-  header { border-bottom: 2px solid var(--encre); padding-bottom: 28px; margin-bottom: 52px; }
-  h1 { font-size: clamp(34px, 6vw, 60px); line-height: 0.98; letter-spacing: -0.025em; margin: 0 0 20px; }
-  .chapeau { font-size: 19px; max-width: 48ch; margin: 0 0 22px; }
-  .compte { font-size: 16px; color: var(--sourdine); margin: 0; }
-  .compte b { color: var(--accent); font-variant-numeric: tabular-nums; }
+  /* Tête de page */
+  .masthead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px;
+               font-family: var(--condense); font-size: var(--t-meta); letter-spacing: .008em;
+               color: var(--sourdine); padding: 24px 0 12px; border-bottom: 1px solid var(--filet); }
+  .masthead a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--filet); }
+  .masthead a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+  header h1 { font-size: var(--t-display); line-height: 1.0; letter-spacing: -0.028em;
+               margin: 40px 0 6px; max-width: 20ch; }
+  header .suite { font-size: var(--t-sous-titre); line-height: 1.2; letter-spacing: -0.012em;
+                   margin: 0 0 24px; max-width: 24ch; }
+  header .chapeau { font-size: var(--t-accroche); line-height: 1.35; max-width: 48ch; margin: 0 0 32px; }
 
-  .quoi { margin: 0 0 56px; }
-  .quoi h2 { font-size: 15px; letter-spacing: .06em; text-transform: uppercase; color: var(--sourdine); margin: 0 0 16px; font-weight: 600; }
-  .quoi ol { margin: 0; padding-left: 20px; }
-  .quoi li { margin-bottom: 8px; }
+  /* Bande de la prochaine fournée */
+  .fournee { background: var(--encre); color: var(--sur-encre);
+              padding: 32px clamp(20px, 4vw, 40px); display: flex; flex-wrap: wrap;
+              align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 56px; }
+  .fournee .libelle { font-family: var(--condense); font-size: var(--t-meta);
+                       color: var(--sur-encre-sourdine); letter-spacing: .02em; }
+  .fournee .reste { font-family: var(--condense); font-size: var(--t-chiffre); font-weight: 600;
+                     line-height: 1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
 
-  h2 { font-size: clamp(24px, 3.2vw, 32px); letter-spacing: -0.015em; margin: 0 0 8px; }
-  article { padding: 28px 0; border-top: 1px solid var(--trait); }
-  @media (min-width: 720px) { article { padding: 40px 0; } }
-  h3 { font-size: clamp(22px, 3vw, 29px); line-height: 1.14; letter-spacing: -0.015em; margin: 0 0 14px; }
-  .accroche { font-size: 21px; line-height: 1.35; margin: 0 0 14px; }
-  .resume { margin: 0 0 14px; }
-  .faits { font-size: 15px; color: var(--sourdine); margin: 0 0 12px; }
-  .faits .source { font-style: italic; }
-  .neuf { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
-           color: var(--accent); vertical-align: middle; margin-left: 10px; }
-  .verdict { margin: 0; padding: 14px 16px; background: var(--creux);
-              border-left: 3px solid var(--accent); font-size: 15px; }
-  .verdict b { display: block; font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
-                color: var(--accent); margin-bottom: 6px; }
+  /* Notices */
+  article { padding: 40px 0; border-top: 1px solid var(--filet); }
+  article:first-of-type { border-top: none; padding-top: 0; }
+  article h2 { font-size: var(--t-titre); line-height: 1.08; letter-spacing: -0.018em; margin: 0 0 12px; }
+  .accroche { font-size: var(--t-accroche); line-height: 1.35; letter-spacing: -0.006em; margin: 0 0 20px; }
+  .resume { max-width: min(60ch, 40rem); margin: 0 0 20px; }
+  .meta { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine);
+           letter-spacing: .008em; margin: 0 0 16px; }
 
-  .plus-tot { margin-top: 64px; border-top: 2px solid var(--encre); padding-top: 28px; }
-  .liste { list-style: none; margin: 22px 0 0; padding: 0; }
-  .liste li { display: flex; flex-direction: column; gap: 2px; padding: 11px 0;
-               border-bottom: 1px solid var(--trait); font-size: 16px; }
-  @media (min-width: 720px) { .liste li { flex-direction: row; justify-content: space-between; gap: 20px; } }
-  .liste .jour { color: var(--sourdine); font-size: 14px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .verdict { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+              font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine);
+              text-decoration: none; padding: 10px 0; border-top: 1px solid var(--filet); }
+  .verdict:hover span { color: var(--encre); }
+  .verdict b { font-weight: 600; letter-spacing: .06em; font-size: 0.9375rem; color: var(--encre); }
+  .verdict span { flex: 1 1 100%; }
+  .jauge { display: inline-flex; gap: 2px; }
+  .jauge i { width: 6px; height: 6px; display: block; border: 1px solid var(--filet); }
+  .jauge i.plein { background: var(--accent); border-color: var(--accent); }
 
-  .rythme { list-style: none; display: flex; align-items: flex-end; gap: 12px; margin: 24px 0 0; padding: 0; height: 78px; }
-  .rythme li { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; }
-  .rythme .barre { width: 26px; background: var(--accent); display: block; }
-  .rythme em { font-size: 11px; color: var(--sourdine); font-style: normal; }
-  .rythme small { font-size: 11px; color: var(--sourdine); }
+  /* Fournées précédentes */
+  .precedentes { margin-top: 96px; }
+  .precedentes h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 20px;
+                     padding-top: 24px; border-top: 2px solid var(--encre); }
+  .table { list-style: none; margin: 0; padding: 0; }
+  .table li { display: grid; grid-template-columns: 9ch 1fr; gap: 4px 16px; align-items: baseline;
+               min-height: 48px; padding: 12px 0; border-bottom: 1px solid var(--filet); }
+  @media (min-width: 720px) {
+    .table li { grid-template-columns: 9ch 1fr 12ch; }
+    .table li .mot { text-align: right; }
+  }
+  .table time { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine);
+                 font-variant-numeric: tabular-nums; }
+  .table .titre { font-size: 1.0625rem; }
+  .table .mot { font-family: var(--condense); font-size: 0.875rem; letter-spacing: .05em;
+                 color: var(--sourdine); grid-column: 2; }
 
-  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
-  .alerte { margin-top: 64px; padding: 32px 0 0; border-top: 2px solid var(--encre); }
-  .alerte h2 { font-size: clamp(22px, 3vw, 28px); margin: 0 0 8px; }
-  .alerte p { margin: 0 0 18px; }
-  .bouton { display: block; padding: 14px 22px; background: var(--accent); color: var(--papier);
-             text-decoration: none; font-size: 16px; text-align: center; }
+  /* Histogramme */
+  .histogramme { margin: 0 0 8px; }
+  .barres { list-style: none; display: flex; align-items: flex-end; gap: 4px;
+             height: 96px; margin: 0 0 8px; padding: 0; border-bottom: 2px solid var(--encre); }
+  .barres li { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+  .barres .barre { width: 100%; background: var(--encre); display: block; }
+  .barres .aujourdhui .barre { background: var(--accent); }
+  .legende { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
+
+  /* Abonnement */
+  .abonnement { margin-top: 96px; padding: 64px clamp(20px, 4vw, 40px); background: var(--accent-doux); }
+  .abonnement h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 8px; }
+  .abonnement .meta { margin: 0 0 24px; }
+  .bouton { display: block; font-family: var(--condense); font-size: var(--t-meta); font-weight: 500;
+             letter-spacing: .02em; text-align: center; text-decoration: none;
+             background: var(--encre); color: var(--papier); padding: 15px 24px; }
+  .bouton:hover { background: var(--accent); }
   @media (min-width: 720px) { .bouton { display: inline-block; } }
-  .bouton:hover { background: var(--encre); }
 
-  footer { margin-top: 80px; padding-top: 24px; border-top: 2px solid var(--encre); font-size: 14px; color: var(--sourdine); }
+  footer { margin-top: 64px; padding: 24px 0 64px; border-top: 1px solid var(--filet);
+            font-family: var(--condense); font-size: 0.875rem; color: var(--sourdine); }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
 <main class="page">
   <header>
-    <h1>Des idées de projet, vérifiées avant de coûter trois mois.</h1>
-    <p class="chapeau">Chaque heure, le site lit la presse technique et les dépôts arXiv des dernières 24 heures,
-    en tire trois idées de projet pour une équipe Data&nbsp;&amp;&nbsp;IA et Systèmes embarqués, puis vérifie
-    sur le web si quelque chose de similaire existe déjà.</p>
-    <p class="compte">Prochaines idées dans <b id="compte">—</b> · 3 par heure, 6 conservées</p>
+    <div class="masthead">
+      <span>Bulletin d’antériorité · idées de projet</span>
+      <span>04.11.2026 · <a href="#precedentes">Les fournées précédentes</a></span>
+    </div>
+    <h1>Des idées de projet,</h1>
+    <p class="suite">vérifiées avant de coûter trois mois.</p>
+    <p class="chapeau">Chaque heure, la presse technique et les dépôts arXiv des dernières 24 heures sont lus,
+    trois idées en sortent, et chacune est confrontée au web pour savoir si quelque chose de semblable existe déjà.</p>
   </header>
 
-  <section class="quoi">
-    <h2>Comment s'en servir</h2>
-    <ol>
-      <li>Lisez l'accroche : si elle ne vous parle pas en une phrase, l'idée ne vaut pas trois mois de travail.</li>
-      <li>Regardez le verdict : « PROCHE » signifie que des produits existent, mais pas sous cette forme.</li>
-      <li>Vérifiez la faisabilité : une ligne suffit à savoir si le budget tient.</li>
-    </ol>
-    <ul class="rythme"><li><span class="barre" style="height:48px"></span><em>11/04</em><small>6</small></li></ul>
+  <div class="fournee">
+    <span class="libelle" id="libelle">Prochaine fournée</span>
+    <time class="reste" id="compte" aria-live="polite">—</time>
+  </div>
+
+  <section class="notices">
+        <article>
+      <h2>Le détecteur de paiements suspects</h2>
+      <p class="accroche">Un petit terminal de poche qui signale en un instant si une transaction semble risquée.</p>
+      <p class="resume">Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.</p>
+      <p class="meta">Oui, avec quelques dizaines d’euros de matériel et des données libres. · D’après « Show HN: Kairos – Open-source risk and fraud decisioning platform » ---</p>
+      <a class="verdict" href="https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude" rel="noopener nofollow"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b><span>Le FNC-RF de la Banque de France (plateforme publique d&#x27;IBAN suspects, mai 2026) et plusieurs solutions SaaS de scoring de transactions en temps réel couvrent déjà l&#x27;aide à la décision anti-fraude, mais aucun boîtier autonome de poche effectuant le scoring localement sans transmission de données n&#x27;a été identifié.</span></a>
+    </article>
+    <article>
+      <h2>La pince qui apprend à attraper</h2>
+      <p class="accroche">Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.</p>
+      <p class="resume">Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.</p>
+      <p class="meta">Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples. · D’après « Stringman, an $800 open-source room scale gripper robot »</p>
+      <span class="verdict"><span class="jauge" aria-hidden="true"><i class="vide"></i><i class="vide"></i><i class="vide"></i></span><b>RIEN TROUVÉ</b><span>aucune recherche exploitable (moteur indisponible).</span></span>
+    </article>
+    <article>
+      <h2>Le veilleur de données</h2>
+      <p class="accroche">Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.</p>
+      <p class="resume">Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.</p>
+      <p class="meta">Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible. · D’après « Postman silently auto-installs AI plugins and attempts to share all API data »</p>
+      <a class="verdict" href="https://firewalla.com/" rel="noopener nofollow"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b><span>Des boîtiers/apps de surveillance réseau (Firewalla, Fingbox, Little Snitch/OpenSnitch) alertent déjà sur des communications sortantes inhabituelles, mais pas sous la forme exacte d’un petit objet de bureau autonome dédié.</span></a>
+    </article>
   </section>
 
-  <section class="dernieres">
-          <article>
-        <h3>Le détecteur de paiements suspects <span class="neuf">nouveau</span></h3>
-        <p class="accroche">Un petit terminal de poche qui signale en un instant si une transaction semble risquée.</p>
-        <p class="resume">Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.</p>
-        <p class="faits"><span>Oui, avec quelques dizaines d’euros de matériel et des données libres.</span> · <span class="source">D’après : « Show HN: Kairos – Open-source risk and fraud decisioning platform » ---</span></p>
-        <p class="verdict"><b>PROCHE</b> Le FNC-RF de la Banque de France (plateforme publique d&#x27;IBAN suspects, mai 2026) et plusieurs solutions SaaS de scoring de transactions en temps réel couvrent déjà l&#x27;aide à la décision anti-fraude, mais aucun boîtier autonome de poche effectuant le scoring localement sans transmission de données n&#x27;a été identifié. <a href="https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude" rel="noopener nofollow">voir ce qui existe</a></p>
-      </article>
-      <article>
-        <h3>La pince qui apprend à attraper <span class="neuf">nouveau</span></h3>
-        <p class="accroche">Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.</p>
-        <p class="resume">Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.</p>
-        <p class="faits"><span>Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.</span> · <span class="source">D’après : « Stringman, an $800 open-source room scale gripper robot »</span></p>
-        <p class="verdict"><b>RIEN TROUVÉ</b> aucune recherche exploitable (moteur indisponible). </p>
-      </article>
-      <article>
-        <h3>Le veilleur de données <span class="neuf">nouveau</span></h3>
-        <p class="accroche">Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.</p>
-        <p class="resume">Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.</p>
-        <p class="faits"><span>Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible.</span> · <span class="source">D’après : « Postman silently auto-installs AI plugins and attempts to share all API data »</span></p>
-        <p class="verdict"><b>PROCHE</b> Des boîtiers/apps de surveillance réseau (Firewalla, Fingbox, Little Snitch/OpenSnitch) alertent déjà sur des communications sortantes inhabituelles, mais pas sous la forme exacte d’un petit objet de bureau autonome dédié. <a href="https://firewalla.com/" rel="noopener nofollow">voir ce qui existe</a></p>
-      </article>
+    <section class="precedentes" id="precedentes">
+    <h2>Les fournées précédentes</h2>
+    <ul class="table"><li><time datetime="2026-11-04">2026.11.04</time><span class="titre">L’échiquier qui s’adapte au niveau du joueur</span><span class="mot">PROCHE</span></li><li><time datetime="2026-11-04">2026.11.04</time><span class="titre">La prise qui coupe quand vos objets connectés en disent trop</span><span class="mot">RIEN TROUVÉ</span></li><li><time datetime="2026-11-04">2026.11.04</time><span class="titre">Le petit trieur robotisé qui apprend à ranger</span><span class="mot">PROCHE</span></li></ul>
   </section>
 
-  <section class="plus-tot"><h2>Sorties plus tôt</h2><ul class="liste"><li><span class="titre">L’échiquier qui s’adapte au niveau du joueur</span><span class="jour">2026/11/04</span></li><li><span class="titre">La prise qui coupe quand vos objets connectés en disent trop</span><span class="jour">2026/11/04</span></li><li><span class="titre">Le petit trieur robotisé qui apprend à ranger</span><span class="jour">2026/11/04</span></li></ul></section>
+  <section class="rythme-section">
+    <h2 class="sr-only" hidden>Rythme de publication</h2>
+    <div class="histogramme"><ul class="barres"><li class="aujourdhui"><span class="barre" style="height:100%"></span></li></ul><p class="legende">1 jours · 6 idées · max 6 le 04/11</p></div>
+  </section>
 
   
 
   <footer>
-    Généré automatiquement : presse technique + arXiv, puis vérification d'antériorité par recherche web.
-    Les liens « voir ce qui existe » sont des résultats de recherche, pas des validations.
-    Méthode : double diamant, question « comment pourrait-on », et annonce à la manière d'un communiqué.
+    6 idées conservées. Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité
+    par recherche web. Les liens de verdict sont des résultats de recherche, pas des validations.
+    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
   </footer>
 </main>
 <script>
-  // Prochaine fournée : le prochain multiple d'une heure, heure locale du visiteur.
   (function () {
     var cible = new Date();
     cible.setMinutes(0, 0, 0);
     cible.setHours(cible.getHours() + 1);
     var el = document.getElementById('compte');
+    var lib = document.getElementById('libelle');
+    function deux(n) { return String(n).padStart(2, '0'); }
     function tic() {
-      var reste = Math.max(0, cible - new Date());
-      var m = Math.floor(reste / 60000), s = Math.floor(reste % 60000 / 1000);
-      el.textContent = m + ' min ' + String(s).padStart(2, '0') + ' s';
-      if (reste <= 0) location.reload();
+      var reste = cible - new Date();
+      if (reste <= 0) { el.textContent = 'Fournée en ligne'; lib.textContent = 'Mise à jour'; return; }
+      var h = Math.floor(reste / 3600000), m = Math.round((reste % 3600000) / 60000);
+      if (m === 60) { h += 1; m = 0; }
+      el.textContent = (h > 0 ? h + ' h ' : '') + deux(m) + ' min';
     }
-    tic(); setInterval(tic, 1000);
+    tic(); setInterval(tic, 30000);
   })();
 </script>
 </html>
