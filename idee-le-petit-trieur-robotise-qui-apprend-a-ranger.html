@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le petit trieur robotisé qui apprend à ranger — Bulletin d’antériorité</title>
+<meta name="description" content="Des idées de projet tirées de l'actualité, vérifiées sur le web avant publication.">
+<style>
+  :root {
+    --papier: #F4F3EC; --encre: #171A15; --sourdine: #5B5F55; --accent: #A8271B;
+    --accent-doux: #EDE1D9; --filet: #BDBBAA; --sur-encre: #F4F3EC; --sur-encre-sourdine: #B9B8AA;
+    --serif: "Newsreader", "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --condense: "IBM Plex Sans Condensed", "Roboto Condensed", "Arial Narrow", Helvetica, Arial, sans-serif;
+    --t-display: clamp(2.125rem, 1.429rem + 2.857vw, 4rem);
+    --t-titre: clamp(1.5rem, 1.221rem + 1.143vw, 2.25rem);
+    --t-sous-titre: clamp(1.25rem, 1.064rem + 0.762vw, 1.75rem);
+    --t-accroche: clamp(1.0625rem, 1.0rem + 0.25vw, 1.25rem);
+    --t-corps: clamp(1.0625rem, 1.03rem + 0.15vw, 1.1875rem);
+    --t-meta: clamp(0.875rem, 0.86rem + 0.08vw, 0.9375rem);
+    --t-chiffre: clamp(2.25rem, 2.0rem + 1.2vw, 3rem);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--papier); color: var(--encre);
+         font-family: var(--serif); font-size: var(--t-corps); line-height: 1.55;
+         font-optical-sizing: auto; font-synthesis: none; overflow-wrap: anywhere; }
+  .page { max-width: 1152px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 56px) 64px; }
+  h1, h2 { font-weight: 400; text-wrap: balance; }
+  p { margin: 0; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .masthead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px;
+              font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine);
+              padding: 24px 0 12px; border-bottom: 1px solid var(--filet); }
+  header h1 { font-size: var(--t-display); line-height: 1.0; letter-spacing: -0.028em;
+              margin: 40px 0 6px; max-width: 20ch; }
+  header .suite { font-size: var(--t-sous-titre); line-height: 1.2; letter-spacing: -0.012em;
+                  margin: 0 0 24px; max-width: 24ch; }
+  header .chapeau { font-size: var(--t-accroche); line-height: 1.35; max-width: 48ch; margin: 0 0 32px; }
+
+  .fournee { background: var(--encre); color: var(--sur-encre); padding: 32px clamp(20px, 4vw, 40px);
+             display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+             gap: 12px; margin-bottom: 56px; }
+  .fournee .libelle { font-family: var(--condense); font-size: var(--t-meta); color: var(--sur-encre-sourdine); }
+  .fournee .reste { font-family: var(--condense); font-size: var(--t-chiffre); font-weight: 600;
+                    line-height: 1; font-variant-numeric: tabular-nums; }
+
+  .liste h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 24px; }
+  .entrees { list-style: none; margin: 0; padding: 0; }
+  .entrees li { border-top: 1px solid var(--filet); }
+  .entrees a { display: block; padding: 20px 0; text-decoration: none; color: inherit; min-height: 48px; }
+  .entrees a:hover { background: var(--accent-doux); }
+  .entrees a:hover .titre { text-decoration: underline; text-decoration-color: var(--accent); }
+  .entrees .titre { display: block; font-size: 1.1875rem; letter-spacing: -0.012em; margin-bottom: 4px; }
+  .entrees .accroche { display: block; color: var(--sourdine); font-size: var(--t-accroche);
+                       line-height: 1.4; max-width: 60ch; margin-bottom: 8px; }
+  .entrees .mot { display: flex; align-items: center; gap: 8px; font-family: var(--condense);
+                  font-size: 0.8125rem; letter-spacing: .06em; color: var(--sourdine); }
+
+  .jauge { display: inline-flex; gap: 2px; }
+  .jauge i { width: 6px; height: 6px; display: block; border: 1px solid var(--filet); }
+  .jauge i.plein { background: var(--accent); border-color: var(--accent); }
+
+  article.detail { max-width: min(60ch, 40rem); padding: 40px 0 0; }
+  article.detail h1 { font-size: var(--t-titre); line-height: 1.08; letter-spacing: -0.02em; margin: 16px 0 16px; }
+  .accroche { font-size: var(--t-accroche); line-height: 1.4; margin: 0 0 20px; }
+  .resume { margin: 0 0 24px; }
+  .meta { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 12px; }
+  .verdict { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; padding: 14px 0;
+             border-top: 1px solid var(--filet); border-bottom: 1px solid var(--filet);
+             font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 0 0 20px; }
+  .verdict b { font-weight: 600; letter-spacing: .06em; color: var(--encre); }
+
+  .histogramme { margin: 64px 0 0; }
+  .barres { list-style: none; display: flex; align-items: flex-end; gap: 4px; height: 72px;
+            margin: 0 0 8px; padding: 0; border-bottom: 2px solid var(--encre); }
+  .barres li { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+  .barres .barre { width: 100%; background: var(--encre); display: block; }
+  .barres .aujourdhui .barre { background: var(--accent); }
+  .legende { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
+
+  .abonnement { margin-top: 96px; padding: 56px clamp(20px, 4vw, 40px); background: var(--accent-doux); }
+  .abonnement h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 8px; }
+  .abonnement .meta { margin: 0 0 20px; }
+  .bouton { display: block; font-family: var(--condense); font-size: var(--t-meta); text-align: center;
+            text-decoration: none; background: var(--encre); color: var(--papier); padding: 15px 24px; }
+  .bouton:hover { background: var(--accent); }
+  @media (min-width: 720px) { .bouton { display: inline-block; } }
+
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--filet);
+           font-family: var(--condense); font-size: 0.875rem; color: var(--sourdine); }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+<main class="page">
+  <article class="detail">
+    <p class="meta"><a href="index.html">← Toutes les idées</a></p>
+    <h1>Le petit trieur robotisé qui apprend à ranger</h1>
+    <p class="accroche">Un petit bras robotisé regarde des objets posés devant lui, les reconnaît et les range dans la bonne case, tout en s&#x27;arrêtant si une main approche.</p>
+    <p class="resume">L’actualité montre que des robots de préhension ouverts deviennent accessibles, mais les versions de bureau restent rares et peu adaptatives. Le problème à régler est simple : trier quelques objets sans caméra coûteuse ni réglage complexe, tout en restant sûr autour d’un humain. C’est le bon moment car on peut faire apprendre une petite reconnaissance d’objets sur place et piloter des mouvements simples en direct. Côté données, l’équipe collecte et étiquette quelques objets puis vérifie que la reconnaissance tient sur de nouvelles scènes ; côté embarqué, l’autre moitié gère la prise d’images, les mouvements et l’arrêt immédiat. Le prototype agit vraiment : il attrape et range quelques objets choisis.</p>
+    <p class="meta">oui, avec quelques dizaines d&#x27;euros de matériel, sans abonnement. · D’après Stringman, an $800 open-source room scale gripper robot</p>
+    <p class="verdict"><span class="jauge" aria-hidden="true"><i class="plein"></i><i class="plein"></i><i class="vide"></i></span><b>PROCHE</b> Des robots domestiques apprenant à ranger et des trieurs optiques existent, mais pas de petit bras de bureau low-cost avec reconnaissance sans caméra coûteuse et arrêt sur approche de main.</p>
+    <p class="meta"><a href="https://www.youtube.com/watch?v=T4M6jTskpeg" rel="noopener nofollow">Voir ce qui existe déjà</a></p>
+    <p class="meta">Publiée le 2026.11.04</p>
+  </article>
+  <footer>
+    Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité par recherche web.
+    Les liens de verdict sont des résultats de recherche, pas des validations.
+    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
+  </footer>
+</main>
+<script>
+  (function () {
+    var cible = new Date();
+    cible.setMinutes(0, 0, 0);
+    cible.setHours(cible.getHours() + 1);
+    var el = document.getElementById('compte');
+    var lib = document.getElementById('libelle');
+    if (!el) return;
+    function deux(n) { return String(n).padStart(2, '0'); }
+    function tic() {
+      var reste = cible - new Date();
+      if (reste <= 0) { el.textContent = 'Fournée en ligne'; if (lib) lib.textContent = 'Mise à jour'; return; }
+      var h = Math.floor(reste / 3600000), m = Math.round((reste % 3600000) / 60000);
+      if (m === 60) { h += 1; m = 0; }
+      el.textContent = (h > 0 ? h + ' h ' : '') + deux(m) + ' min';
+    }
+    tic(); setInterval(tic, 30000);
+  })();
+</script>
+</html>
