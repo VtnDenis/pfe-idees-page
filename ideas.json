@@ -1,5 +1,44 @@
 [
   {
+    "titre": "Des capteurs qui apprennent ensemble sans partager ce qu'ils voient",
+    "L'accroche": "Deux ou trois petites boîtes qui s'entraînent chacune de leur côté puis partagent seulement ce qu'elles ont appris, jamais les données qu'elles ont vues.",
+    "Le résumé": "Un article récent regrette qu'il n'existe aucun espace commun où partager les données après l'entraînement des grands modèles, ce qui concentre tout le pouvoir entre quelques acteurs. Dans le monde des objets connectés, le même problème se pose : chacun collecte des données chez lui, mais personne ne veut les envoyer à un serveur central. Or, des techniques récentes permettent à plusieurs appareils d'apprendre ensemble sans jamais échanger les données brutes. L'idée est de construire deux ou trois petites boîtes, chacune voyant des choses différentes, qui s'entraînent séparément puis combinent leurs apprentissages. Une fois réunies, chaque boîte sait reconnaître des choses qu'elle n'avait pourtant jamais vues — la démonstration parfaite pour montrer qu'on peut apprendre ensemble en gardant ses données pour soi.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel, à condition de rester sur deux ou trois boîtes.",
+    "D'où ça vient": "\"There is no posttraining data commons\"",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "C'est exactement l'apprentissage fédéré (federated learning), domaine mature depuis FedAvg (McMahan et al., 2016) avec des frameworks open source comme Flower, TensorFlow Federated ou OpenFL, déjà appliqués à l'IoT.",
+      "LIEN": "https://arxiv.org/abs/1602.05629"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Le guetteur du salon qui surveille ce que vos objets connectés envoient",
+    "L'accroche": "Un boîtier branché sur votre box qui détecte quand un appareil de la maison envoie discrètement vos données sur Internet.",
+    "Le résumé": "On vient d'apprendre qu'un outil très utilisé par les développeurs installe tout seul des modules d'intelligence artificielle et tente d'envoyer les données de ses utilisateurs à l'extérieur. En même temps, les objets connectés du quotidien parlent de plus en plus souvent à des serveurs lointains sans qu'on le sache. Ce boîtier, posé entre votre box et vos appareils, observe le trafic en temps réel, apprend à reconnaître les comportements normaux de chaque appareil, et allume un signal visible dès qu'il repère un envoi inhabituel. L'idée donne à chacun une petite vigie personnelle, sans passer par un service payant.",
+    "Faisable ?": "Oui, avec un petit ordinateur à carte et son alimentation.",
+    "D'où ça vient": "\"Postman silently auto-installs AI plugins and attempts to share all API data\"",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Le sismographe du jardin qui reconnaît les vrais tremblements",
+    "L'accroche": "Un petit boîtier posé dans votre jardin qui surveille les vibrations du sol et vous prévient quand c'est un vrai séisme et pas un camion qui passe.",
+    "Le résumé": "Une équipe de scientifiques vient de montrer qu'un immense canyon sur Mars bouge encore aujourd'hui, ce qui relance l'intérêt pour la surveillance des tremblements de terre. Aujourd'hui, en dehors des stations officielles, personne n'a de moyen simple de savoir si la secousse ressentie est un séisme ou du bruit. Des capteurs de mouvement bon marché et de petits modèles d'apprentissage sont maintenant capables de tourner directement sur un appareil de la taille d'une main. L'idée, c'est de construire un boîtier qui écoute le sol en continu, distingue un vrai séisme du bruit du quotidien, et prévient immédiatement. Ça donne à des particuliers ou à des petites communes une alerte locale, sans dépendre des grands réseaux nationaux.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "\"Giant Canyon on Mars Is Still Tectonically Active Today\"",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des sismomètres personnels comme Raspberry Shake et des méthodes de discrimination bruit anthropique/séisme existent déjà, mais pas exactement un boîtier de jardin grand public dédié à cette reconnaissance.",
+      "LIEN": "https://raspberryshake.org/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Le coach de prononciation",
     "L'accroche": "Un petit boîtier avec un micro qui écoute une phrase répétée et montre tout de suite si la prononciation ressemble à celle d'un natif.",
     "Le résumé": "Une actualité récente propose d'apprendre les langues avec de vraies vidéos, ligne par ligne. Mais on ne sait pas toujours si on prononce bien. L'idée est de fabriquer un objet autonome qui écoute, compare avec une prononciation de référence et donne un retour immédiat par un voyant ou une petite vibration, sans passer par internet. C'est le moment parce que les micros et les petits calculateurs sont bon marché et que l'apprentissage des langues en autonomie explose.",
