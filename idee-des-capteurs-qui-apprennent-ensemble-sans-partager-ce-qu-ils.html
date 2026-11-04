@@ -186,6 +186,25 @@
   footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--filet);
            font-family: var(--condense); font-size: 0.875rem; color: var(--sourdine); }
 
+  .barre-outils { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 20px;
+                  font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
+  .barre-outils label { display: flex; align-items: center; gap: 8px; }
+  .barre-outils select { font: inherit; color: var(--encre); background: transparent; border: 0;
+                         border-bottom: 1px solid var(--filet); padding: 6px 2px; }
+  .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
+  .entrees .texte { min-width: 0; }
+  .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
+  #theme { font-family: var(--condense); font-size: var(--t-meta); background: transparent;
+           color: var(--sourdine); border: 1px solid var(--filet); padding: 6px 12px; cursor: pointer; }
+  #theme:hover { border-color: var(--accent); color: var(--accent); }
+
+  [data-theme="dark"] {
+    --papier: #14150F; --encre: #F2F0E6; --sourdine: #A8AB9C; --accent: #E0664B;
+    --accent-doux: #241F1B; --filet: #33362D; --sur-encre: #14150F; --sur-encre-sourdine: #8F9285;
+  }
+  [data-theme="dark"] .squelette { background: linear-gradient(90deg, #dedbcd 25%, #f4f2e8 37%, #dedbcd 63%);
+                                   background-size: 400% 100%; }
+
   article.erreur { background: var(--accent); color: var(--papier); margin: 0 calc(-1 * clamp(20px, 5vw, 56px));
                    padding: 88px clamp(20px, 5vw, 56px); min-height: 60vh; }
   article.erreur h1 { font-size: var(--t-display); line-height: 1; letter-spacing: -0.028em; margin: 12px 0 16px; max-width: 16ch; }
@@ -241,6 +260,40 @@
     for (var j = 0; j < etapes.length; j++) {
       etapes[j].style.animationDelay = (j * 90) + 'ms';
     }
+
+    var racine = document.documentElement;
+    var memo = localStorage.getItem('theme');
+    if (memo) racine.dataset.theme = memo;
+    else if (window.matchMedia('(prefers-color-scheme: dark)').matches) racine.dataset.theme = 'dark';
+    var bouton = document.getElementById('theme');
+    if (bouton) bouton.addEventListener('click', function () {
+      var suivant = racine.dataset.theme === 'dark' ? 'light' : 'dark';
+      racine.dataset.theme = suivant;
+      localStorage.setItem('theme', suivant);
+    });
+
+    var liste = document.querySelector('.entrees');
+    var filtre = document.getElementById('filtre');
+    var tri = document.getElementById('tri');
+    function ranger() {
+      if (!liste) return;
+      var items = Array.prototype.slice.call(liste.children);
+      items.forEach(function (li) {
+        li.hidden = !!(filtre && filtre.value && li.dataset.verdict !== filtre.value);
+      });
+      var mode = tri ? tri.value : 'recent';
+      items.sort(function (a, b) {
+        if (mode === 'alpha') {
+          return a.querySelector('.titre').textContent
+            .localeCompare(b.querySelector('.titre').textContent, 'fr');
+        }
+        var da = a.dataset.jour || '', db = b.dataset.jour || '';
+        return mode === 'ancien' ? da.localeCompare(db) : db.localeCompare(da);
+      });
+      items.forEach(function (li) { liste.appendChild(li); });
+    }
+    if (filtre) filtre.addEventListener('change', ranger);
+    if (tri) tri.addEventListener('change', ranger);
   })();
 </script>
 </html>
