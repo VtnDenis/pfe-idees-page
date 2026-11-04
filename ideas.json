@@ -1,5 +1,44 @@
 [
   {
+    "titre": "Le coach de prononciation",
+    "L'accroche": "Un petit boîtier avec un micro qui écoute une phrase répétée et montre tout de suite si la prononciation ressemble à celle d'un natif.",
+    "Le résumé": "Une actualité récente propose d'apprendre les langues avec de vraies vidéos, ligne par ligne. Mais on ne sait pas toujours si on prononce bien. L'idée est de fabriquer un objet autonome qui écoute, compare avec une prononciation de référence et donne un retour immédiat par un voyant ou une petite vibration, sans passer par internet. C'est le moment parce que les micros et les petits calculateurs sont bon marché et que l'apprentissage des langues en autonomie explose.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "Practice speaking Japanese with real YouTube videos, graded line by line ---",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des applications/startups de coaching de prononciation par reconnaissance vocale existent (ELSA Speak, SpeechAce), mais pas exactement un boîtier autonome dédié comparant à une prononciation native.",
+      "LIEN": "https://elsaspeak.com/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Le petit bras qui range",
+    "L'accroche": "Un petit bras mécanique qui regarde une table, reconnaît l'objet qu'on lui montre et va l'attraper pour le poser ailleurs.",
+    "Le résumé": "Un robot open source présenté récemment montre qu'on peut faire de la manipulation d'objets à la maison, mais son prix le réserve à des passionnés. L'idée est de reproduire la même chose en beaucoup plus simple et beaucoup moins cher : un bras qui apprend à reconnaître quelques objets et à les saisir sans les casser, en bougeant ses articulations en direct. C'est le moment parce que les petites caméras et les mini-moteurs coûtent de moins en moins cher et que la robotique domestique devient réaliste.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "Stringman, an $800 open-source room scale gripper robot",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Un produit commercial proche existe (Roborock Saros Z70) avec un bras articulé qui ramasse et range de petits objets, mais pas exactement le bras de table open source bas coût décrit.",
+      "LIEN": "https://www.20minutes.fr/high-tech/4143478-20250317-enfin-vu-aspirateur-robot-ramasse-chaussettes-petit-bras-muscle"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Le veilleur du réseau",
+    "L'accroche": "Un petit boîtier posé chez soi qui surveille ce qui sort de la maison par internet et allume un voyant quand quelque chose cloche.",
+    "Le résumé": "Une actualité récente a montré qu'un logiciel très répandu pouvait installer des choses sans prévenir et envoyer des données personnelles sans qu'on le sache. Beaucoup de gens ignorent ce que leurs appareils envoient réellement. L'idée est de fabriquer un objet simple qui observe en continu ce qui circule chez soi, qui apprend petit à petit ce qui est normal ou pas, et qui réagit tout seul en cas de comportement inhabituel. C'est le moment parce que les objets connectés se multiplient et que la confiance dans les logiciels s'effrite.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "Postman silently auto-installs AI plugins and attempts to share all API data",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des boîtiers domestiques comme Firewalla, Bitdefender Box ou Cujo, ainsi que la stack open source Pi-hole/ntopng sur Raspberry Pi avec LED d'alerte, réalisent déjà exactement cette surveillance du trafic sortant avec signal visuel.",
+      "LIEN": "https://firewalla.com"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Le présentoir qui conseille sans connexion",
     "L'accroche": "Un petit meuble de table apprend les goûts de la maison et propose une idée au bon moment, sans envoyer de données au dehors.",
     "Le résumé": "Une actualité récente décrit les efforts d’une grande plateforme pour stocker et servir des recommandations à très grande échelle. L’idée inverse est de faire vivre une recommandation minuscule dans un objet local : il observe quelques usages simples, apprend les préférences, puis suggère une activité ou un contenu. Le problème réglé est de conseiller sans connexion et sans profiler les gens à distance. C’est le moment car les données libres et les petits calculateurs permettent de garder tout le traitement dans l’objet.",
