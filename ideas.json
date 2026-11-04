@@ -1,5 +1,44 @@
 [
   {
+    "titre": "Le petit bras qui apprend en étant guidé",
+    "L'accroche": "Un petit bras apprend quelques gestes humains et les répète tout seul pour attraper ou déplacer un objet.",
+    "Le résumé": "Des travaux récents montrent qu'on peut guider les exemples donnés à un robot au lieu de tout filmer au hasard. L'idée est de construire un petit bras qui apprend en regardant quelques démonstrations humaines, puis agit seul sur une tâche simple. Le problème actuel est que les robots apprennent souvent avec beaucoup de données coûteuses et mal choisies. C'est le moment parce que les méthodes de guidage progressent et qu'un démonstrateur simple suffit à prouver l'idée. Le projet mélange bien deux côtés : apprendre les gestes à partir d'exemples, et les exécuter vite et sans danger.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« GUILD: Guided Iterative Data Collection for Imitation Learning » ; « PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des projets open source et articles (LeRobot, ALOHA, imitation learning) font déjà apprendre à un bras des gestes de préhension à partir de quelques démonstrations humaines puis les rejouer seul, mais pas sous cette formulation exacte de projet d'école.",
+      "LIEN": "https://github.com/huggingface/lerobot"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Le boîtier qui reconnaît les gestes et fait agir",
+    "L'accroche": "Une caméra apprend à reconnaître quelques gestes et les transforme en actions sur un objet.",
+    "Le résumé": "Une actualité récente montre qu'un modèle peut apprendre des actions à partir de vidéos, sans décrire chaque geste à la main. On peut imaginer un petit boîtier avec une caméra qui reconnaît quelques gestes simples et commande un objet, comme allumer une lampe ou déplacer un petit robot. Le problème est que les systèmes qui réagissent aux gestes demandent souvent beaucoup de données ou du matériel coûteux. C'est le moment parce que les modèles deviennent plus compacts et que du matériel courant suffit pour un démonstrateur. Le projet équilibre les deux côtés : apprendre à partir de vidéos, et réagir rapidement sur un petit système.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« DreamX: Video Diffusion Model is a Universal Latent Action Learner »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "L'objet qui s'arrête quand il n'est pas sûr",
+    "L'accroche": "Un petit système reconnaît une situation et, s'il hésite, s'arrête au lieu de faire une bêtise.",
+    "Le résumé": "Une actualité récente montre qu'on peut inspecter les réglages internes d'un modèle pour mieux comprendre ce qu'il a appris. L'idée serait un petit objet qui reconnaît une situation simple et, quand il n'est pas sûr, s'arrête ou demande de l'aide au lieu de se tromper. Le problème est que beaucoup de systèmes automatiques prennent des décisions sans signaler leur doute. C'est le moment parce que les modèles embarqués se multiplient et qu'il devient important de les rendre prudents et inspectables. Le projet mélange bien les deux côtés : entraîner et analyser un petit modèle, puis réagir à temps sur un système embarqué.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« Qwen 3.8 27B on my laptop can interpret model weights, too »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Un robot qui apprend en te regardant faire",
     "L'accroche": "Un petit bras qu'on pilote à la main pour lui montrer un geste, et qui le reproduit ensuite seul.",
     "Le résumé": "Pour apprendre un geste à un robot, il faut lui montrer beaucoup d'exemples, souvent filmés au hasard par un humain qui ne sait pas quoi filmer. Une nouvelle étude propose de guider celui qui filme vers les moments les plus utiles, pour apprendre plus vite avec moins d'exemples. C'est le moment : ce genre de démonstration coûte très cher, et diviser ce coût ouvre la porte à des robots moins chers dans les ateliers et les maisons. Notre projet : un petit bras piloté à la main, dont on enregistre les mouvements, et qui apprend à les refaire seul avec un objet réel.",
