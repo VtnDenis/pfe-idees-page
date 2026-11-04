@@ -39,7 +39,26 @@
 
   .fournee { background: var(--encre); color: var(--sur-encre); padding: 32px clamp(20px, 4vw, 40px);
              display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-             gap: 12px; margin-bottom: 56px; }
+             gap: 12px; margin-bottom: 56px; position: relative; overflow: hidden; }
+  .progres { position: absolute; left: 0; bottom: 0; height: 3px; width: 0;
+             background: var(--accent); transition: width 900ms linear; }
+  .squelette { color: transparent; background: linear-gradient(90deg, #2b2f28 25%, #3a3f36 37%, #2b2f28 63%);
+               background-size: 400% 100%; animation: brillance 1.4s ease-in-out infinite;
+               min-width: 7rem; display: inline-block; border-radius: 0; }
+  @keyframes brillance { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+  @keyframes monte { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes parait { from { opacity: 0; } to { opacity: 1; } }
+  @view-transition { navigation: auto; }
+  .entrees li { animation: monte 480ms cubic-bezier(.2,.7,.2,1) both; }
+  article.detail { animation: monte 420ms cubic-bezier(.2,.7,.2,1) both; }
+  .entrees a { transition: background-color 180ms ease, padding-left 180ms ease; }
+  .entrees a:hover, .entrees a:focus-visible { padding-left: 10px; }
+  .bouton { transition: background-color 160ms ease, transform 160ms ease; }
+  .bouton:hover { transform: translateY(-1px); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .entrees a:hover { padding-left: 0; }
+  }
   .fournee .libelle { font-family: var(--condense); font-size: var(--t-meta); color: var(--sur-encre-sourdine); }
   .fournee .reste { font-family: var(--condense); font-size: var(--t-chiffre); font-weight: 600;
                     line-height: 1; font-variant-numeric: tabular-nums; }
@@ -114,16 +133,25 @@
     cible.setHours(cible.getHours() + 1);
     var el = document.getElementById('compte');
     var lib = document.getElementById('libelle');
-    if (!el) return;
+    var barre = document.getElementById('progres');
     function deux(n) { return String(n).padStart(2, '0'); }
     function tic() {
       var reste = cible - new Date();
+      if (barre) barre.style.width = Math.min(100, Math.max(0, (1 - reste / 3600000) * 100)) + '%';
+      if (!el) return;
+      el.classList.remove('squelette');
       if (reste <= 0) { el.textContent = 'Fournée en ligne'; if (lib) lib.textContent = 'Mise à jour'; return; }
       var h = Math.floor(reste / 3600000), m = Math.round((reste % 3600000) / 60000);
       if (m === 60) { h += 1; m = 0; }
       el.textContent = (h > 0 ? h + ' h ' : '') + deux(m) + ' min';
     }
-    tic(); setInterval(tic, 30000);
+    tic();
+    setInterval(tic, 15000);
+
+    var lignes = document.querySelectorAll('.entrees li');
+    for (var i = 0; i < lignes.length; i++) {
+      lignes[i].style.animationDelay = Math.min(i * 55, 550) + 'ms';
+    }
   })();
 </script>
 </html>
