@@ -135,7 +135,6 @@
   .parcours .etape { font-family: var(--condense); font-size: 0.8125rem; letter-spacing: .07em;
                      text-transform: uppercase; color: var(--accent); }
   .parcours .quoi { font-size: 1.0625rem; margin: 6px 0 0; }
-  .parcours .dit { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 4px 0 0; }
   @media (min-width: 760px) {
     .parcours { grid-template-columns: repeat(4, 1fr); gap: 0; }
     .parcours li { padding: 16px 22px 0 0; border-top: 2px solid var(--encre); }
@@ -188,15 +187,20 @@
 
   .barre-outils { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 20px;
                   font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
-  .barre-outils label { display: flex; align-items: center; gap: 8px; }
   .barre-outils select { font: inherit; color: var(--encre); background: transparent; border: 0;
-                         border-bottom: 1px solid var(--filet); padding: 6px 2px; }
+                         border-bottom: 1px solid var(--filet); padding: 6px 2px; cursor: pointer; }
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
-  #theme { font-family: var(--condense); font-size: var(--t-meta); background: transparent;
-           color: var(--sourdine); border: 1px solid var(--filet); padding: 6px 12px; cursor: pointer; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
+  #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
+           background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
+           padding: 5px; line-height: 0; cursor: pointer; }
   #theme:hover { border-color: var(--accent); color: var(--accent); }
+  #theme svg { display: block; width: 18px; height: 18px; }
+  #theme .icone-lune { display: none; }
+  [data-theme="dark"] #theme .icone-soleil { display: none; }
+  [data-theme="dark"] #theme .icone-lune { display: block; }
 
   [data-theme="dark"] {
     --papier: #14150F; --encre: #F2F0E6; --sourdine: #A8AB9C; --accent: #E0664B;
@@ -217,21 +221,20 @@
   <header>
     <div class="masthead">
       <span>Bulletin d’antériorité · idées de projet</span>
-      <span>04.11.2026 · <button id="theme" type="button">Thème</button></span>
+      <span>04.11.2026 · <button id="theme" type="button" aria-label="Changer de thème" title="Changer de thème"><svg class="icone-soleil" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.1"/><path d="M12 2.7v2.2M12 19.1v2.2M4.4 4.4l1.6 1.6M18 18l1.6 1.6M2.7 12h2.2M19.1 12h2.2M4.4 19.6l1.6-1.6M18 6l1.6-1.6"/></svg><svg class="icone-lune" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.4 14.6A8.5 8.5 0 0 1 9.4 3.6a8.5 8.5 0 1 0 11 11Z"/></svg></button></span>
     </div>
     <h1>Des idées de projet,</h1>
     <p class="suite">vérifiées avant de coûter trois mois.</p>
-    <p class="chapeau">Chaque heure, la presse technique et les dépôts arXiv des dernières 24 heures sont lus,
-    trois idées en sortent, et chacune est confrontée au web pour savoir si quelque chose de semblable existe déjà.</p>
+    <p class="chapeau">Trois idées par heure, chacune confrontée au web avant publication.</p>
   </header>
 
   <section class="parcours-section">
     <h2>Comment une idée arrive ici</h2>
     <ol class="parcours">
-      <li><span class="etape">Collecte</span><p class="quoi">Presse technique et arXiv</p><p class="dit">Les dépôts et articles des dernières 24 heures.</p></li>
-      <li><span class="etape">Tri</span><p class="quoi">Trois idées retenues</p><p class="dit">Les doublons et les sujets déjà publiés sont écartés.</p></li>
-      <li><span class="etape">Vérification</span><p class="quoi">Recherche web</p><p class="dit">Ce qui existe déjà est cherché, puis jugé : existe, proche, ou rien.</p></li>
-      <li><span class="etape">Publication</span><p class="quoi">Une page par idée</p><p class="dit">Accroche, résumé, faisabilité, verdict.</p></li>
+      <li><span class="etape">Collecte</span><p class="quoi">Presse technique et arXiv</p></li>
+      <li><span class="etape">Tri</span><p class="quoi">Trois idées retenues</p></li>
+      <li><span class="etape">Vérification</span><p class="quoi">Recherche web</p></li>
+      <li><span class="etape">Publication</span><p class="quoi">Une page par idée</p></li>
     </ol>
   </section>
 
@@ -244,21 +247,17 @@
   <section class="liste">
     <h2>20 idées en ligne</h2>
     <div class="barre-outils">
-      <label>Filtrer
-        <select id="filtre">
-          <option value="">Tous les verdicts</option>
-          <option value="EXISTE">Existe déjà</option>
-          <option value="PROCHE">Proche</option>
-          <option value="RIEN TROUVÉ">Rien trouvé</option>
-        </select>
-      </label>
-      <label>Trier
-        <select id="tri">
-          <option value="recent">Plus récentes</option>
-          <option value="ancien">Plus anciennes</option>
-          <option value="alpha">A → Z</option>
-        </select>
-      </label>
+      <select id="filtre" aria-label="Filtrer">
+        <option value="">Tous les verdicts</option>
+        <option value="EXISTE">Existe déjà</option>
+        <option value="PROCHE">Proche</option>
+        <option value="RIEN TROUVÉ">Rien trouvé</option>
+      </select>
+      <select id="tri" aria-label="Trier">
+        <option value="recent">Plus récentes</option>
+        <option value="ancien">Plus anciennes</option>
+        <option value="alpha">A → Z</option>
+      </select>
     </div>
     <ul class="entrees">
 <li data-verdict="RIEN TROUVÉ" data-jour="2026-11-04"><a href="idee-un-robot-qui-apprend-en-te-regardant-faire.html"><svg class="glyphe" viewBox="0 0 64 64" aria-hidden="true"><circle cx="31" cy="31" r="15" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.25"/><circle cx="28" cy="27" r="10" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/><circle cx="32" cy="34" r="15" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.85"/></svg><span class="texte"><span class="titre">Un robot qui apprend en te regardant faire</span><span class="accroche">Un petit bras qu&#x27;on pilote à la main pour lui montrer un geste, et qui le reproduit ensuite seul.</span><span class="mot"><span class="jauge" aria-hidden="true"><i class="vide"></i><i class="vide"></i><i class="vide"></i></span>RIEN TROUVÉ</span></span></a></li>
@@ -289,9 +288,7 @@
   
 
   <footer>
-    Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité par recherche web.
-    Les liens de verdict sont des résultats de recherche, pas des validations.
-    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
+    Généré automatiquement depuis la presse technique et arXiv, puis vérifié par recherche web — les liens de verdict restent des résultats de recherche.
   </footer>
 </main>
 <script>

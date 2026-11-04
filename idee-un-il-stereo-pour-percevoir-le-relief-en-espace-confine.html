@@ -135,7 +135,6 @@
   .parcours .etape { font-family: var(--condense); font-size: 0.8125rem; letter-spacing: .07em;
                      text-transform: uppercase; color: var(--accent); }
   .parcours .quoi { font-size: 1.0625rem; margin: 6px 0 0; }
-  .parcours .dit { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 4px 0 0; }
   @media (min-width: 760px) {
     .parcours { grid-template-columns: repeat(4, 1fr); gap: 0; }
     .parcours li { padding: 16px 22px 0 0; border-top: 2px solid var(--encre); }
@@ -188,15 +187,20 @@
 
   .barre-outils { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 20px;
                   font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
-  .barre-outils label { display: flex; align-items: center; gap: 8px; }
   .barre-outils select { font: inherit; color: var(--encre); background: transparent; border: 0;
-                         border-bottom: 1px solid var(--filet); padding: 6px 2px; }
+                         border-bottom: 1px solid var(--filet); padding: 6px 2px; cursor: pointer; }
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
-  #theme { font-family: var(--condense); font-size: var(--t-meta); background: transparent;
-           color: var(--sourdine); border: 1px solid var(--filet); padding: 6px 12px; cursor: pointer; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
+  #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
+           background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
+           padding: 5px; line-height: 0; cursor: pointer; }
   #theme:hover { border-color: var(--accent); color: var(--accent); }
+  #theme svg { display: block; width: 18px; height: 18px; }
+  #theme .icone-lune { display: none; }
+  [data-theme="dark"] #theme .icone-soleil { display: none; }
+  [data-theme="dark"] #theme .icone-lune { display: block; }
 
   [data-theme="dark"] {
     --papier: #14150F; --encre: #F2F0E6; --sourdine: #A8AB9C; --accent: #E0664B;
@@ -216,6 +220,7 @@
 <main class="page">
   <article class="detail">
     <p class="meta"><a href="index.html">← Toutes les idées</a></p>
+    <svg class="glyphe-detail" viewBox="0 0 64 64" aria-hidden="true"><circle cx="34" cy="34" r="20" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.25"/><circle cx="32" cy="36" r="15" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.55"/><circle cx="31" cy="34" r="24" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.85"/></svg>
     <h1>Un œil stéréo pour percevoir le relief en espace confiné</h1>
     <p class="accroche">Deux caméras miniatures qui, comme nos deux yeux, permettent à un petit système de mesurer la distance aux objets qui l&#x27;entourent, en temps réel.</p>
     <p class="resume">Les robots qui assistent les chirurgiens ont besoin de « voir en profondeur » pour manipuler sans risque dans un espace minuscule. Une actualité récente annonce le premier jeu de données public qui synchronise plusieurs caméras endoscopiques, signe que la perception 3D en milieu chirurgical devient un sujet chaud. Le problème à régler : mesurer des distances fiables sur de tout petits objets, avec un matériel bon marché et en direct. C&#x27;est le moment parce que les jeux de données publics et les modèles ouverts permettent désormais d&#x27;entraîner ce genre de système sans moyens industriels. L&#x27;équipe construirait un petit module à deux caméras synchronisées, avec un calcul embarqué sur place, qui affiche en direct une carte de profondeur de ce qu&#x27;il voit.</p>
@@ -225,9 +230,7 @@
     <p class="meta">Publiée le 04.11.2026</p>
   </article>
   <footer>
-    Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité par recherche web.
-    Les liens de verdict sont des résultats de recherche, pas des validations.
-    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
+    Généré automatiquement depuis la presse technique et arXiv, puis vérifié par recherche web — les liens de verdict restent des résultats de recherche.
   </footer>
 </main>
 <script>

@@ -135,7 +135,6 @@
   .parcours .etape { font-family: var(--condense); font-size: 0.8125rem; letter-spacing: .07em;
                      text-transform: uppercase; color: var(--accent); }
   .parcours .quoi { font-size: 1.0625rem; margin: 6px 0 0; }
-  .parcours .dit { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 4px 0 0; }
   @media (min-width: 760px) {
     .parcours { grid-template-columns: repeat(4, 1fr); gap: 0; }
     .parcours li { padding: 16px 22px 0 0; border-top: 2px solid var(--encre); }
@@ -188,15 +187,20 @@
 
   .barre-outils { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 20px;
                   font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
-  .barre-outils label { display: flex; align-items: center; gap: 8px; }
   .barre-outils select { font: inherit; color: var(--encre); background: transparent; border: 0;
-                         border-bottom: 1px solid var(--filet); padding: 6px 2px; }
+                         border-bottom: 1px solid var(--filet); padding: 6px 2px; cursor: pointer; }
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
-  #theme { font-family: var(--condense); font-size: var(--t-meta); background: transparent;
-           color: var(--sourdine); border: 1px solid var(--filet); padding: 6px 12px; cursor: pointer; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
+  #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
+           background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
+           padding: 5px; line-height: 0; cursor: pointer; }
   #theme:hover { border-color: var(--accent); color: var(--accent); }
+  #theme svg { display: block; width: 18px; height: 18px; }
+  #theme .icone-lune { display: none; }
+  [data-theme="dark"] #theme .icone-soleil { display: none; }
+  [data-theme="dark"] #theme .icone-lune { display: block; }
 
   [data-theme="dark"] {
     --papier: #14150F; --encre: #F2F0E6; --sourdine: #A8AB9C; --accent: #E0664B;
@@ -216,6 +220,7 @@
 <main class="page">
   <article class="detail">
     <p class="meta"><a href="index.html">← Toutes les idées</a></p>
+    <svg class="glyphe-detail" viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="27" r="12" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.25"/><circle cx="32" cy="28" r="10" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.55"/><circle cx="27" cy="30" r="21" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.85"/></svg>
     <h1>Le sismographe du jardin qui reconnaît les vrais tremblements</h1>
     <p class="accroche">Un petit boîtier posé dans votre jardin qui surveille les vibrations du sol et vous prévient quand c&#x27;est un vrai séisme et pas un camion qui passe.</p>
     <p class="resume">Une équipe de scientifiques vient de montrer qu&#x27;un immense canyon sur Mars bouge encore aujourd&#x27;hui, ce qui relance l&#x27;intérêt pour la surveillance des tremblements de terre. Aujourd&#x27;hui, en dehors des stations officielles, personne n&#x27;a de moyen simple de savoir si la secousse ressentie est un séisme ou du bruit. Des capteurs de mouvement bon marché et de petits modèles d&#x27;apprentissage sont maintenant capables de tourner directement sur un appareil de la taille d&#x27;une main. L&#x27;idée, c&#x27;est de construire un boîtier qui écoute le sol en continu, distingue un vrai séisme du bruit du quotidien, et prévient immédiatement. Ça donne à des particuliers ou à des petites communes une alerte locale, sans dépendre des grands réseaux nationaux.</p>
@@ -225,9 +230,7 @@
     <p class="meta">Publiée le 04.11.2026</p>
   </article>
   <footer>
-    Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité par recherche web.
-    Les liens de verdict sont des résultats de recherche, pas des validations.
-    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
+    Généré automatiquement depuis la presse technique et arXiv, puis vérifié par recherche web — les liens de verdict restent des résultats de recherche.
   </footer>
 </main>
 <script>

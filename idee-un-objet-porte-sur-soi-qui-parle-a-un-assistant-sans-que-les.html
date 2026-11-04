@@ -135,7 +135,6 @@
   .parcours .etape { font-family: var(--condense); font-size: 0.8125rem; letter-spacing: .07em;
                      text-transform: uppercase; color: var(--accent); }
   .parcours .quoi { font-size: 1.0625rem; margin: 6px 0 0; }
-  .parcours .dit { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 4px 0 0; }
   @media (min-width: 760px) {
     .parcours { grid-template-columns: repeat(4, 1fr); gap: 0; }
     .parcours li { padding: 16px 22px 0 0; border-top: 2px solid var(--encre); }
@@ -188,15 +187,20 @@
 
   .barre-outils { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 20px;
                   font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
-  .barre-outils label { display: flex; align-items: center; gap: 8px; }
   .barre-outils select { font: inherit; color: var(--encre); background: transparent; border: 0;
-                         border-bottom: 1px solid var(--filet); padding: 6px 2px; }
+                         border-bottom: 1px solid var(--filet); padding: 6px 2px; cursor: pointer; }
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
-  #theme { font-family: var(--condense); font-size: var(--t-meta); background: transparent;
-           color: var(--sourdine); border: 1px solid var(--filet); padding: 6px 12px; cursor: pointer; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
+  #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
+           background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
+           padding: 5px; line-height: 0; cursor: pointer; }
   #theme:hover { border-color: var(--accent); color: var(--accent); }
+  #theme svg { display: block; width: 18px; height: 18px; }
+  #theme .icone-lune { display: none; }
+  [data-theme="dark"] #theme .icone-soleil { display: none; }
+  [data-theme="dark"] #theme .icone-lune { display: block; }
 
   [data-theme="dark"] {
     --papier: #14150F; --encre: #F2F0E6; --sourdine: #A8AB9C; --accent: #E0664B;
@@ -216,6 +220,7 @@
 <main class="page">
   <article class="detail">
     <p class="meta"><a href="index.html">← Toutes les idées</a></p>
+    <svg class="glyphe-detail" viewBox="0 0 64 64" aria-hidden="true"><circle cx="30" cy="30" r="9" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.25"/><circle cx="35" cy="29" r="24" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.55"/><circle cx="28" cy="28" r="17" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.85"/></svg>
     <h1>Un objet porté sur soi qui parle à un assistant sans que les voisins entendent</h1>
     <p class="accroche">Un petit dispositif personnel qui transmet des messages à son porteur par un canal invisible pour les autres, même en pleine conversation.</p>
     <p class="resume">Quand un robot ou un assistant doit échanger une information avec une seule personne au milieu d&#x27;un groupe, la voix ou les gestes trahissent le message. Une actualité récente pose exactement cette question : comment échanger discrètement avec un agent dans un lieu partagé. Le problème à régler : capter le contexte du porteur, décider quoi transmettre, et le transmettre sans bruit ni écran visible. C&#x27;est le moment parce que les assistants deviennent assez légers pour tourner sur un objet porté, et que le grand public commence à accepter ce type d&#x27;interface. L&#x27;équipe construirait un objet porté qui reconnaît des situations simples à partir de capteurs de mouvement et du son ambiant, puis transmet un signal discret au porteur — et à lui seul.</p>
@@ -225,9 +230,7 @@
     <p class="meta">Publiée le 04.11.2026</p>
   </article>
   <footer>
-    Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité par recherche web.
-    Les liens de verdict sont des résultats de recherche, pas des validations.
-    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
+    Généré automatiquement depuis la presse technique et arXiv, puis vérifié par recherche web — les liens de verdict restent des résultats de recherche.
   </footer>
 </main>
 <script>

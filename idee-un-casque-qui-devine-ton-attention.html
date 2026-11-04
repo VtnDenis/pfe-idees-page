@@ -135,7 +135,6 @@
   .parcours .etape { font-family: var(--condense); font-size: 0.8125rem; letter-spacing: .07em;
                      text-transform: uppercase; color: var(--accent); }
   .parcours .quoi { font-size: 1.0625rem; margin: 6px 0 0; }
-  .parcours .dit { font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); margin: 4px 0 0; }
   @media (min-width: 760px) {
     .parcours { grid-template-columns: repeat(4, 1fr); gap: 0; }
     .parcours li { padding: 16px 22px 0 0; border-top: 2px solid var(--encre); }
@@ -188,15 +187,20 @@
 
   .barre-outils { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 20px;
                   font-family: var(--condense); font-size: var(--t-meta); color: var(--sourdine); }
-  .barre-outils label { display: flex; align-items: center; gap: 8px; }
   .barre-outils select { font: inherit; color: var(--encre); background: transparent; border: 0;
-                         border-bottom: 1px solid var(--filet); padding: 6px 2px; }
+                         border-bottom: 1px solid var(--filet); padding: 6px 2px; cursor: pointer; }
   .entrees a { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; }
   .entrees .texte { min-width: 0; }
   .glyphe { width: 56px; height: 56px; color: var(--accent); display: block; }
-  #theme { font-family: var(--condense); font-size: var(--t-meta); background: transparent;
-           color: var(--sourdine); border: 1px solid var(--filet); padding: 6px 12px; cursor: pointer; }
+  .glyphe-detail { width: 96px; height: 96px; color: var(--accent); display: block; margin: 0 0 4px; }
+  #theme { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle;
+           background: transparent; color: var(--sourdine); border: 1px solid var(--filet);
+           padding: 5px; line-height: 0; cursor: pointer; }
   #theme:hover { border-color: var(--accent); color: var(--accent); }
+  #theme svg { display: block; width: 18px; height: 18px; }
+  #theme .icone-lune { display: none; }
+  [data-theme="dark"] #theme .icone-soleil { display: none; }
+  [data-theme="dark"] #theme .icone-lune { display: block; }
 
   [data-theme="dark"] {
     --papier: #14150F; --encre: #F2F0E6; --sourdine: #A8AB9C; --accent: #E0664B;
@@ -216,6 +220,7 @@
 <main class="page">
   <article class="detail">
     <p class="meta"><a href="index.html">← Toutes les idées</a></p>
+    <svg class="glyphe-detail" viewBox="0 0 64 64" aria-hidden="true"><circle cx="35" cy="35" r="21" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.25"/><circle cx="37" cy="29" r="21" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.55"/><circle cx="28" cy="27" r="16" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.85"/></svg>
     <h1>Un casque qui devine ton attention</h1>
     <p class="accroche">Un petit casque qui lit l&#x27;activité du cerveau et donne un retour immédiat pour aider à rester concentré.</p>
     <p class="resume">Des chercheurs viennent de publier une façon de suivre en temps réel un rythme bien précis du cerveau, celui qu&#x27;utilisent certains soins et appareils de relaxation. Aujourd&#x27;hui, ces appareils réagissent trop tard : le signal est lu après coup. Résultat, ils aident peu. Notre projet : un mini-casque portable qui mesure le cerveau en direct, s&#x27;adapte à la personne qui le porte et réagit instantanément — par exemple en changeant une lumière ou un son. Un objet réel, porté sur la tête, qui réagit vraiment.</p>
@@ -225,9 +230,7 @@
     <p class="meta">Publiée le 04.11.2026</p>
   </article>
   <footer>
-    Généré automatiquement : presse technique + arXiv, puis vérification d’antériorité par recherche web.
-    Les liens de verdict sont des résultats de recherche, pas des validations.
-    Méthode : double diamant, question « comment pourrait-on », annonce à la manière d’un communiqué.
+    Généré automatiquement depuis la presse technique et arXiv, puis vérifié par recherche web — les liens de verdict restent des résultats de recherche.
   </footer>
 </main>
 <script>
