@@ -1,5 +1,44 @@
 [
   {
+    "titre": "Un petit robot qui sait à l'avance combien d'énergie il lui reste",
+    "L'accroche": "Un petit robot mobile qui prévoit sa propre consommation et adapte son chemin pour ne jamais tomber en panne au mauvais moment.",
+    "Le résumé": "Sur les drones comme sur les robots mobiles, l'autonomie est le principal frein, et une actualité récente montre qu'on peut calculer un vol économe en fonction du poids et de la trajectoire. Le problème à régler : un robot qui ne sait pas estimer sa consommation s'arrête au pire moment. C'est le moment parce qu'on peut embarquer un petit modèle d'apprentissage directement sur le robot, alimenté par des capteurs bon marché, pour prédire l'énergie restante et choisir un trajet plus sûr. L'équipe construirait un petit robot roulant capable d'apprendre en conditions réelles comment il consomme, de prédire son autonomie, et de modifier son parcours pour tenir sa mission.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« Mass Scaling Laws for Energy-Optimal Horizontal Multirotor Flight »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Un objet porté sur soi qui parle à un assistant sans que les voisins entendent",
+    "L'accroche": "Un petit dispositif personnel qui transmet des messages à son porteur par un canal invisible pour les autres, même en pleine conversation.",
+    "Le résumé": "Quand un robot ou un assistant doit échanger une information avec une seule personne au milieu d'un groupe, la voix ou les gestes trahissent le message. Une actualité récente pose exactement cette question : comment échanger discrètement avec un agent dans un lieu partagé. Le problème à régler : capter le contexte du porteur, décider quoi transmettre, et le transmettre sans bruit ni écran visible. C'est le moment parce que les assistants deviennent assez légers pour tourner sur un objet porté, et que le grand public commence à accepter ce type d'interface. L'équipe construirait un objet porté qui reconnaît des situations simples à partir de capteurs de mouvement et du son ambiant, puis transmet un signal discret au porteur — et à lui seul.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« Just Between Us? Exploring a Wearable-Mediated Channel for Discreet Human-Agent Interaction in a Shared Game Setting »",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "MIT Media Lab a développé AlterEgo, interface portable de parole silencieuse avec retour par conduction osseuse, mais c’est un prototype de recherche, pas un produit grand public.",
+      "LIEN": "https://www.media.mit.edu/projects/alterego/overview/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Un œil stéréo pour percevoir le relief en espace confiné",
+    "L'accroche": "Deux caméras miniatures qui, comme nos deux yeux, permettent à un petit système de mesurer la distance aux objets qui l'entourent, en temps réel.",
+    "Le résumé": "Les robots qui assistent les chirurgiens ont besoin de « voir en profondeur » pour manipuler sans risque dans un espace minuscule. Une actualité récente annonce le premier jeu de données public qui synchronise plusieurs caméras endoscopiques, signe que la perception 3D en milieu chirurgical devient un sujet chaud. Le problème à régler : mesurer des distances fiables sur de tout petits objets, avec un matériel bon marché et en direct. C'est le moment parce que les jeux de données publics et les modèles ouverts permettent désormais d'entraîner ce genre de système sans moyens industriels. L'équipe construirait un petit module à deux caméras synchronisées, avec un calcul embarqué sur place, qui affiche en direct une carte de profondeur de ce qu'il voit.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "D'où ça vient": "« iMED: A Multi-Endoscope Dataset for Surgical 3D Perception »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Le drone Stéréo2 de Multinnov existe pour l’inspection en espaces confinés avec vision stéréo, mais il ne cible pas explicitement la mesure de distance temps réel pour robots chirurgicaux.",
+      "LIEN": "https://multinnov.com/drone-pour-espaces-confines-le-stereo2-de-multinnov/"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Œil qui parle sans Internet",
     "L'accroche": "Un petit appareil posé sur une table décrit à voix haute ce qu'il a devant lui, sans jamais se connecter.",
     "Le résumé": "Des modèles d'intelligence artificielle commencent à tenir sur de simples ordinateurs portables, sans passer par un serveur distant. Or la plupart des assistants qui savent reconnaître des objets dépendent du réseau, ce qui pose des questions de vie privée et de coût. Un appareil autonome, qui raconte ce qu'il voit à une personne malvoyante, rendrait ce service partout, même sans connexion. C'est le moment parce que ces modèles commencent à tenir sur de tout petits appareils.",
@@ -217,19 +256,6 @@
       "VERDICT": "RIEN TROUVÉ",
       "RAISON": "aucune recherche exploitable (moteur indisponible).",
       "LIEN": "—"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "Le petit trieur robotisé qui apprend à ranger",
-    "L'accroche": "Un petit bras robotisé regarde des objets posés devant lui, les reconnaît et les range dans la bonne case, tout en s'arrêtant si une main approche.",
-    "Le résumé": "L’actualité montre que des robots de préhension ouverts deviennent accessibles, mais les versions de bureau restent rares et peu adaptatives. Le problème à régler est simple : trier quelques objets sans caméra coûteuse ni réglage complexe, tout en restant sûr autour d’un humain. C’est le bon moment car on peut faire apprendre une petite reconnaissance d’objets sur place et piloter des mouvements simples en direct. Côté données, l’équipe collecte et étiquette quelques objets puis vérifie que la reconnaissance tient sur de nouvelles scènes ; côté embarqué, l’autre moitié gère la prise d’images, les mouvements et l’arrêt immédiat. Le prototype agit vraiment : il attrape et range quelques objets choisis.",
-    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
-    "D'où ça vient": "Stringman, an $800 open-source room scale gripper robot",
-    "verdict": {
-      "VERDICT": "PROCHE",
-      "RAISON": "Des robots domestiques apprenant à ranger et des trieurs optiques existent, mais pas de petit bras de bureau low-cost avec reconnaissance sans caméra coûteuse et arrêt sur approche de main.",
-      "LIEN": "https://www.youtube.com/watch?v=T4M6jTskpeg"
     },
     "jour": "2026-11-04"
   }
