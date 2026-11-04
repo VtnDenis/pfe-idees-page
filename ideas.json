@@ -1,5 +1,31 @@
 [
   {
+    "titre": "La lumière qui apprend vos habitudes",
+    "L'accroche": "Une petite lampe ou un petit écran ajuste sa lumière tout seul en observant la luminosité de la pièce et vos corrections, pour éviter l'éblouissement et la fatigue.",
+    "Le résumé": "L'actualité montre qu'un navigateur célèbre ajoute un mode sombre qui s'adapte tout seul. Beaucoup de gens règlent encore leur écran ou leur lampe à la main, plusieurs fois par jour. L'idée est un objet physique qui apprend quand vous préférez une lumière douce ou forte, selon l'heure et la pièce. Il ajuste alors la lumière sans attendre. Le projet combine l'observation des habitudes et l'apprentissage côté données avec la réaction immédiate côté objet.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "D'où ça vient": "« Safari introduces Adaptive Dark Mode in 27.3 »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Le boîtier qui reconnaît les vibrations",
+    "L'accroche": "Un petit boîtier posé sur une table détecte et reconnaît différentes vibrations, comme un pas, une machine ou un choc, et prévient quand quelque chose d'inhabituel arrive.",
+    "Le résumé": "L'actualité rappelle qu'un canyon sur Mars bouge encore, ce qui montre l'intérêt de surveiller les vibrations du sol. Sur Terre, un capteur bon marché peut déjà enregistrer des secousses très fines. Le problème est qu'il faut trier ces signaux pour ne pas alerter pour rien. L'idée est un objet autonome qui apprend à reconnaître les vibrations normales et signale les anomalies. Le projet combine l'écoute continue et la réaction immédiate de l'objet avec l'analyse des données pour apprendre à reconnaître les situations.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "D'où ça vient": "« Giant canyon on Mars is still tectonically active »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des détecteurs de vibrations à seuil et alarmes existent (vibroswitch industriel, alarmes antivol), mais pas un boîtier grand public qui reconnaît et classe différents types de vibrations pour signaler l'inhabituel.",
+      "LIEN": "https://www.alliantech.com/vibroswitch/9889-vibroswitch-atex-detecteur-mecanique-vibrations-5550g.html"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Un boîtier qui envoie un signal au bon moment d'une onde corporelle",
     "L'accroche": "Un petit appareil qui observe une onde du corps et n'envoie une impulsion lumineuse qu'à l'instant précis du cycle le plus favorable.",
     "Le résumé": "Pour certaines stimulations, envoyer un signal au bon moment d'une onde cérébrale change nettement l'effet obtenu, mais il faut prévoir ce moment à quelques millisecondes près sur un signal bruité. Une équipe de recherche vient de publier une méthode qui estime ce bon moment en direct, malgré les perturbations du signal. L'idée : un boîtier capte une onde du corps, estime en continu où en est le cycle, et déclenche un signal lumineux quand l'instant cible est atteint. Les deux majeures se partagent le vrai travail : côté Data & IA on construit et entraîne l'estimateur, côté Systèmes embarqués on fait tenir la mesure, le calcul et le déclenchement dans une boucle temps réel irréprochable.",
@@ -229,32 +255,6 @@
     "verdict": {
       "VERDICT": "RIEN TROUVÉ",
       "RAISON": "Les résultats ne portent que sur des machines à pince de fête foraine, la pince géante de SpaceX ou des gadgets Instagram, pas sur un petit bras open source apprenant à reconnaître puis saisir des objets.",
-      "LIEN": "—"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "Le détecteur de paiements suspects",
-    "L'accroche": "Un petit terminal de poche qui signale en un instant si une transaction semble risquée.",
-    "Le résumé": "Une plateforme gratuite d’aide à la décision contre la fraude a été rendue publique récemment. Les petits commerçants ou les services de paiement ont besoin d’un avis rapide sans envoyer toutes les données à un service payant. L’idée est un boîtier autonome qui reçoit une transaction simulée, donne un niveau de risque et bloque ou valide avec un signal clair. Côté données, il apprend sur des historiques publics et synthétiques ; côté embarqué, il doit répondre en temps réel et rester sûr même sans connexion. C’est le moment car les outils de fraude deviennent accessibles et les objets connectés peu coûteux.",
-    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et des données libres.",
-    "D'où ça vient": "« Show HN: Kairos – Open-source risk and fraud decisioning platform » ---",
-    "verdict": {
-      "VERDICT": "PROCHE",
-      "RAISON": "Le FNC-RF de la Banque de France (plateforme publique d'IBAN suspects, mai 2026) et plusieurs solutions SaaS de scoring de transactions en temps réel couvrent déjà l'aide à la décision anti-fraude, mais aucun boîtier autonome de poche effectuant le scoring localement sans transmission de données n'a été identifié.",
-      "LIEN": "https://www.banque-france.fr/fr/le-fncrf-fichier-national-des-comptes-bancaires-suspectes-de-risque-de-fraude"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "La pince qui apprend à attraper",
-    "L'accroche": "Un petit bras de table qui essaie, rate, recommence et finit par attraper des objets du quotidien tout seul.",
-    "Le résumé": "Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.",
-    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.",
-    "D'où ça vient": "« Stringman, an $800 open-source room scale gripper robot »",
-    "verdict": {
-      "VERDICT": "RIEN TROUVÉ",
-      "RAISON": "aucune recherche exploitable (moteur indisponible).",
       "LIEN": "—"
     },
     "jour": "2026-11-04"
