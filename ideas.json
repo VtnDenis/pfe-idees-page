@@ -1,5 +1,44 @@
 [
   {
+    "titre": "Un boîtier qui envoie un signal au bon moment d'une onde corporelle",
+    "L'accroche": "Un petit appareil qui observe une onde du corps et n'envoie une impulsion lumineuse qu'à l'instant précis du cycle le plus favorable.",
+    "Le résumé": "Pour certaines stimulations, envoyer un signal au bon moment d'une onde cérébrale change nettement l'effet obtenu, mais il faut prévoir ce moment à quelques millisecondes près sur un signal bruité. Une équipe de recherche vient de publier une méthode qui estime ce bon moment en direct, malgré les perturbations du signal. L'idée : un boîtier capte une onde du corps, estime en continu où en est le cycle, et déclenche un signal lumineux quand l'instant cible est atteint. Les deux majeures se partagent le vrai travail : côté Data & IA on construit et entraîne l'estimateur, côté Systèmes embarqués on fait tenir la mesure, le calcul et le déclenchement dans une boucle temps réel irréprochable.",
+    "Faisable ?": "oui, avec un capteur corporel simple et une carte d'entrée de gamme, pour quelques dizaines d'euros.",
+    "D'où ça vient": "A Bayesian Optimized Biquad Filter-Burg Model for Real-Time EEG Phase Estimation.",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "La stimulation en boucle fermée et à phase verrouillée existe déjà (RNS de NeuroPace, DBS adaptatif, travaux de recherche prédisant la phase d'une oscillation cérébrale), mais pas sous la forme d'un petit boîtier pédagogique autonome à impulsion lumineuse ; les résultats de recherche fournis, eux, ne portent que sur la physique générale des ondes.",
+      "LIEN": "https://en.wikipedia.org/wiki/Responsive_neurostimulation"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Un petit robot qui demande de l'aide quand il hésite",
+    "L'accroche": "Un robot qui ne se trompe pas en silence : il s'arrête pile quand il n'est pas sûr et fait signe à son opérateur pour qu'il lui montre juste ce moment-là.",
+    "Le résumé": "Pour apprendre un geste à un robot, on lui montre souvent des dizaines de fois un parcours, dont beaucoup d'exemples inutiles, et le résultat reste approximatif. Une équipe de recherche vient de proposer un procédé où l'on ne montre au robot que les situations où il est vraiment perdu, en le laissant juger lui-même son incertitude. Le projet : un petit véhicule qui apprend à suivre un parcours simple, s'arrête et lève un signal lumineux quand il hésite, l'étudiant le guide alors seulement pour ces instants. Les étudiants Data & IA construisent et entraînent l'estimateur d'hésitation, ceux en Systèmes embarqués font tenir ce jugement à bord, en temps réel, sans à-coups dans la conduite.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel courant.",
+    "D'où ça vient": "GUILD: Guided Iterative Data Collection for Imitation Learning.",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "Le principe d’un robot qui demande une intervention humaine quand il hésite est déjà traité en recherche via l’imitation learning interactif (DAgger/HG-DAgger), même s’il ne s’agit pas d’un produit grand public identique.",
+      "LIEN": "https://arxiv.org/abs/1810.02890"
+    },
+    "jour": "2026-11-04"
+  },
+  {
+    "titre": "Un petit bras qui apprend tout seul à attraper juste",
+    "L'accroche": "Un bras articulé de bureau qui apprend, rien qu'en s'entraînant, les gestes précis pour atteindre un objet posé devant lui, puis les exécute en direct.",
+    "Le résumé": "Régler à la main les gestes d'un bras robotisé est un travail d'expert, à refaire dès que la forme du bras ou l'objet change. Une équipe de recherche vient de montrer qu'on pouvait laisser le bras découvrir lui-même, par essais, les positions à adopter pour viser une cible avec une grande précision. L'idée : un petit bras posé sur une table, un objet à atteindre, une puce à bord qui corrige le geste en temps réel pendant que l'entraînement se fait hors ligne. Les deux majeures se partagent le travail : les étudiants Data & IA entraînent le modèle à viser, ceux en Systèmes embarqués font tenir la commande du bras et la correction du geste en direct. C'est le bon moment parce que les cartes embarquées et les outils d'entraînement gratuits rendent cette expérience tenable en dix semaines.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel courant.",
+    "D'où ça vient": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning.",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "L'apprentissage autonome de la préhension par un bras robotisé est un domaine de recherche très établi (apprentissage par renforcement, Levine/Google, MIT, EPFL), avec démos, articles et code disponibles.",
+      "LIEN": "https://www.01net.com/actualites/ce-robot-du-mit-peut-manipuler-les-objets-aussi-bien-qu-un-humain-1520841.html"
+    },
+    "jour": "2026-11-04"
+  },
+  {
     "titre": "Un petit robot qui sait à l'avance combien d'énergie il lui reste",
     "L'accroche": "Un petit robot mobile qui prévoit sa propre consommation et adapte son chemin pour ne jamais tomber en panne au mauvais moment.",
     "Le résumé": "Sur les drones comme sur les robots mobiles, l'autonomie est le principal frein, et une actualité récente montre qu'on peut calculer un vol économe en fonction du poids et de la trajectoire. Le problème à régler : un robot qui ne sait pas estimer sa consommation s'arrête au pire moment. C'est le moment parce qu'on peut embarquer un petit modèle d'apprentissage directement sur le robot, alimenté par des capteurs bon marché, pour prédire l'énergie restante et choisir un trajet plus sûr. L'équipe construirait un petit robot roulant capable d'apprendre en conditions réelles comment il consomme, de prédire son autonomie, et de modifier son parcours pour tenir sa mission.",
@@ -213,45 +252,6 @@
     "Le résumé": "Un robot open source capable d’attraper des objets à l’échelle d’une pièce a été présenté récemment, mais son prix reste très élevé. Le problème est que les petits robots abordables ne savent pas s’adapter à des objets variés. L’idée est une pince de table qui apprend par essais successifs à saisir quelques objets simples, avec une caméra et un retour d’effort. Côté données, elle tire des leçons de ses réussites et de ses échecs ; côté embarqué, elle contrôle les mouvements en temps réel et s’arrête si elle force trop. C’est faisable maintenant car les composants courants et les logiciels libres permettent de prototyper à petite échelle.",
     "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et de la récupération, à condition de viser quelques objets simples.",
     "D'où ça vient": "« Stringman, an $800 open-source room scale gripper robot »",
-    "verdict": {
-      "VERDICT": "RIEN TROUVÉ",
-      "RAISON": "aucune recherche exploitable (moteur indisponible).",
-      "LIEN": "—"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "Le veilleur de données",
-    "L'accroche": "Un petit objet posé sur le bureau qui prévient quand l’ordinateur envoie des informations de façon inhabituelle.",
-    "Le résumé": "Une application très utilisée a récemment été accusée d’installer des modules sans prévenir et de vouloir partager des données d’usage. Beaucoup de gens ne savent pas quand leur ordinateur communique vers l’extérieur. L’idée est un boîtier autonome qui surveille les échanges et signale un comportement suspect par une lumière ou une vibration. Côté données, il apprend ce qui est normal chez son utilisateur ; côté embarqué, il doit réagir vite et fonctionner sans abonnement. C’est le moment car les outils deviennent plus autonomes et posent une vraie question de confiance.",
-    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel et un petit calculateur déjà disponible.",
-    "D'où ça vient": "« Postman silently auto-installs AI plugins and attempts to share all API data »",
-    "verdict": {
-      "VERDICT": "PROCHE",
-      "RAISON": "Des boîtiers/apps de surveillance réseau (Firewalla, Fingbox, Little Snitch/OpenSnitch) alertent déjà sur des communications sortantes inhabituelles, mais pas sous la forme exacte d’un petit objet de bureau autonome dédié.",
-      "LIEN": "https://firewalla.com/"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "L’échiquier qui s’adapte au niveau du joueur",
-    "L'accroche": "Un échiquier physique repère vos coups, éclaire des cases et durcit ou adoucit le jeu selon votre niveau.",
-    "Le résumé": "L’actualité pose la question de ce qu’un petit système peut faire avec peu de moyens, à condition d’être bien pensé. Le problème visé est qu’un échiquier connecté coûte souvent cher ou reste limité à un écran, alors qu’un objet physique est plus simple à utiliser. C’est le moment car des capteurs et des composants courants permettent de fabriquer un plateau qui réagit vraiment. Côté données, l’équipe observe les coups du joueur et estime son niveau pour adapter la difficulté ; côté embarqué, l’autre moitié détecte les pièces, allume les cases et gère les réactions immédiates. Le prototype agit : il voit un coup, éclaire une réponse et change de niveau après quelques parties.",
-    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
-    "D'où ça vient": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996? ---",
-    "verdict": {
-      "VERDICT": "PROCHE",
-      "RAISON": "Des échiquiers connectés à détection de coups et LEDs existent déjà (ChessUp de Bryght Labs, Square Off, GoChess de Particula) avec entraînement/IA adaptative, même si l'adaptation fine au niveau pilotée par le plateau seul reste peu documentée.",
-      "LIEN": "https://bryghtlabs.com/"
-    },
-    "jour": "2026-11-04"
-  },
-  {
-    "titre": "La prise qui coupe quand vos objets connectés en disent trop",
-    "L'accroche": "Une petite boîte branchée entre un objet connecté et son alimentation le coupe automatiquement s’il se met à envoyer des données personnelles.",
-    "Le résumé": "L’actualité rappelle que des outils courants peuvent installer des fonctions cachées et partager des données sans que l’utilisateur le voie. Le problème est qu’un objet connecté peut se mettre à communiquer davantage après une mise à jour, sans signal clair pour son propriétaire. C’est le moment car la vie privée devient un sujet grand public et qu’un petit boîtier local peut agir sans envoyer les données ailleurs. Côté données, l’équipe apprend ce qui ressemble à un comportement normal et repère les écarts ; côté embarqué, l’autre moitié surveille en direct, allume une alerte et coupe l’alimentation. Le prototype agit physiquement : il débranche l’objet et affiche ce qui a déclenché l’alerte.",
-    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel, sans abonnement.",
-    "D'où ça vient": "Postman silently auto-installs AI plugins and attempts to share all API data",
     "verdict": {
       "VERDICT": "RIEN TROUVÉ",
       "RAISON": "aucune recherche exploitable (moteur indisponible).",
