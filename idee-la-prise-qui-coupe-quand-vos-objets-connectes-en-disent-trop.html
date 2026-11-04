@@ -128,8 +128,7 @@
 
   .liste h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 24px; }
 
-  .parcours-section { margin: 0 0 56px; }
-  .parcours-section h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 20px; }
+  .parcours-section { margin: 0 0 56px; }  .parcours-section h2 { font-size: var(--t-titre); letter-spacing: -0.018em; margin: 0 0 20px; }
   .parcours { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
   .parcours li { position: relative; padding-top: 16px; border-top: 2px solid var(--encre);
                  animation: monte 520ms cubic-bezier(.2,.7,.2,1) both; }
@@ -186,6 +185,13 @@
 
   footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--filet);
            font-family: var(--condense); font-size: 0.875rem; color: var(--sourdine); }
+
+  article.erreur { background: var(--accent); color: var(--papier); margin: 0 calc(-1 * clamp(20px, 5vw, 56px));
+                   padding: 88px clamp(20px, 5vw, 56px); min-height: 60vh; }
+  article.erreur h1 { font-size: var(--t-display); line-height: 1; letter-spacing: -0.028em; margin: 12px 0 16px; max-width: 16ch; }
+  article.erreur .accroche { color: var(--papier); opacity: .92; max-width: 34ch; }
+  article.erreur .meta { color: var(--papier); opacity: .8; }
+  article.erreur .bouton { background: var(--papier); color: var(--accent); display: inline-block; margin-top: 28px; }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
 <main class="page">
