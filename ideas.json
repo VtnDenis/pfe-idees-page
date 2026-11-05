@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le compteur de vélos de quartier qui respecte les passants",
+    "L'accroche": "Une petite boîte fixée à un poteau compte les vélos, les piétons et les voitures, sans filmer les visages ni envoyer d’images.",
+    "Le résumé": "L’idée vient d’une actualité sur des pistes cyclables improvisées à San Francisco devenues officielles : les villes veulent mesurer l’effet de ces aménagements sans installer de matériel coûteux. Le problème est qu’un compteur classique ne distingue pas bien les usages et peut inquiéter les riverains. Le prototype regarde localement, compte seulement des formes et affiche des chiffres agrégés. C’est le moment parce que les petites caméras et les cartes à faible coût permettent de faire ce calcul sur place, sans abonnement.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel et un peu de récupération.",
+    "Cas d'usage": "Le matin, la mairie voit sur un petit écran que la piste improvisée devant l’école est très utilisée entre 8 h et 9 h, sans avoir stocké une seule photo. Le soir, un riverain peut vérifier que le passage est surtout piéton et non cycliste, ce qui aide à choisir un aménagement.",
+    "Pour qui": "Une mairie de quartier ou une association de mobilité qui veut défendre un aménagement avec des chiffres plutôt qu’avec des impressions.",
+    "D'où ça vient": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "Des solutions commerciales comme Kiomda/Verdilo ou Eco-Compteur comptent et distinguent déjà piétons, vélos et véhicules de façon anonyme, autonome et sans images.",
+      "LIEN": "https://www.kiomda.com/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "La boîte qui repère les appareils détournés à la maison",
+    "L'accroche": "Un petit boîtier posé près du routeur apprend le comportement normal des appareils de la maison et prévient quand l’un d’eux se met à travailler pour des inconnus.",
+    "Le résumé": "L’idée vient d’une actualité où des appareils ordinaires détournés en relais ont été détectés sur le réseau de la Maison-Blanche, sans que leurs propriétaires le sachent. Le problème est qu’un particulier ne voit rien quand sa caméra ou son imprimante se met à servir de passerelle. Le prototype observe seulement les rythmes et les volumes d’échanges, pas le contenu, et allume une alerte quand le comportement sort de l’ordinaire. C’est le moment parce que les objets de la maison sont nombreux et que les attaques automatisées deviennent banales.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel et des données de test fabriquées par l’équipe.",
+    "Cas d'usage": "Un soir, le boîtier clignote parce que la vieille imprimante du salon envoie soudain beaucoup plus de données que d’habitude, alors qu’elle devrait être endormie. Dans un petit bureau, la gérante reçoit une alerte avant que son appareil de visioconférence ne soit utilisé pour masquer l’activité de quelqu’un d’autre.",
+    "Pour qui": "Un particulier ou une très petite structure qui veut comprendre pourquoi son réseau domestique ralentit sans payer une surveillance professionnelle.",
+    "D'où ça vient": "Residential proxies detected on White House network",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "La lampe qui éclaire sans piéger les insectes",
+    "L'accroche": "Une lampe de jardin bon marché compte les insectes qui tournent autour d’elle et adapte sa lumière pour éclairer sans devenir un piège.",
+    "Le résumé": "L’idée vient d’une observation récente : les insectes ne s’agglutinent pas autour de toutes les lampes de la même façon. Le problème est que l’éclairage extérieur attire des insectes utiles et perturbe la nuit, sans que l’on sache quelles lampes sont les plus responsables. Le prototype filme une petite zone, estime l’activité des insectes et change la couleur ou l’intensité de la lampe pour comparer. C’est le moment parce que les caméras et les cartes à faible coût permettent de mesurer cela dehors, sans matériel de laboratoire.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel, à condition de travailler sur une seule espèce ou un petit nombre d’insectes.",
+    "Cas d'usage": "Un jardinier voit que sa nouvelle lampe attire trois fois plus de petits papillons que l’ancienne et peut la régler avant que la haie ne se vide. Une commune teste deux éclairages au bord d’un parc et choisit celui qui éclaire le chemin sans faire tourner les insectes toute la nuit.",
+    "Pour qui": "Un jardin partagé, un camping ou un service d’espaces verts qui veut éclairer sans appauvrir la biodiversité autour.",
+    "D'où ça vient": "Insects don't swarm at LED lights",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des lampes anti-insectes, UV et pièges lumineux commerciaux existent, mais aucun produit/projet identifié ne compte les insectes autour d’une lampe pour adapter automatiquement sa lumière afin d’éclairer sans les piéger.",
+      "LIEN": "https://madecojardin.com/blogs/guides-eclairage-exterieur/eclairage-anti-insectes-exterieur"
+    },
+    "jour": "2026-11-05"
+  },
+  {
     "titre": "Une lumière qui suit le rythme du cerveau",
     "L'accroche": "Une petite lampe qui adapte sa couleur et son rythme, en direct, à l'état cérébral de la personne assise en face.",
     "Le résumé": "Pour aider quelqu'un à se détendre, il faut un objet qui réagit à l'instant, pas une analyse faite une heure plus tard. Des chercheurs viennent de montrer qu'on peut estimer en direct un rythme cérébral précis avec des calculs légers, ce qui était réservé aux gros systèmes. Transposé à une lampe de chevet, cela donne une boucle complète : on mesure, on réagit, on apaise. C'est possible aujourd'hui parce que les capteurs de signaux corporels et les petites cartes sont devenus vraiment accessibles.",
