@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le petit robot qui apprend à se faufiler",
+    "L'accroche": "Un petit robot mobile apprend tout seul à traverser une pièce encombrée sans rien renverser.",
+    "Le résumé": "Les robots qui roulent près des humains doivent éviter les objets, mais prévoir toutes les situations à la main est impossible. L'idée est de faire apprendre au robot à choisir ses trajectoires, d'abord dans un monde virtuel, puis sur un vrai petit châssis. Des travaux récents montrent qu'on peut planifier des mouvements rapides sans collision et améliorer les comportements des robots par apprentissage. Avec un budget minuscule et des outils gratuits, c'est devenu faisable en dix semaines.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Dans un atelier, le robot slalome entre les cartons posés au sol sans les toucher ; à la maison, il contourne les jouets des enfants et retrouve sa base.",
+    "Pour qui": "Un étudiant en robotique ou un petit atelier qui veut un démonstrateur d'évitement intelligent.",
+    "D'où ça vient": "« cuRoboV2-Fast: Fast Torque-Limited Collision-Free Motion Planning » — https://arxiv.org/abs/2611.06913v1",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "L'apprentissage de trajectoires par RL et transfert sim-to-real pour robots mobiles en environnement encombré est un thème très étudié et outillé (ROS, Habitat, Isaac Sim), mais aucun produit ou projet exact \"petit robot qui apprend à se faufiler sans rien renverser\" n'est clairement identifiable.",
+      "LIEN": "https://www.citizenside.fr/petit-robot-change-forme-faufiler-espaces-restreints/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "La serre qui devine l'air entre les capteurs",
+    "L'accroche": "Quelques capteurs bien placés suffisent à un petit système pour estimer la température et l'humidité partout dans une serre, et agir avant que les plants ne souffrent.",
+    "Le résumé": "Dans une serre ou un local technique, on ne peut pas installer un capteur partout, et les relevés manquent souvent de précision. Des chercheurs ont comparé plusieurs façons de reconstruire tout un champ à partir de quelques points de mesure, en regardant le coût et la fiabilité. L'idée est de faire tourner cette approche sur un petit boîtier qui lit quelques capteurs, estime ce qui se passe ailleurs et déclenche ventilation ou arrosage. Les capteurs bon marché et les modèles légers rendent cela possible sur une carte à quelques dizaines d'euros.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le maraîcher voit à 6 h que sa serre a gelé cette nuit depuis son téléphone, et le système a déjà allumé le chauffage d'appoint ; dans un local technique, le boîtier détecte un point chaud invisible entre deux capteurs et déclenche l'extracteur.",
+    "Pour qui": "Un maraîcher ou un responsable de local technique qui veut surveiller sans multiplier les capteurs.",
+    "D'où ça vient": "« FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors » — https://arxiv.org/abs/2611.06912v1",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "Le chien de garde du réseau local",
+    "L'accroche": "Un petit boîtier branché sur le réseau d'une maison ou d'un atelier repère les comportements anormaux et prévient avant qu'un appareil mal protégé ne soit piraté.",
+    "Le résumé": "Les failles récentes dans des services très répandus rappellent que les petits réseaux aussi sont exposés. L'idée est de construire un objet embarqué qui observe passivement le trafic local, apprend ce qui est normal et alerte dès qu'une connexion sort de l'ordinaire. Ce type de surveillance était réservé aux grandes entreprises, mais un petit calculateur suffit désormais à le faire localement, sans envoyer les données dans le cloud. C'est le moment car les alertes de sécurité se multiplient et que le matériel est devenu accessible.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Dans un atelier, le boîtier bipe quand une imprimante connectée tente d'envoyer des données vers un serveur inconnu ; à la maison, il prévient qu'un nouvel appareil explore le réseau comme le ferait un intrus.",
+    "Pour qui": "Un particulier bricoleur ou un petit atelier qui veut une alerte simple sans abonnement.",
+    "D'où ça vient": "« Alpine Linux Security Advisory: OpenSSH-server password authentication bypass » — https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-05"
+  },
+  {
     "titre": "Voir l'air d'une pièce avec seulement trois capteurs",
     "L'accroche": "Un petit boîtier qui dessine les courants d'air et les poches de froid de toute une pièce alors qu'il ne mesure qu'à trois endroits.",
     "Le résumé": "Aujourd'hui, pour savoir comment l'air circule dans une serre, un atelier ou un gymnase, il faut poser des dizaines de capteurs, ce qui coûte cher et gêne tout le monde. Des chercheurs viennent de mesurer sérieusement à quel point un modèle appris peut reconstituer toute une carte d'air à partir de quelques points de mesure seulement, et quand il fait mieux que les méthodes classiques. C'est le moment : ce type de reconstruction devient assez fiable et assez calibré pour qu'on ose s'y fier dans la vraie vie. Notre prototype consiste en quelques boîtiers autonomes posés dans une pièce qui renvoient une carte animée de l'air, visible sur un écran ou un téléphone. Côté données, il faut apprendre la forme de l'air à partir de peu de mesures ; côté embarqué, il faut des boîtiers qui mesurent au même instant, sans fil, et qui tiennent longtemps sur pile.",
