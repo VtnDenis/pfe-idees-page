@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Voir l'air d'une pièce avec seulement trois capteurs",
+    "L'accroche": "Un petit boîtier qui dessine les courants d'air et les poches de froid de toute une pièce alors qu'il ne mesure qu'à trois endroits.",
+    "Le résumé": "Aujourd'hui, pour savoir comment l'air circule dans une serre, un atelier ou un gymnase, il faut poser des dizaines de capteurs, ce qui coûte cher et gêne tout le monde. Des chercheurs viennent de mesurer sérieusement à quel point un modèle appris peut reconstituer toute une carte d'air à partir de quelques points de mesure seulement, et quand il fait mieux que les méthodes classiques. C'est le moment : ce type de reconstruction devient assez fiable et assez calibré pour qu'on ose s'y fier dans la vraie vie. Notre prototype consiste en quelques boîtiers autonomes posés dans une pièce qui renvoient une carte animée de l'air, visible sur un écran ou un téléphone. Côté données, il faut apprendre la forme de l'air à partir de peu de mesures ; côté embarqué, il faut des boîtiers qui mesurent au même instant, sans fil, et qui tiennent longtemps sur pile.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le maraîcher voit à 6 h depuis son téléphone qu'un filet d'air glacé descend pile sur ses jeunes plants de tomates et décide de fermer une aération. / Le responsable d'un open space découvre que l'air vicié stagne dans le coin où personne ne passe jamais, et déplace une arrivée d'air.",
+    "Pour qui": "Un maraîcher, un éleveur ou un gestionnaire de bâtiment qui veut comprendre son air sans équiper la pièce entière.",
+    "D'où ça vient": "« FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Les résultats ne montrent que des stations/capteurs connectés grand public pour l’air intérieur, pas de produit, projet open source ou article reconstruisant les courants d’air d’une pièce avec seulement trois mesures.",
+      "LIEN": "https://www.toutpourvotremaison.fr/conseils/capteurs-connectes-ou-placer-pour-surveiller-air-interieur/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "Le petit bras qui corrige tout seul quand on le charge",
+    "L'accroche": "Un petit bras robotisé qui sent que l'objet qu'il porte est plus lourd que prévu et rattrape son geste avant de trembler ou de le lâcher.",
+    "Le résumé": "Les petits robots d'atelier planifient leurs gestes en supposant que ce qu'ils portent pèse toujours pareil ; dès qu'un carton est plus lourd, le bras vibre, dévie ou rate sa cible. Une nouvelle génération de travaux montre qu'on peut désormais calculer un geste rapide, sans collision, en tenant compte en temps réel de l'effort que les moteurs fournissent réellement. C'est le moment parce que ces calculs deviennent accessibles sur de petits calculateurs bon marché, pas seulement sur de gros serveurs. Notre prototype : un petit bras à quelques articulations qui soulève des objets au poids inconnu, apprend à quel point ils sont lourds en sentant ses propres moteurs, et adapte son mouvement sans cogner ce qui l'entoure.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Dans un atelier de conditionnement, les cartons ne pèsent jamais exactement pareil et le bras ne tremble plus ni ne lâche au milieu du geste. / Dans un laboratoire, le bras attrape des tubes remplis à des niveaux différents sans les faire tomber, sans qu'on ait à lui dire leur poids.",
+    "Pour qui": "Un petit atelier artisanal, un fablab ou un laboratoire qui manipule des objets de poids variable.",
+    "D'où ça vient": "« cuRoboV2-Fast: Fast Torque-Limited Collision-Free Motion Planning »",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "La commande adaptative et l'estimation de charge utile inconnue sont classiques depuis les années 1980 (Craig, Slotine), et des cobots commerciaux (Franka, KUKA LBR) estiment la masse portée et ajustent l'admittance/le couple en ligne.",
+      "LIEN": "https://franka.de/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "Le robot qui apprend à tenir debout avant d'exister",
+    "L'accroche": "Un petit robot à deux roues apprend à rester en équilibre dans un monde virtuel, puis, posé sur une table, il y arrive presque du premier coup.",
+    "Le résumé": "Faire apprendre un robot directement dans la vraie vie est lent, coûteux et casse du matériel ; on préfère donc l'entraîner dans un simulateur, mais le comportement appris ne survit pas toujours au passage au réel. Les travaux récents sur des robots marcheurs montrent que ce passage devient de plus en plus fiable quand on soigne la façon dont on entraîne. C'est le moment parce que ces résultats deviennent reproductibles à petite échelle, avec un objet de table plutôt qu'un grand robot humanoïde. Notre prototype : un petit engin instable sur deux roues, entraîné à se rattraper dans un simulateur, puis posé sur la table où il se rétablit quand on le pousse du doigt — c'est cette démonstration physique qui fait la preuve.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Quand on pousse du doigt le petit robot posé sur la table pendant la soutenance, il se redresse tout seul et personne n'a touché au code ce jour-là. / Quand une roue patine sur une table un peu lisse, l'engin retrouve l'équilibre sans qu'on ait eu à décrire ce cas à l'avance.",
+    "Pour qui": "Un enseignant ou une équipe de robotique amateur qui veut montrer du mouvement appris sans acheter un vrai robot marcheur.",
+    "D'où ça vient": "« Perceptive Humanoid Motion from Simulation »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des travaux sim-to-real existent pour l’équilibre de robots humanoïdes ou à roues, mais aucun ne correspond exactement au scénario d’un petit robot à deux roues entraîné virtuellement avant construction puis validé sur table.",
+      "LIEN": "https://xpert.digital/fr/controle-de-la-levee-humanoide/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
     "titre": "La carte des courants d'air",
     "L'accroche": "Un boîtier qui rend visible, en direct, la façon dont l'air circule dans une pièce.",
     "Le résumé": "Des chercheurs viennent de montrer qu'avec seulement quelques capteurs bon marché posés au hasard on pouvait reconstituer tout le mouvement de l'air dans une zone, à condition de bien régler le système. Or on ne sait toujours pas où l'air stagne vraiment dans une salle de classe, un open-space ou une serre, alors que c'est exactement là que s'accumulent le CO2 et les virus respiratoires. Jusqu'ici, mesurer ça demandait du matériel de laboratoire hors de prix. Aujourd'hui, un petit appareil peut dessiner cette carte en continu et alerter quand ça devient malsain.",
