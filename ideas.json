@@ -1,5 +1,35 @@
 [
   {
+    "titre": "La carte des courants d'air",
+    "L'accroche": "Un boîtier qui rend visible, en direct, la façon dont l'air circule dans une pièce.",
+    "Le résumé": "Des chercheurs viennent de montrer qu'avec seulement quelques capteurs bon marché posés au hasard on pouvait reconstituer tout le mouvement de l'air dans une zone, à condition de bien régler le système. Or on ne sait toujours pas où l'air stagne vraiment dans une salle de classe, un open-space ou une serre, alors que c'est exactement là que s'accumulent le CO2 et les virus respiratoires. Jusqu'ici, mesurer ça demandait du matériel de laboratoire hors de prix. Aujourd'hui, un petit appareil peut dessiner cette carte en continu et alerter quand ça devient malsain.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le gestionnaire d'un lycée voit à 8 h que l'air de la salle B12 n'a pas bougé de la nuit et fait ouvrir les fenêtres avant les cours ; le maraîcher voit depuis son téléphone qu'une poche d'air chaud s'est formée sous une rangée de tomates et risque de les brûler.",
+    "Pour qui": "Toute personne responsable d'un local fermé — gestionnaire de bâtiment, enseignant, producteur sous serre — qui veut savoir où l'air respire vraiment.",
+    "D'où ça vient": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des recherches existent sur la reconstruction de champs d’air intérieur à partir de capteurs épars et des outils de cartographie de flux, mais pas ce boîtier grand public exact.",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "Le veilleur du ciel nocturne",
+    "L'accroche": "Un petit appareil qui surveille le ciel à votre place et prévient dès qu'une traînée de satellite traverse la nuit.",
+    "Le résumé": "Une photo récente montre à quel point le ciel nocturne est saturé de satellites, au point de gêner le travail des astronomes. Les clubs d'observation veulent documenter l'ampleur du phénomène, mais les caméras de recherche coûtent une fortune. Un appareil modeste posé sur un balcon peut pourtant filmer le ciel toute la nuit, reconnaître tout seul les traînées et tenir un carnet de la qualité du ciel. C'est le moment parce que les constellations de satellites explosent et que personne ne mesure vraiment l'impact localement.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel, en acceptant une qualité d'image modeste.",
+    "Cas d'usage": "Le club d'astronomie de Nantes peut enfin dire, preuves à l'appui, combien de satellites ont gâché ses nuits d'observation cette année ; une mairie reçoit une alerte quand son éclairage public fait perdre des étoiles visibles par rapport à l'an dernier.",
+    "Pour qui": "Les clubs d'astronomie amateurs et les associations de protection du ciel nocturne.",
+    "D'où ça vient": "Image of Our Satellite-Choked Night Skies",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des caméras tout-ciel open source et des outils citoyens de détection/report de traînées de satellites existent (IAU CPS SatHub, AllSky7), mais pas un petit boîtier grand public dédié avec alerte.",
+      "LIEN": "https://cps.iau.org/tools/sathub/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
     "titre": "Le boîtier qui devine l’air",
     "Le résumé": "L’idée vient d’une étude récente qui montre qu’on peut reconstruire tout un écoulement d’air à partir de quelques capteurs seulement. Dans une petite fromagerie ou un atelier, l’air peut stagner sans qu’on le voie, et la ventilation tourne souvent trop ou pas assez. Le boîtier mesure en continu, apprend sur place à repérer les zones mortes, puis allume le ventilateur ou prévient quelqu’un. C’est le bon moment parce que les petits capteurs et le calcul embarqué sont devenus assez abordables pour un projet étudiant.",
     "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel. **Cas d’usage** : - Le fromager voit à 7 h que la zone près de la porte ne respire plus et le ventilateur se met en route avant que le linge ne sente l’humidité. - Dans un bureau, le boîtier repère que l’air chaud stagne sous le bureau du fond et prévient le technicien avant que tout le monde n’ait trop chaud.",
