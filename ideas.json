@@ -1,5 +1,41 @@
 [
   {
+    "titre": "Le boîtier qui devine l’air",
+    "Le résumé": "L’idée vient d’une étude récente qui montre qu’on peut reconstruire tout un écoulement d’air à partir de quelques capteurs seulement. Dans une petite fromagerie ou un atelier, l’air peut stagner sans qu’on le voie, et la ventilation tourne souvent trop ou pas assez. Le boîtier mesure en continu, apprend sur place à repérer les zones mortes, puis allume le ventilateur ou prévient quelqu’un. C’est le bon moment parce que les petits capteurs et le calcul embarqué sont devenus assez abordables pour un projet étudiant.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel. **Cas d’usage** : - Le fromager voit à 7 h que la zone près de la porte ne respire plus et le ventilateur se met en route avant que le linge ne sente l’humidité. - Dans un bureau, le boîtier repère que l’air chaud stagne sous le bureau du fond et prévient le technicien avant que tout le monde n’ait trop chaud.",
+    "Pour qui": "Le responsable d’une petite fromagerie ou d’un atelier qui ne peut pas surveiller l’air en permanence. **D’où ça vient** : **FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors**",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "La ventilation asservie à des capteurs de CO2/qualité d'air est un marché mature (Airthings, sondes DCV) et la reconstruction de champs d'écoulement à partir de quelques capteurs est un sujet de recherche actif (apprentissage sur données de simulation/PIV), mais aucun produit ni projet open source ne combine les deux pour déduire la circulation d'air d'une pièce et piloter la ventilation \"juste ce qu'il faut\".",
+      "LIEN": "https://arxiv.org/abs/1811.02771"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "Le vélo qui prévient des trous",
+    "Le résumé": "L’idée vient d’un mouvement citoyen qui transforme des pistes cyclables sauvages en infrastructures officielles. Beaucoup de cyclistes découvrent les trous et les bosses au dernier moment, et personne ne centralise ces dangers. Un boîtier fixé au vélo mesure les secousses, apprend à distinguer un trou d’un simple pavé, et prévient tout de suite par un signal lumineux. C’est faisable maintenant parce qu’un petit objet embarqué peut faire ce calcul sans coûter cher.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel. **Cas d’usage** : - Le livreur voit sa lumière clignoter juste avant une plaque de bitume arrachée et serre les freins à temps. - Une association de quartier collecte les secousses de plusieurs vélos et montre sur une carte les rues à réparer en priorité.",
+    "Pour qui": "Le cycliste quotidien ou l’association qui veut des rues sûres. **D’où ça vient** : **Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)**",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des systèmes existent déjà (See.Sense, capteurs/accéléromètres embarqués et travaux académiques sur la détection de nids-de-poule), mais pas exactement un boîtier grand public dédié à l'alerte anticipée du cycliste.",
+      "LIEN": "https://see.sense.cc/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
+    "titre": "Le garde-fou de l’atelier",
+    "Le résumé": "L’idée vient des alertes récentes sur les failles de sécurité que l’IA rend plus faciles à exploiter. Dans un petit atelier, une machine qui reçoit des commandes étranges peut casser avant que quelqu’un ne réagisse. Le boîtier écoute en continu les échanges entre machines, apprend ce qui est normal, et coupe l’alimentation dès qu’une séquence sort de l’ordinaire. C’est le moment parce que les petites cartes embarquées savent réagir vite avec un modèle léger.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel. **Cas d’usage** : - Le responsable d’un petit atelier voit la pompe s’arrêter avant qu’une commande aberrante ne force la vanne. - Dans une serre, le boîtier coupe l’arrosage quand plusieurs ordres incohérents arrivent coup sur coup.",
+    "Pour qui": "Le responsable d’un petit atelier ou d’une petite exploitation qui ne peut pas surveiller ses machines en permanence. **D’où ça vient** : **AI is forcing us to pay off 40 years of technical debt**",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des solutions de cybersécurité OT/IoT (Nozomi, Claroty, Dragos) surveillent les commandes anormales et des relais/PLC de sécurité coupent l’alimentation, mais pas ce boîtier unique dédié au petit atelier.",
+      "LIEN": "https://www.nozominetworks.com/"
+    },
+    "jour": "2026-11-05"
+  },
+  {
     "titre": "Le compteur de vélos de quartier qui respecte les passants",
     "L'accroche": "Une petite boîte fixée à un poteau compte les vélos, les piétons et les voitures, sans filmer les visages ni envoyer d’images.",
     "Le résumé": "L’idée vient d’une actualité sur des pistes cyclables improvisées à San Francisco devenues officielles : les villes veulent mesurer l’effet de ces aménagements sans installer de matériel coûteux. Le problème est qu’un compteur classique ne distingue pas bien les usages et peut inquiéter les riverains. Le prototype regarde localement, compte seulement des formes et affiche des chiffres agrégés. C’est le moment parce que les petites caméras et les cartes à faible coût permettent de faire ce calcul sur place, sans abonnement.",
