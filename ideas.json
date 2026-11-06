@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le piège à insectes qui sait ce qu’il a attrapé",
+    "L'accroche": "Un boîtier autonome photographie les insectes qui tombent dans un piège et indique aussitôt s’il s’agit d’une espèce utile ou envahissante.",
+    "Le résumé": "L’actualité sur les fourmis prises dans un gouffre rappelle que les pièges de terrain capturent beaucoup d’animaux qu’on met ensuite des jours à trier. Les écologues ont besoin de savoir vite ce qui tombe dans un piège, surtout quand les espèces sont fragiles. Aujourd’hui, une petite caméra et un calcul embarqué peuvent reconnaître un insecte sans tout envoyer sur Internet. C’est le moment parce que le matériel reste simple et que les données publiques sur les espèces sont disponibles.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Le garde de la réserve voit à 7 h que son piège a capturé trois abeilles et un frelon, sans ouvrir la boîte. Le maraîcher reçoit une alerte quand un insecte qui mange ses plants arrive près de la serre.",
+    "Pour qui": "Un écologue de terrain ou un technicien de réserve naturelle.",
+    "D'où ça vient": "« Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016) »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Les pièges à phéromones connectés et les pièges photographiques automatisés existent (ex. Sticky Pi open source, Trapview), mais la combinaison identification IA embarquée + statut utile/invasif en autonomie reste à consolider.",
+      "LIEN": "https://www.mesinsectes.com/piege-a-pheromone-comment-cela-fonctionne-t-il-reellement/"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "La fenêtre qui se couvre toute seule",
+    "L'accroche": "Un petit dispositif apprend quand il faut couvrir ou découvrir une fenêtre pour garder la pièce agréable sans y penser.",
+    "Le résumé": "L’actualité « Window Sweaters » montre qu’on peut habiller une fenêtre pour mieux gérer la chaleur et le froid. Beaucoup de pièces surchauffent l’après-midi ou refroidissent la nuit faute de store bien réglé. Un objet simple peut observer la lumière, la température et les habitudes des occupants pour agir au bon moment. C’est le moment parce que les petits moteurs et les capteurs courants sont devenus bon marché.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Dans une classe, le store se ferme avant que le soleil ne transforme la pièce en four. Une personne âgée voit son rideau se fermer le soir sans se lever.",
+    "Pour qui": "Un particulier ou un petit gestionnaire de bâtiment qui veut moins chauffer et moins climatiser.",
+    "D'où ça vient": "« Window Sweaters »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des stores motorisés et capteurs intelligents existent déjà, mais pas exactement ce petit dispositif autonome qui apprend à couvrir/découvrir une fenêtre.",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "Le boîtier qui débranche un objet connecté trop bavard",
+    "L'accroche": "Un petit boîtier apprend le comportement normal d’un objet connecté et coupe son alimentation quand il devient bizarre.",
+    "Le résumé": "L’actualité sur les mots de passe mal protégés dans l’app Tata Motors montre que des objets connectés peuvent être mal sécurisés. Beaucoup de gens ont chez eux des objets bon marché qu’ils ne peuvent pas mettre à jour. Un boîtier séparé peut surveiller leur activité, repérer une changement inhabituel et agir physiquement. C’est le moment parce que ces objets sont partout et que les incidents se multiplient.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Une boutique voit sa caméra connectée s’agiter anormalement et le boîtier la débranche seul. Une famille est alertée que son babyphone fait quelque chose d’étrange la nuit.",
+    "Pour qui": "Un petit commerce ou une famille qui a des objets connectés simples.",
+    "D'où ça vient": "« Hardcoded credentials and other issues in Tata Motors App »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
     "titre": "Le veilleur d’appels louches",
     "L'accroche": "un petit boîtier posé près du téléphone qui prévient quand une voix ou un discours ressemble à une arnaque faite par une machine.",
     "Le résumé": "Les fausses voix et les fausses publicités se multiplient, et une personne peut croire qu’elle parle à un proche ou à un fournisseur. Le problème, c’est qu’une arnaque convaincante arrive souvent avant qu’on ait le temps de réfléchir. Le boîtier écoute localement, repère les signes qui ne collent pas et allume un voyant ou émet un son pour alerter. C’est le moment parce que de petits programmes d’apprentissage peuvent tourner sur du matériel bon marché sans envoyer la voix sur Internet. Côté objet embarqué, il faut capter le son en continu et réagir vite ; côté données, il faut apprendre à distinguer les voix vraies des voix imitées et les phrases d’urgence des phrases normales.",
