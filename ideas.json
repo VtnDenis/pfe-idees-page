@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le garde-feu",
+    "L'accroche": "Un petit boîtier autonome posé dans la nature qui sent un départ de feu avant qu'on ne le voie et prévient les secours.",
+    "Le résumé": "Les satellites météo européens publient désormais des images très nettes du territoire plusieurs fois par jour. Mais entre deux passages, un feu peut couver sans que personne ne s'en aperçoive. Ce projet propose un capteur bon marché installé dans les zones à risque qui surveille en continu et croise ce qu'il voit avec les images satellites gratuites. Il alerte alors les habitants et les secours plusieurs minutes avant que la fumée ne soit visible à l'œil nu.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant et un petit panneau solaire.",
+    "Cas d'usage": "Le propriétaire d'une parcelle de pins voit son téléphone vibrer en pleine après-midi et aperçoit sur l'image du boîtier un mince filet de fumée derrière sa colline ; le maire d'un village isolé apprend avant les pompiers qu'un feu a démarré sur le plateau et peut appeler directement le voisin concerné.",
+    "Pour qui": "Les mairies rurales, les exploitants forestiers et les associations de surveillance des massifs.",
+    "D'où ça vient": "\"MTG-I2 First Images\" — https://www.eumetsat.int/mtg-i2-first-images",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Dryad Networks (Silvanet) commercialise déjà des capteurs IoT autonomes sentant les feux couvants en forêt, et des projets de recherche (SenseNet, FireSat, Pano AI) couvrent la détection précoce, mais le sujet scolaire tel que formulé n'existe pas comme tel.",
+      "LIEN": "https://www.dryad.net/"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "Le stéthoscope de vieux moteurs",
+    "L'accroche": "Un petit capteur qui se colle sur une machine ancienne et prévient qu'elle va tomber en panne avant qu'elle ne s'arrête.",
+    "Le résumé": "Beaucoup d'industriels et de collectivités continuent de faire tourner des équipements très anciens, faute de pouvoir les remplacer. Ces machines tombent sans prévenir et coûtent cher à l'arrêt. Ce projet imagine un boîtier qui apprend le bruit et les vibrations normales d'un moteur, puis repère les signaux faibles qui annoncent la casse. Aucune modernisation lourde, juste une oreille attentive posée dessus.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le meunier d'un vieux moulin à eau reçoit une alerte la veille d'une casse et commande la pièce à temps, sans arrêter la production ; l'équipe d'une piscine municipale voit sur son écran que la pompe de filtration commence à fatiguer avant le jour du grand bain.",
+    "Pour qui": "Les petites industries, les artisans et les services techniques de collectivités qui s'appuient sur du matériel ancien.",
+    "D'où ça vient": "\"US FAA says it will phase out floppy disks from air traffic control by 2028\" — https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "Le gardien du foyer connecté",
+    "L'accroche": "Une petite boîte branchée à la box qui prévient en temps réel quand un objet connecté de la maison se comporte bizarrement.",
+    "Le résumé": "On découvre régulièrement que des dizaines de milliers de sites et d'appareils connectés sont détournés sans que leurs propriétaires le sachent. Personne n'a de moyen simple de voir que sa caméra de salon ou son thermostat parle à un serveur inconnu. Ce projet propose un boîtier qui apprend tranquillement le comportement habituel de chaque appareil de la maison, puis allume une alerte dès qu'un appareil change de manière de communiquer. Rien ne sort de la maison, tout se traite localement.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Une famille apprend que le babyphone du salon envoie en permanence des données vers un pays lointain et le débranche à temps ; le gérant d'un petit cabinet voit une lumière rouge s'allumer quand l'imprimante de l'accueil commence à envoyer des messages suspects en pleine nuit.",
+    "Pour qui": "Les foyers et les très petites structures qui veulent savoir ce que font leurs objets connectés sans être experts.",
+    "D'où ça vient": "\"We know 15k websites are infected. how do we tell them?\" — https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
     "titre": "La commande vocale qui reste dans la pièce",
     "L'accroche": "Un boîtier comprend quelques mots prononcés à voix basse et allume ou éteint un appareil, sans jamais envoyer le son sur Internet.",
     "Le résumé": "L'actualité montre que des modèles d'IA de plus en plus petits peuvent tenir dans des objets ordinaires. Le problème : les assistants vocaux actuels envoient tout au cloud, consomment beaucoup et inquiètent pour la vie privée. L'idée : un petit objet qui apprend à reconnaître une poignée de commandes utiles et agit immédiatement, même sans réseau. Côté données, on collecte et nettoie des exemples audio pour que le modèle résiste au bruit ; côté embarqué, le boîtier doit écouter en permanence avec très peu d'énergie et déclencher l'action en temps réel. Pourquoi maintenant : les modèles compacts rendent enfin possible une parole utile hors ligne dans un objet à petit prix.",
