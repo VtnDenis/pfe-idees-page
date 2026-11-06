@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le veilleur d’appels louches",
+    "L'accroche": "un petit boîtier posé près du téléphone qui prévient quand une voix ou un discours ressemble à une arnaque faite par une machine.",
+    "Le résumé": "Les fausses voix et les fausses publicités se multiplient, et une personne peut croire qu’elle parle à un proche ou à un fournisseur. Le problème, c’est qu’une arnaque convaincante arrive souvent avant qu’on ait le temps de réfléchir. Le boîtier écoute localement, repère les signes qui ne collent pas et allume un voyant ou émet un son pour alerter. C’est le moment parce que de petits programmes d’apprentissage peuvent tourner sur du matériel bon marché sans envoyer la voix sur Internet. Côté objet embarqué, il faut capter le son en continu et réagir vite ; côté données, il faut apprendre à distinguer les voix vraies des voix imitées et les phrases d’urgence des phrases normales.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Une grand-mère reçoit un appel qui imite la voix de son fils et le boîtier se met à clignoter avant qu’elle ne donne son code. Un artisan reçoit un message vocal pressant d’un faux fournisseur et le boîtier l’avertit pendant qu’il est encore en ligne.",
+    "Pour qui": "Une personne peu à l’aise avec le numérique, ou un proche qui veut la protéger sans lui installer une application compliquée.",
+    "D'où ça vient": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des applications et services détectent déjà les appels indésirables et les deepfakes vocaux, mais pas sous la forme exacte d’un boîtier autonome posé près du téléphone.",
+      "LIEN": "https://louche-ou-pas.fr/conseils/arnaques-aux-deepfakes-vocaux-comment-dejouer-les-appels-frauduleux-utilisant-li"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "La lampe qui apprend sans espionner",
+    "L'accroche": "une lampe de bureau qui devine quand vous travaillez et adapte sa lumière, sans envoyer aucune donnée.",
+    "Le résumé": "Aujourd’hui, beaucoup d’objets connectés apprennent nos habitudes, mais souvent en les envoyant ailleurs. Le problème, c’est qu’on veut du confort personnalisé sans être surveillé. La lampe observe simplement la présence, la lumière et le bruit, apprend vos rythmes sur place et agit sur sa luminosité. C’est le moment parce que les composants bon marché et les petits apprentissages locaux rendent ce genre d’objet enfin accessible. Côté embarqué, il faut capter et réagir vite ; côté données, il faut apprendre des habitudes et repérer les moments inhabituels.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Un étudiant rentre à 23 h, la lampe sait qu’il travaille tard et baisse doucement la lumière pour l’aider à dormir. Une personne qui télétravaille voit la lampe passer en mode concentration quand elle s’assoit, puis en veilleuse quand elle s’absente.",
+    "Pour qui": "Quelqu’un qui veut un logement qui s’adapte à lui sans installer de caméra ni de micro toujours connecté.",
+    "D'où ça vient": "I wish tech companies knew more about me",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "Le trieur d’alertes de sécurité",
+    "L'accroche": "un petit boîtier qui regarde les failles logicielles du jour et montre seulement celles qui menacent vraiment l’ordinateur ou l’objet qu’il protège.",
+    "Le résumé": "Les alertes de sécurité s’accumulent et les petites structures ne savent pas lesquelles traiter d’abord. Le problème, c’est qu’une alerte grave mais sans rapport avec le matériel utilisé fait perdre du temps et crée de la panique. Le boîtier compare les alertes publiques à ce qui est réellement installé, apprend des décisions passées et allume un signal clair quand une faille est vraiment critique. C’est le moment parce que les informations sur les failles sont publiques et qu’un petit appareil peut trier utilement en local. Côté embarqué, il faut surveiller, réagir et alerter sans dépendre d’un grand système ; côté données, il faut collecter, structurer et apprendre à classer les alertes.",
+    "Faisable ?": "Oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Un lycée technique voit son boîtier passer au rouge pour une faille qui touche son logiciel de dessin utilisé en cours, et l’alerte est affichée avant l’ouverture des ateliers. Un petit atelier reçoit une alerte qui ne concerne pas ses machines, le boîtier la classe en jaune et évite une panique inutile.",
+    "Pour qui": "Le responsable informatique d’une petite structure qui n’a pas d’équipe de sécurité dédiée.",
+    "D'où ça vient": "MS Paint Remote Code Execution Vulnerability",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
     "titre": "Le petit robot qui apprend à se faufiler",
     "L'accroche": "Un petit robot mobile apprend tout seul à traverser une pièce encombrée sans rien renverser.",
     "Le résumé": "Les robots qui roulent près des humains doivent éviter les objets, mais prévoir toutes les situations à la main est impossible. L'idée est de faire apprendre au robot à choisir ses trajectoires, d'abord dans un monde virtuel, puis sur un vrai petit châssis. Des travaux récents montrent qu'on peut planifier des mouvements rapides sans collision et améliorer les comportements des robots par apprentissage. Avec un budget minuscule et des outils gratuits, c'est devenu faisable en dix semaines.",
