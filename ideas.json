@@ -1,5 +1,50 @@
 [
   {
+    "titre": "La commande vocale qui reste dans la pièce",
+    "L'accroche": "Un boîtier comprend quelques mots prononcés à voix basse et allume ou éteint un appareil, sans jamais envoyer le son sur Internet.",
+    "Le résumé": "L'actualité montre que des modèles d'IA de plus en plus petits peuvent tenir dans des objets ordinaires. Le problème : les assistants vocaux actuels envoient tout au cloud, consomment beaucoup et inquiètent pour la vie privée. L'idée : un petit objet qui apprend à reconnaître une poignée de commandes utiles et agit immédiatement, même sans réseau. Côté données, on collecte et nettoie des exemples audio pour que le modèle résiste au bruit ; côté embarqué, le boîtier doit écouter en permanence avec très peu d'énergie et déclencher l'action en temps réel. Pourquoi maintenant : les modèles compacts rendent enfin possible une parole utile hors ligne dans un objet à petit prix.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel et des enregistrements faits maison.",
+    "Cas d'usage": "- Dans une chambre d'hôpital, une infirmière dit « lumière douce » et la lampe baisse sans qu'aucun son ne quitte la pièce. - Dans un atelier bruyant, l'ouvrier garde ses gants et commande la ventilation d'un mot.",
+    "Pour qui": "Une personne qui veut commander un appareil chez elle sans confier sa voix à un service en ligne.",
+    "D'où ça vient": "« Inkling 2 Small »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des solutions open source comme Rhasspy ou Home Assistant Voice font déjà de la reconnaissance vocale locale sans cloud, mais pas exactement un boîtier autonome limité à quelques mots à voix basse.",
+      "LIEN": "https://rhasspy.readthedocs.io/"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "Le piège à insectes qui compte tout seul",
+    "L'accroche": "Un piège posé dans la forêt reconnaît et compte les insectes qui tombent dedans, puis prévient le chercheur quand quelque chose d'inhabituel se passe.",
+    "Le résumé": "L'actualité raconte des fourmis prises dans un piège naturel géant, et montre à quel point un tel piège peut fausser ce qu'on croit observer. Le problème : les échantillons sont relevés à la main, trop tard, et on ne sait pas ce qui est tombé entre deux visites. L'idée : un piège instrumenté qui prend une photo à chaque capture, trie grossièrement les insectes et alerte quand la cadence change. Côté données, on apprend à reconnaître quelques catégories d'insectes à partir d'images libres et de photos prises sur le terrain ; côté embarqué, le boîtier doit économiser sa batterie et réagir en direct. Pourquoi maintenant : les chercheurs manquent de temps et veulent des relevés plus réguliers sans multiplier les tournées.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel et un peu de récupération.",
+    "Cas d'usage": "- Le garde forestier reçoit un message à l'aube : cette nuit, le piège a capturé dix fois plus de fourmis que d'habitude. - L'étudiante en écologie ouvre son carnet et voit la courbe heure par heure, sans avoir passé la nuit dans la forêt.",
+    "Pour qui": "Un écologue de terrain qui suit la petite faune d'une parcelle.",
+    "D'où ça vient": "« Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016) »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
+    "titre": "Le guetteur de salle de lecture",
+    "L'accroche": "Un petit boîtier posé sur une table repère en direct les usages anormaux d'un espace public de lecture et prévient le bibliothécaire avant que le service ne se bloque.",
+    "Le résumé": "L'actualité montre que des robots d'IA envahissent les bibliothèques universitaires et menacent l'accès public. Le problème : impossible de distinguer à l'œil un lecteur pressé d'un robot qui aspire tout. L'idée : un objet embarqué qui observe des signaux simples autour d'un poste de consultation et signale les situations qui ne ressemblent pas à un usage humain normal, sans identifier les personnes. Côté données, on apprend à séparer les usages ordinaires des rafales suspectes ; côté embarqué, tout doit décider en quelques secondes, localement, sans envoyer les images au cloud. Pourquoi maintenant : les bibliothèques cherchent des moyens concrets et respectueux de protéger l'accès public sans couper Internet.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel et des scènes filmées avec accord.",
+    "Cas d'usage": "- À 14 h, la bibliothécaire voit son boîtier passer à l'orange : un poste est utilisé en rafale depuis vingt minutes, comme un robot qui tourne les pages. - Le soir, le responsable sait quels postes ont eu un usage étrange sans avoir stocké les visages.",
+    "Pour qui": "La responsable d'une bibliothèque universitaire qui doit garder ses postes ouverts à tous.",
+    "D'où ça vient": "« University libraries are being swarmed by AI bots, putting public access at risk »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-06"
+  },
+  {
     "titre": "Le piège à insectes qui sait ce qu’il a attrapé",
     "L'accroche": "Un boîtier autonome photographie les insectes qui tombent dans un piège et indique aussitôt s’il s’agit d’une espèce utile ou envahissante.",
     "Le résumé": "L’actualité sur les fourmis prises dans un gouffre rappelle que les pièges de terrain capturent beaucoup d’animaux qu’on met ensuite des jours à trier. Les écologues ont besoin de savoir vite ce qui tombe dans un piège, surtout quand les espèces sont fragiles. Aujourd’hui, une petite caméra et un calcul embarqué peuvent reconnaître un insecte sans tout envoyer sur Internet. C’est le moment parce que le matériel reste simple et que les données publiques sur les espèces sont disponibles.",
