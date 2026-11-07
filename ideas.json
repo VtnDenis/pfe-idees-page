@@ -1,5 +1,50 @@
 [
   {
+    "titre": "La veille qui apprend les habitudes de mamie",
+    "L'accroche": "une petite boîte posée dans le salon qui apprend en silence la routine d'une personne âgée et prévient la famille quand quelque chose cloche.",
+    "Le résumé": "Apple a récemment montré que ses ordinateurs savent déjà deviner qui est qui dans votre entourage sans envoyer vos données sur Internet. On reprend cette idée pour la maison : un appareil discret observe les allées et venues, apprend la routine de la personne qui vit là, et alerte un proche si d'un coup elle ne se lève plus, ne passe plus par la cuisine ou reste trop longtemps immobile. Aucune caméra, aucune image, aucun abonnement : tout se passe dans la boîte. Avec le vieillissement de la population et le prix des maisons de retraite, c'est le bon moment.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "le fils de 55 ans reçoit une notification un mardi à 11 h en réunion, parce que sa mère n'a pas touché à sa cuisine depuis la veille. Ou : la dame vit normalement depuis trois mois et son boîtier n'a jamais sonné, ce qui rassure toute la famille sans qu'elle ait l'impression d'être surveillée.",
+    "Pour qui": "une famille qui accompagne à distance un parent âgé vivant seul.",
+    "D'où ça vient": "« Every Mac comes with an (undocumented) family member classifier ».",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "Des solutions de télésurveillance ambiante (Vayyar Care, CarePredict, etc.) apprennent les routines et alertent les proches, et la reconnaissance d’activités en habitat intelligent est un domaine de recherche mature.",
+      "LIEN": "https://www.vayyar.com/care/"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "Le pot de miel qui piège les intrus du réseau",
+    "L'accroche": "un petit boîtier qui se fait passer pour une proie facile sur le réseau d'une maison ou d'un cabinet, et qui apprend à reconnaître les techniques des curieux.",
+    "Le résumé": "une enquête récente a montré comment des escrocs détournent les paiements des livreurs de restaurants en s'infiltrant sur les réseaux locaux. Beaucoup de petites structures (boulangerie, cabinet médical, bureau) n'ont aucune protection, et payer une cybersécurité est hors budget. L'idée : un objet qui imite une machine vulnérable, laisse croire aux intrus qu'ils entrent, enregistre comment ils s'y prennent, et apprend à les reconnaître. On peut même lui demander de couper physiquement l'accès d'un appareil louche.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "le boulanger voit sa petite lumière clignoter un matin et comprend que quelqu'un a essayé de passer par le réseau de la caisse hier soir. Ou : le médecin reçoit une alerte quand un appareil inconnu s'est connecté trois fois de suite en une heure, sans qu'il ait eu besoin de comprendre la technique utilisée.",
+    "Pour qui": "un artisan ou une petite structure qui a déjà été piratée une fois et ne peut pas payer de service.",
+    "D'où ça vient": "« Port 0: The Port That Does Not Exist ».",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Les honeypots sont un domaine mature (T-Pot, Cowrie, Thinkst Canary en appliance plug-and-play), mais l'angle \"boîtier grand public pour TPE/PME apprenant les techniques d'intrusion sur WiFi local\" reste peu couvert comme produit dédié.",
+      "LIEN": "https://fr.wikipedia.org/wiki/Honeypot"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "La vanne qui te sauve d'une fuite d'eau",
+    "L'accroche": "un boîtier qui apprend la consommation d'eau normale d'une maison ou d'une exploitation et coupe automatiquement le robinet quand quelque chose ne ressemble plus à rien de normal.",
+    "Le résumé": "les géants du numérique dépensent des fortunes pour refroidir leurs serveurs et l'eau devient un sujet aussi stratégique que l'électricité. Pendant ce temps, une fuite non détectée dans un jardin ou une cave peut coûter cher, surtout quand on est loin. On construit un petit appareil qui écoute le débit au fil des jours, apprend les habitudes (la douche du matin, le lave-vaisselle du soir, l'arrosage du dimanche) et ferme une vanne dès qu'une fuite ressemble à une fuite. Il prévient aussi la personne sur son téléphone.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "la maraîchère reçoit un message à 6 h du matin en plein marché et voit que la vanne principale s'est refermée toute seule, parce que son tuyau d'irrigation avait éclaté cette nuit. Ou : le propriétaire d'une résidence secondaire apprend par un message qu'une fuite a été stoppée dans sa buanderie un jour où il était à 500 km de là.",
+    "Pour qui": "une personne qui a une cave, un jardin ou une deuxième maison loin de chez elle.",
+    "D'où ça vient": "« Google has acquired Crusoe's data center site in southeast Wyoming ».",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "Des vannes anti-fuite à coupure automatique et des systèmes connectés apprenant les habitudes de consommation (Flo by Moen, Phyn, StreamLabs) sont déjà commercialisés, et des tutoriels DIY à base de vanne motorisée existent.",
+      "LIEN": "https://generateur-eau.com/77-vannes-anti-fuite-d-eau"
+    },
+    "jour": "2026-11-07"
+  },
+  {
     "titre": "La batterie qui prévient qu'elle va lâcher",
     "L'accroche": "Un petit boîtier branché sur une batterie apprend à connaître son comportement et annonce, avant tout le monde, quand elle va faiblir.",
     "Le résumé": "Les nouvelles batteries au sodium arrivent enfin à un prix comparable aux classiques, mais on ne sait pas encore bien prévoir leur usure réelle dans une cave ou un vélo, hors laboratoire. Un boîtier qui surveille en permanence ce qui entre et sort d'une batterie pourrait apprendre son comportement et signaler une dégradation imminente, sans matériel de mesure professionnel. C'est le moment parce que ces batteries deviennent accessibles à petit budget et que l'analyse en temps réel tient désormais sur une puce bon marché. L'idée intéresse autant les particuliers qui vivent partiellement hors réseau que les réparateurs qui récupèrent des packs usagés.",
