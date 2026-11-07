@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le boîtier qui connaît les habitudes de la maison",
+    "L'accroche": "Un petit boîtier apprend le rythme normal d'un logement et prévient quand quelque chose sort de l'ordinaire.",
+    "Le résumé": "Les objets personnels savent de plus en plus reconnaître des situations, comme le montre une actualité récente sur un classement familial caché dans les ordinateurs Apple. L'idée est de mettre cette intelligence directement dans un boîtier indépendant, sans envoyer la vie privée sur Internet. Il observe des signaux simples d'une maison et repère les changements inquiétants. C'est le moment car les capteurs et les petits ordinateurs sont devenus bon marché. Le prototype agit : il alerte localement ou allume un témoin.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Une personne âgée vit seule ; le matin, son proche voit sur le boîtier que la cuisine ne s'est pas allumée à l'heure habituelle. Un étudiant parti en week-end reçoit une alerte locale parce qu'une porte est restée ouverte plus longtemps que d'habitude.",
+    "Pour qui": "Une personne âgée vivant seule et le proche qui l'accompagne au quotidien.",
+    "D'où ça vient": "Every Mac comes with an (undocumented) family member classifier",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des produits et recherches sur la détection d’anomalies dans l’habitat connecté existent, mais pas exactement un boîtier autonome apprenant le rythme domestique et alertant sur l’inhabituel.",
+      "LIEN": "https://www.ffdomotique.org/petit-boitier-connecte-facture-electricite/"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "Le gardien du petit réseau",
+    "L'accroche": "Un boîtier branché sur un petit réseau repère quand un objet connecté se comporte bizarrement et coupe le lien avant que ça dégénère.",
+    "Le résumé": "Une actualité récente montre qu'il existe encore des chemins réseau invisibles et surprenants. Dans une maison ou un petit atelier, les objets connectés parlent sans arrêt, et un comportement étrange passe souvent inaperçu. Le projet consiste à apprendre le fonctionnement normal de ce petit réseau puis à réagir tout de suite quand quelque chose sort du cadre. Le prototype agit : il alerte et peut isoler l'objet suspect.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Un artisan voit le soir qu'une caméra de son atelier a essayé de parler à un serveur inconnu, et le boîtier coupe sa connexion. Une famille est prévenue quand l'imprimante se réveille à trois heures du matin et envoie des données.",
+    "Pour qui": "Un petit commerce ou une famille qui a quelques objets connectés et veut garder la main.",
+    "D'où ça vient": "Port 0: The Port That Does Not Exist",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des box de sécurité IoT commerciales (Firewalla, Bitdefender Box, Cujo) et des outils open source (IoT Inspector, Suricata/Zeek) détectent déjà des comportements anormaux et peuvent bloquer ou isoler un objet connecté, même si le nom exact \"gardien du petit réseau\" n'existe pas.",
+      "LIEN": "https://firewalla.com/"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "Le veilleur qui entend la fatigue d'une machine",
+    "L'accroche": "Un petit boîtier écoute une machine travailler et prévient avant qu'elle ne casse.",
+    "Le résumé": "Les petits ordinateurs à très bas prix rendent possible l'écoute intelligente d'une machine sans passer par Internet, comme le rappelle une actualité sur un ordinateur à huit dollars. Une pompe, un ventilateur ou une imprimante fait toujours un bruit un peu différent quand elle s'use. Le projet apprend ce bruit normal puis repère les écarts avant la panne. Le prototype agit : il alerte et peut arrêter la machine à temps.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le responsable d'un petit atelier reçoit une alerte avant que sa pompe ne casse en pleine journée. Un imprimeur voit que son imprimante a un bruit bizarre et l'arrête à distance avant d'abîmer la pièce en cours.",
+    "Pour qui": "Un petit atelier ou un FabLab qui ne peut pas surveiller ses machines en permanence.",
+    "D'où ça vient": "The $8 Linux Computer (2022)",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-07"
+  },
+  {
     "titre": "La veille qui apprend les habitudes de mamie",
     "L'accroche": "une petite boîte posée dans le salon qui apprend en silence la routine d'une personne âgée et prévient la famille quand quelque chose cloche.",
     "Le résumé": "Apple a récemment montré que ses ordinateurs savent déjà deviner qui est qui dans votre entourage sans envoyer vos données sur Internet. On reprend cette idée pour la maison : un appareil discret observe les allées et venues, apprend la routine de la personne qui vit là, et alerte un proche si d'un coup elle ne se lève plus, ne passe plus par la cuisine ou reste trop longtemps immobile. Aucune caméra, aucune image, aucun abonnement : tout se passe dans la boîte. Avec le vieillissement de la population et le prix des maisons de retraite, c'est le bon moment.",
