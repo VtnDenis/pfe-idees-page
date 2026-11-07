@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le faux frigo qui piège les pirates",
+    "L'accroche": "Un petit boîtier se fait passer pour le contrôleur d'un frigo de supermarché afin d'attirer les pirates et d'apprendre de leurs attaques.",
+    "Le résumé": "Beaucoup d'équipements industriels du froid sont aujourd'hui reliés à Internet sans grande protection. Des chercheurs viennent de montrer qu'un faux contrôleur, imitant un frigo de supermarché, peut attirer les attaquants et permettre de les observer à loisir. C'est le moment parce que les attaques contre les bâtiments connectés explosent, et parce que le matériel nécessaire tient dans la poche et coûte le prix d'un livre. L'objet réagit en temps réel quand on le touche, et trie automatiquement les tentatives reçues pour les rendre lisibles.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le gérant d'une PME du froid rentre le lundi et voit, sur son tableau de bord, une carte des attaques qui ont visé son faux frigo durant le week-end, avec les régions du monde d'où elles viennent. En cours de cybersécurité, un étudiant lance une manœuvre depuis le fond de la salle ; le faux frigo s'allume en rouge et lui explique en clair, sur un petit écran, ce qu'il vient de tenter.",
+    "Pour qui": "Une petite équipe sécurité industrielle, ou un enseignant de cybersécurité qui veut un banc d'observation réaliste sans risquer le vrai matériel de l'usine.",
+    "D'où ça vient": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Les résultats documentent des frigos connectés piratés (Danfoss/Dixell) et la faille OT, mais pas un boîtier-leurre “faux contrôleur de frigo” abouti.",
+      "LIEN": "https://tech-insider.org/fr/cyberattaque-frigos-danfoss-systemes-obsoletes-2026/"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "L'objet qui comprend la maison sans l'écouter",
+    "L'accroche": "Un petit boîtier reconnaît les situations du quotidien — une porte, une machine, un proche qui rentre — sans jamais envoyer une seule donnée à l'extérieur.",
+    "Le résumé": "Les téléphones récents savent déjà reconnaître des personnes à partir de petites habitudes, sans passer par Internet. La même idée peut sortir du téléphone : un objet bon marché qui apprend à distinguer les bruits et les présences d'un logement, et qui prend ses décisions sur place. C'est le moment parce que la puissance de calcul embarquée a beaucoup progressé et que la défiance envers les objets connectés qui parlent au cloud est à son maximum. Le boîtier réagit en direct et n'enregistre jamais la voix de personne.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Une personne âgée qui vit seule a un boîtier posé sur la commode ; si la bouilloire siffle et qu'aucun mouvement ne suit pendant dix minutes, son fils reçoit une alerte sur son téléphone, sans avoir jamais vu une seconde d'audio. Dans une maison de vacances, le boîtier distingue la porte d'entrée du lave-vaisselle et affiche sur son petit écran « quelqu'un est rentré à 18 h 42 », sans rien diffuser au-dehors.",
+    "Pour qui": "Une famille qui veut veiller sur un proche à distance sans installer de caméra ni de micro relié à Internet.",
+    "D'où ça vient": "Every Mac comes with an (undocumented) family member classifier",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "La boîte qui compte les foules sans caméra",
+    "L'accroche": "Une petite boîte bon marché estime en temps réel si la rue est calme, dense ou saturée, sans caméra et sans la moindre image.",
+    "Le résumé": "Compter une foule est essentiel pour la sécurité, mais les caméras coûtent cher et filment tout le monde, ce que beaucoup refusent. Une boîte de la taille d'une main peut percevoir sons et chaleur et apprendre à reconnaître les différents niveaux d'affluence selon ces signaux. C'est le moment parce que les grands rassemblements se multiplient et que les solutions de comptage respectueuses de la vie privée manquent. Le boîtier mesure en continu, directement sur place, et n'envoie qu'un niveau de densité — jamais un enregistrement.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Aux abords d'une grande manifestation, un organisateur voit sur son téléphone que la rue à droite est déjà saturée et redirige les groupes vers une autre avenue. Le régisseur d'un marché de Noël sait, heure par heure, quelles allées sont bondées et lesquelles restent calmes, sans avoir installé une seule caméra.",
+    "Pour qui": "Un responsable sécurité d'événement ou une mairie qui doit organiser des rassemblements sans filmer les gens.",
+    "D'où ça vient": "Revivez les manifestations du 7 novembre : 146 000 personnes ont défilé dans le calme en France, selon le ministère de l’intérieur, 250 000, selon l’intersyndicale de la jeunesse",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des compteurs de personnes sans caméra existent (Wi‑Fi, PIR, laser), mais aucun ne décrit exactement une boîte bon marché combinant sons et chaleur pour estimer la densité de foule.",
+      "LIEN": "https://bumbeelabs.com/fr/analyses/compter-sans-cameras/"
+    },
+    "jour": "2026-11-07"
+  },
+  {
     "titre": "Le boîtier qui connaît les habitudes de la maison",
     "L'accroche": "Un petit boîtier apprend le rythme normal d'un logement et prévient quand quelque chose sort de l'ordinaire.",
     "Le résumé": "Les objets personnels savent de plus en plus reconnaître des situations, comme le montre une actualité récente sur un classement familial caché dans les ordinateurs Apple. L'idée est de mettre cette intelligence directement dans un boîtier indépendant, sans envoyer la vie privée sur Internet. Il observe des signaux simples d'une maison et repère les changements inquiétants. C'est le moment car les capteurs et les petits ordinateurs sont devenus bon marché. Le prototype agit : il alerte localement ou allume un témoin.",
