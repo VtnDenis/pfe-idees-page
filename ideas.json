@@ -1,5 +1,50 @@
 [
   {
+    "titre": "L'espion de la santé des batteries",
+    "L'accroche": "Un petit boîtier qui surveille une batterie pendant qu'elle se décharge, apprend à reconnaître son vieillissement et prévient avant qu'elle ne lâche.",
+    "Le résumé": "On nous annonce aujourd'hui des batteries au sodium capables de tenir des décennies, tant mieux, mais comment savoir si celle qu'on a chez soi tient vraiment ses promesses ? Les packs de vélos électriques, de panneaux solaires ou de petits engins meurent souvent sans prévenir, et leur remplacement coûte cher. Ce projet fait parler une batterie : on la sollicite, on observe comment elle réagit, et un modèle apprend à prédire combien de cycles utiles il lui reste. C'est le moment parce que les batteries se multiplient partout et que personne n'a d'outil simple pour savoir où en est la sienne.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "Cas d'usage": "Le réparateur de vélos électriques inspecte un pack d'occasion en deux minutes et sait s'il peut le revendre sans risque. Le propriétaire d'une petite installation solaire voit depuis son téléphone qu'une de ses batteries va faiblir avant l'hiver.",
+    "Pour qui": "Un réparateur de vélos électriques ou un installateur solaire indépendant.",
+    "D'où ça vient": "*CATL Sodium Battery Hits LFP Cost Parity in 2026: 15,000 Cycles, 30-Year Life* — https://ievchina.com/energy-storage/catl-sodium-battery-cost-parity-lfp-2026-15000-cycles/",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des recherches et projets de diagnostic du SoH (EDF, DIAGBAT) et des moniteurs de batterie existent, mais pas exactement un boîtier grand public qui apprend le vieillissement pendant la décharge pour prédire la défaillance.",
+      "LIEN": "https://www.crittm2a.com/fr/diagbat-diagnostic-etat-sante-batteries/"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "La sentinelle du terminal de paiement",
+    "L'accroche": "Un petit boîtier posé dans un commerce qui écoute le réseau et allume un voyant rouge dès qu'un terminal de paiement se comporte bizarrement.",
+    "Le résumé": "Une campagne récente de piratage a visé les terminaux de paiement dans des restaurants, aspirant discrètement les données de carte bancaire des clients. Les grandes enseignes ont des outils, les petits commerces non. Ce projet construit une sentinelle locale qui observe les échanges sur le réseau du commerce et repère, grâce à un modèle entraîné sur des comportements normaux, les moments où le terminal se met à communiquer d'une manière inhabituelle. C'est le moment parce que ces attaques ciblent de plus en plus les petites structures qui n'ont aucune défense.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "Cas d'usage": "Le gérant d'un restaurant voit son boîtier clignoter en rouge un samedi soir alors qu'aucune caisse n'est censée fonctionner. Un client passe sa carte l'esprit tranquille parce que la sentinelle aurait coupé la communication suspecte avant tout vol.",
+    "Pour qui": "Un restaurateur ou un gérant de petit commerce.",
+    "D'où ça vient": "*Restaurant Delivery Payment-Skimming Campaign* — https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Aucun produit ne cible exactement la détection d'anomalies d'un TPE par un boîtier à voyant pour petits commerces, mais des briques existent séparément : appliances réseau grand public/PME à alertes type Firewalla ou Bitdefender Box, et travaux sur la détection de malwares POS (memory scraping, exfiltration réseau) côté recherche/PCI.",
+      "LIEN": "https://firewalla.com"
+    },
+    "jour": "2026-11-07"
+  },
+  {
+    "titre": "La pince souple qui sait ce qu'elle attrape",
+    "L'accroche": "Une petite pince flexible qui se déforme pour épouser des objets fragiles et qui, en les touchant, devine à quoi elle a affaire.",
+    "Le résumé": "Les pieuvres se glissent dans des espaces minuscules parce que leur corps s'adapte au lieu de forcer. Cette idée inspire un bras qui, au lieu de serrer fort, épouse la forme des objets et apprend à les reconnaître au contact. Ça règle un problème concret : les robots classiques écrasent les tomates, cassent les œufs, abîment les colis fragiles. C'est le moment parce que les matériaux souples et les capteurs de contact bon marché rendent cette idée enfin accessible à un projet étudiant.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "Cas d'usage": "Dans une serre, un petit bras attrape une tomate mûre sans l'écraser et la dépose dans une cagette. Un préparateur de commandes voit sa pince s'ajuster toute seule quand il lui tend un objet qu'elle n'a jamais vu.",
+    "Pour qui": "Un maraîcher qui conditionne des fruits fragiles ou un préparateur de colis.",
+    "D'où ça vient": "*How octopuses squeeze through too small gaps* — https://journals.biologists.com/jeb/article/229/21/jeb253615/373332/How-octopuses-squeeze-through-too-small-gaps",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "EleTac, pince souple bio-inspirée de la trompe d'éléphant, combine déjà préhension déformable et perception tactile sophistiquée, mais la reconnaissance d'objets par le contact n'est pas explicitement confirmée.",
+      "LIEN": "https://embodiedglobal.com/fr/article/eletac-elephant-inspired-soft-tactile-gripper-delicate-manipulation"
+    },
+    "jour": "2026-11-07"
+  },
+  {
     "titre": "Le garde-feu",
     "L'accroche": "Un petit boîtier autonome posé dans la nature qui sent un départ de feu avant qu'on ne le voie et prévient les secours.",
     "Le résumé": "Les satellites météo européens publient désormais des images très nettes du territoire plusieurs fois par jour. Mais entre deux passages, un feu peut couver sans que personne ne s'en aperçoive. Ce projet propose un capteur bon marché installé dans les zones à risque qui surveille en continu et croise ce qu'il voit avec les images satellites gratuites. Il alerte alors les habitants et les secours plusieurs minutes avant que la fumée ne soit visible à l'œil nu.",
