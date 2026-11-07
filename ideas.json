@@ -1,5 +1,20 @@
 [
   {
+    "titre": "Le compagnon qui surveille tes yeux",
+    "L'accroche": "Une petite caméra posée sur le bureau qui voit si tu clignes assez les yeux, te prévient avant la fatigue et fonctionne sans Internet.",
+    "Le résumé": "On passe des heures devant un écran sans penser à ses yeux, et le mal de tête arrive avant qu'on ne s'en rende compte. Un site vient de proposer un compagnon hors ligne pour surveiller son rythme de clignement, mais c'est une simple application sur l'ordinateur. L'idée : un boîtier autonome avec caméra qui observe le visage, apprend à repérer la fatigue en temps réel et te rappelle de faire une pause — le tout en local, sans rien envoyer nulle part. C'est le moment car la reconnaissance visuelle tient désormais dans un objet de bureau peu coûteux.",
+    "Faisable ?": "oui, avec un petit ordinateur, une caméra simple et un peu de bricolage.",
+    "Cas d'usage": "Un développeur qui code la nuit reçoit un petit signal « pause » avant que la migraine ne l'écrase. / Une étudiante qui rédige son mémoire voit son boîtier lui rappeler de regarder au loin toutes les vingt minutes, sans rien installer sur son ordinateur.",
+    "Pour qui": "Un télétravailleur qui passe ses journées entières devant son écran.",
+    "D'où ça vient": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "La détection de clignements/fatigue par webcam est très documentée (tutoriels et dépôts OpenCV/dlib, systèmes de détection de somnolence) et le lien clignement-fatigue oculaire est étudié, mais aucun produit grand public hors ligne dédié à ce compagnon de bureau n'a été identifié.",
+      "LIEN": "https://pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/"
+    },
+    "jour": "2026-11-08"
+  },
+  {
     "titre": "Le faux frigo qui piège les pirates",
     "L'accroche": "Un petit boîtier se fait passer pour le contrôleur d'un frigo de supermarché afin d'attirer les pirates et d'apprendre de leurs attaques.",
     "Le résumé": "Beaucoup d'équipements industriels du froid sont aujourd'hui reliés à Internet sans grande protection. Des chercheurs viennent de montrer qu'un faux contrôleur, imitant un frigo de supermarché, peut attirer les attaquants et permettre de les observer à loisir. C'est le moment parce que les attaques contre les bâtiments connectés explosent, et parce que le matériel nécessaire tient dans la poche et coûte le prix d'un livre. L'objet réagit en temps réel quand on le touche, et trie automatiquement les tentatives reçues pour les rendre lisibles.",
