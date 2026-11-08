@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le faux frigo qui apprend les attaques",
+    "L'accroche": "Un petit boîtier se fait passer pour le contrôleur d'une chambre froide de supermarché et apprend à reconnaître les visiteurs malveillants.",
+    "Le résumé": "L'idée vient d'un leurre qui imite un équipement de supermarché pour attirer les attaquants. Beaucoup de petits commerces et d'ateliers ont des objets connectés sans personne pour surveiller les attaques. Le boîtier attire les curieux, observe leurs manières d'agir et signale celles qui sortent de l'ordinaire. C'est le moment parce que ces objets se multiplient et que les attaques sont souvent automatisées.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le gérant d'un petit supermarché voit le matin que son boîtier leurre a repéré un scan venu d'Internet et l'a classé comme inhabituel. Un étudiant branche le leurre sur le réseau du labo et voit en direct les tentatives se regrouper en familles.",
+    "Pour qui": "Le responsable informatique d'une PME industrielle ou d'un commerce qui veut voir les attaques sans budget.",
+    "D'où ça vient": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "Le lecteur de poche qui apprend à rendre le texte lisible",
+    "L'accroche": "Un petit appareil transforme n'importe quel texte en affichage géant et net, et apprend le confort de lecture de son utilisateur.",
+    "Le résumé": "L'actualité montre qu'on peut afficher du texte fin sur des écrans minuscules et peu puissants. Le problème, c'est que beaucoup de gens doivent lire des notices ou des étiquettes sur un écran trop petit, dans une lumière mauvaise. L'appareil prend le texte, le remet en page pour l'écran et retient les corrections de son utilisateur pour choisir la taille et le contraste. C'est le moment parce que les petits écrans deviennent courants et que l'on veut éviter d'envoyer des images personnelles au cloud.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Une personne malvoyante pose son lecteur sur une notice de médicament et voit le texte s'afficher gros et net instantanément. Dans une cave, un technicien lit une étiquette sans sortir son téléphone, et l'appareil adapte le contraste à la pénombre.",
+    "Pour qui": "Une personne âgée ou malvoyante, ou un technicien qui travaille dans des endroits sombres.",
+    "D'où ça vient": "JIT bitmap text rendering for microcontrollers",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "La photo électrique qui trie les objets",
+    "L'accroche": "Un petit appareil prend des photos de décharges électriques autour d'un objet et apprend à reconnaître ce qui est sec, humide ou abîmé.",
+    "Le résumé": "L'idée vient d'un montage de photographie Kirlian expliqué pas à pas. Sur une surface, une décharge électrique change d'aspect selon l'humidité, la matière ou les défauts. L'appareil déclenche la décharge au bon moment, prend l'image et apprend à classer ces motifs pour aider à trier des objets. C'est le moment parce que ce type de montage est devenu accessible et que la vision par ordinateur peut tourner sur du petit matériel.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel, en respectant les règles de sécurité.",
+    "Cas d'usage": "Un maraîcher pose une feuille de salade et l'appareil signale une zone plus humide que les autres avant le conditionnement. Un artisan bijoutier voit qu'une pièce laisse une couronne électrique différente et décide de la contrôler de plus près.",
+    "Pour qui": "Un artisan ou un petit producteur qui veut un premier contrôle visuel sans laboratoire.",
+    "D'où ça vient": "Kirlian Photography: Building Your Own Equipment",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "Les résultats trouvés concernent l’effet photoélectrique ou des capteurs photoélectriques industriels, pas un dispositif à décharge type Kirlian couplé à l’IA pour trier des objets selon humidité/matière/défauts.",
+      "LIEN": "https://xunersensor.com/fr/overview-of-photoelectric-sensors/"
+    },
+    "jour": "2026-11-08"
+  },
+  {
     "titre": "Le frigo leurre",
     "L'accroche": "Un contrôleur de froid qui fait semblant d’être une cible facile et prévient quand quelqu’un essaie de le pirater.",
     "Le résumé": "L’idée part d’un leurre récent imitant le contrôleur d’un frigo de supermarché. Un petit commerce a besoin de savoir si quelqu’un teste son installation de froid, souvent sans y prêter attention. Le boîtier régule une température simple, note les visites suspectes et repère les comportements qui ne ressemblent pas à un usage normal. C’est le moment parce qu’un objet peu coûteux peut déjà surveiller et réagir sur place.",
