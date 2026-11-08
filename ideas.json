@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le frigo leurre",
+    "L'accroche": "Un contrôleur de froid qui fait semblant d’être une cible facile et prévient quand quelqu’un essaie de le pirater.",
+    "Le résumé": "L’idée part d’un leurre récent imitant le contrôleur d’un frigo de supermarché. Un petit commerce a besoin de savoir si quelqu’un teste son installation de froid, souvent sans y prêter attention. Le boîtier régule une température simple, note les visites suspectes et repère les comportements qui ne ressemblent pas à un usage normal. C’est le moment parce qu’un objet peu coûteux peut déjà surveiller et réagir sur place.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Le gérant d’une supérette voit à 3 h du matin qu’un inconnu essaie de changer la température de sa chambre froide, depuis son téléphone. Un étudiant branche le boîtier sur le réseau du labo et reçoit une alerte quand un robot automatique le prend pour une cible.",
+    "Pour qui": "Le responsable technique d’un petit commerce ou d’une chambre froide qui ne peut pas payer une surveillance permanente.",
+    "D'où ça vient": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des honeypots OT/ICS génériques existent, mais aucun produit, projet open source, article ou startup identifié ne cible spécifiquement un faux contrôleur de froid de supermarché pour petit commerce.",
+      "LIEN": "https://github.com/mushorg/conpot"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "L’oreille des machines",
+    "L'accroche": "Un petit boîtier écoute les bruits d’une machine et prévient quand elle commence à faire un bruit anormal.",
+    "Le résumé": "L’idée vient d’un article qui montre qu’un tout petit ordinateur suffit à faire tourner des services utiles chez soi. Beaucoup de pannes de machines s’entendent avant de se voir, mais personne n’est là pour écouter en permanence. Le boîtier apprend les bruits normaux d’un appareil, puis signale ceux qui sortent de l’ordinaire. C’est faisable maintenant parce que les micros et les petits boîtiers sont courants et peu chers.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Le boulanger entend à 5 h que son four fait un bruit de roulement fatigué avant la panne. Le gardien d’un parking voit sur son téléphone qu’une pompe se met à siffler.",
+    "Pour qui": "Un artisan ou un petit service de maintenance qui n’a pas d’équipe pour surveiller ses machines jour et nuit.",
+    "D'où ça vient": "What I run on my $10 USD OpenStick homelab",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "L’assistant de poche sans Internet",
+    "L'accroche": "Un petit boîtier qui reconnaît quelques consignes vocales et répond sur place, sans envoyer vos paroles à un serveur.",
+    "Le résumé": "L’actualité montre qu’un modèle très lourd peut tourner sur une machine modeste, sans carte graphique. On veut en garder l’esprit pour un objet simple : comprendre quelques phrases utiles et répondre ou agir tout de suite. Le problème est que beaucoup d’assistants dépendent d’Internet et envoient la voix ailleurs. C’est le moment parce que les petites voix enregistrées et les modèles compacts deviennent accessibles à un projet étudiant.",
+    "Faisable ?": "oui, avec quelques dizaines d’euros de matériel.",
+    "Cas d'usage": "Une aide-soignante dit « note : patient a bu » dans un couloir sans réseau et le boîtier confirme. Un jardinier, les mains dans la terre, dit « arrose dans vingt minutes » et le boîtier allume la pompe.",
+    "Pour qui": "Une personne qui travaille dans une zone sans réseau ou qui ne veut pas que sa voix parte sur Internet.",
+    "D'où ça vient": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des assistants LLM hors-ligne sur smartphone (PocketPal AI) et des RAG locaux (Ollama) existent déjà, mais l'idée d'un boîtier dédié à commandes vocales restreintes sans GPU reste surtout couverte par des projets DIY type Rhasspy, pas un produit fini.",
+      "LIEN": "https://docteurmeta.substack.com/p/une-ia-dans-ta-poche-sans-internet"
+    },
+    "jour": "2026-11-08"
+  },
+  {
     "titre": "Le leurre qui fait semblant d'être un frigo connecté",
     "L'accroche": "Un petit boîtier qui joue le rôle d'un appareil industriel mal protégé pour attirer les pirates et apprendre leurs méthodes.",
     "Le résumé": "Les objets connectés mal protégés sont devenus la porte d'entrée préférée des attaquants. Un projet récent vient de montrer qu'un simple boîtier imitant un contrôleur de frigo de supermarché suffit à piéger des intrus. L'idée est de construire cet appareil leurre, de le laisser se faire attaquer, et d'apprendre automatiquement les schémas d'intrusion pour prévenir les vrais risques. C'est utile maintenant car les petites entreprises s'équipent en capteurs connectés sans avoir personne pour les surveiller.",
