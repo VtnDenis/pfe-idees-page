@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Un nez citoyen autour des data centers",
+    "L'accroche": "Un petit boîtier autonome posé près des centres de données pour mesurer objectivement ce qu'on ressent autour d'eux — bruit, chaleur, poussière — et savoir si les plaintes des riverains sont fondées.",
+    "Le résumé": "Partout en Europe, des habitants manifestent contre la construction de nouveaux centres de données et demandent un moratoire. Le problème, c'est qu'aujourd'hui les riverains n'ont que leurs impressions à opposer aux exploitants. Ce boîtier relève en continu ce qui se passe sur le terrain et repère de lui-même les épisodes anormaux. Il donne enfin une preuve chiffrée aux débats locaux.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "Cas d'usage": "Un habitant voit sur son téléphone que sa nuit a été anormalement bruyante et chaude à côté du site, avec l'heure exacte du pic. Une association dépose trois boîtiers dans trois quartiers et compare ce que chacun a vécu sur un été entier.",
+    "Pour qui": "Un collectif d'habitants ou une association environnementale qui veut des faits, pas des ressentis.",
+    "D'où ça vient": "« La contestation contre les data centers monte en Europe »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des mobilisations et enquêtes citoyennes sur les nuisances des data centers existent, mais aucun boîtier autonome dédié mesurant bruit, chaleur et poussière n’est identifié.",
+      "LIEN": "https://www.terrestres.org/2026/11/02/tout-le-monde-deteste-les-data-centers-et-lia/"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "Le détecteur de mouchards publicitaires",
+    "L'accroche": "Un petit objet qu'on garde sur soi et qui prévient quand quelque chose dans l'environnement essaie de reconnaître ou de suivre son téléphone.",
+    "Le résumé": "Une enquête récente a montré que les données publicitaires collectées par des applications courantes servent aussi, en pratique, à la police pour pister des gens. Le grand public commence seulement à comprendre que son téléphone parle à des inconnus toute la journée. Ce boîtier écoute autour de lui et prévient son porteur quand quelque chose d'inhabituel se passe. Il rend visible ce qui était totalement invisible.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "Cas d'usage": "Dans un centre commercial, l'objet vibre parce qu'une borne essaie de reconnaître votre téléphone, et il enregistre l'heure. Un particulier pose son détecteur dans son salon et découvre qu'une application de son téléphone scanne sans arrêt pendant qu'il dort.",
+    "Pour qui": "Un particulier soucieux de sa vie privée qui veut une preuve tangible, pas un article de blog.",
+    "D'où ça vient": "« Ads in Popular Apps Give Police a Powerful Tool to Spy on Users »",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Les résultats montrent des détecteurs RF anti-espion et des articles sur le ciblage publicitaire, mais aucun produit ou projet open source identifié ne correspond exactement à un objet portable prévenant qu’un dispositif tiers reconnaît ou suit son téléphone.",
+      "LIEN": "https://www.01net.com/actualites/mouchards-publicitaires-comment-les-teles-connectees-espionnent-les-foyers-1486168.html"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "La sentinelle du microclimat de quartier",
+    "L'accroche": "Un boîtier autonome qui surveille le climat d'un bout de terrain et prévient avant que la gelée, la canicule ou le coup de vent n'aient fait des dégâts.",
+    "Le résumé": "La conférence mondiale sur le climat qui s'ouvre à Antalya rappelle que les grands accords ne remplacent pas l'action locale. Or la météo officielle reste générale : elle parle d'un département, pas de votre serre ou de votre terrain de sport. Ce boîtier apprend le microclimat d'un lieu précis et n'alerte que quand un vrai épisode dangereux s'annonce. Il transforme un bout de terrain banal en zone surveillée.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant.",
+    "Cas d'usage": "À 6 h du matin, le maraîcher voit sur son téléphone que sa serre a gelé cette nuit, avant que les plants ne soient perdus. Le responsable d'un club de sport sait une heure à l'avance que l'orage va frapper son terrain, et pas celui d'à côté.",
+    "Pour qui": "Un petit producteur ou une association locale qui n'a pas les moyens d'un service professionnel de météo hyper-locale.",
+    "D'où ça vient": "« En Turquie, la COP31 vise à remettre le climat en haut de l’agenda, dans un monde percuté par les crises »",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-08"
+  },
+  {
     "titre": "L'oreille du quartier",
     "L'accroche": "Un petit boîtier posé près d'un site qui écoute son ronronnement et prend sa température, et qui dit tout seul, sans internet, si ça sent le centre de données qui tourne à plein régime.",
     "Le résumé": "Un peu partout en Europe, des habitants se plaignent de la construction de nouveaux centres de données, sans avoir de preuves locales à montrer. On propose un objet à poser dans un jardin ou sur un balcon qui repère les signes typiques (ronronnement continu, chaleur, air sec) et qui juge sur place si l'on est en train de vivre à côté d'une salle de serveurs. Toute la petite intelligence tourne dans le boîtier, donc aucun son ni aucune mesure ne partent sur un serveur. C'est le moment parce que le débat sur l'impact local de ces bâtiments s'intensifie partout en Europe.",
