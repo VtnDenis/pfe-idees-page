@@ -1,5 +1,50 @@
 [
   {
+    "titre": "L'oreille du quartier",
+    "L'accroche": "Un petit boîtier posé près d'un site qui écoute son ronronnement et prend sa température, et qui dit tout seul, sans internet, si ça sent le centre de données qui tourne à plein régime.",
+    "Le résumé": "Un peu partout en Europe, des habitants se plaignent de la construction de nouveaux centres de données, sans avoir de preuves locales à montrer. On propose un objet à poser dans un jardin ou sur un balcon qui repère les signes typiques (ronronnement continu, chaleur, air sec) et qui juge sur place si l'on est en train de vivre à côté d'une salle de serveurs. Toute la petite intelligence tourne dans le boîtier, donc aucun son ni aucune mesure ne partent sur un serveur. C'est le moment parce que le débat sur l'impact local de ces bâtiments s'intensifie partout en Europe.",
+    "Faisable ?": "oui, avec quelques dizaines d'euros de capteurs et une carte d'entrée de gamme.",
+    "Cas d'usage": "- Une riveraine installe le boîtier contre sa clôture et, au petit matin, voit sur son téléphone si le ronronnement de la nuit ressemblait à celui d'une salle de serveurs. - Lors d'une réunion publique, une association ressort le boîtier et affiche en direct les relevés de la semaine, sans qu'aucune donnée n'ait quitté la salle.",
+    "Pour qui": "une association de riverains ou un élu local qui veut documenter le bruit et la chaleur d'un site sans dépendre d'un prestataire.",
+    "D'où ça vient": "« La contestation contre les data centers monte en Europe » — https://www.lemonde.fr/economie/article/2026/11/08/la-contestation-contre-les-data-centers-monte-en-europe_6808448_3234.html",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des réseaux de capteurs sonores citoyens et des études sur le bruit des centres de données existent, mais aucun boîtier autonome sans internet combinant acoustique et température pour détecter un centre de données ne correspond.",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "Le portier du foyer",
+    "L'accroche": "Un petit boîtier posé à côté de la box qui surveille ce qui entre et sort de la maison, apprend le comportement habituel, et fait sonner une alerte quand un appareil se met à faire quelque chose de bizarre.",
+    "Le résumé": "Les foyers ont de plus en plus d'objets connectés et presque personne ne regarde vraiment avec qui ils parlent sur internet. Un compagnon posé près du routeur observe les échanges, apprend le rythme normal, et prévient uniquement quand quelque chose sort de l'ordinaire. Tout se passe à la maison, sans envoyer les échanges de la famille chez un géant du web. Le moment est opportun parce que ce type d'outil, jusqu'ici réservé aux experts, devient grand public.",
+    "Faisable ?": "oui, avec un mini-ordinateur et un peu de matériel.",
+    "Cas d'usage": "- Une famille découvre qu'un jouet connecté du salon discute tous les soirs avec un serveur qu'elle n'a jamais autorisé. - Une personne isolée reçoit une alerte en pleine nuit parce qu'un vieil appareil oublié tente d'envoyer des fichiers à l'extérieur.",
+    "Pour qui": "une famille avec pas mal d'objets connectés qui veut garder la main sans devenir experte.",
+    "D'où ça vient": "« A Little Snitch for Windows » — https://packethound.app/",
+    "verdict": {
+      "VERDICT": "EXISTE",
+      "RAISON": "Des boîtiers comme Firewalla, Fingbox, CUJO AI ou Bitdefender Box surveillent déjà le trafic du foyer, apprennent les appareils et alertent sur des comportements anormaux.",
+      "LIEN": "https://firewalla.com/"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "La mémoire des habitudes",
+    "L'accroche": "Un petit dispositif qui apprend le rythme de vie d'une personne âgée chez elle et qui prévient un proche quand la semaine ressemble trop peu aux précédentes.",
+    "Le résumé": "Des chercheurs ont montré qu'on peut résumer les habitudes d'une personne sous une forme compacte, comme une carte de vie. On propose d'appliquer cette idée à un logement : quelques capteurs simples notent les passages, et le dispositif apprend le rythme habituel de la maisonnée. Si une semaine ressemble trop peu aux précédentes, un proche est prévenu sur son téléphone. Tout se passe dans la maison, rien n'est envoyé chez un fournisseur extérieur, et c'est rendu possible aujourd'hui parce que ce type de calcul tient dans un boîtier d'entrée de gamme.",
+    "Faisable ?": "oui avec quelques capteurs de présence et une carte d'entrée de gamme, à condition de limiter le projet à un seul logement et à un seul type de mesure pour tenir dans les dix semaines.",
+    "Cas d'usage": "- Une fille reçoit un message dimanche lui disant que sa mère ne s'est pas levée à son heure habituelle depuis deux jours. - Un voisin est prévenu un soir que la personne âgée d'à côté n'a pas bougé de son fauteuil de la journée alors qu'elle sort d'habitude vers 16 h.",
+    "Pour qui": "un proche aidant qui s'inquiète d'un parent vivant seul et qui ne veut pas d'une caméra chez lui.",
+    "D'où ça vient": "« User Embeddings are Superpositions of Interpretable Behavioral Modes » — https://arxiv.org/abs/2611.08487v1",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-08"
+  },
+  {
     "titre": "Le faux frigo qui apprend les attaques",
     "L'accroche": "Un petit boîtier se fait passer pour le contrôleur d'une chambre froide de supermarché et apprend à reconnaître les visiteurs malveillants.",
     "Le résumé": "L'idée vient d'un leurre qui imite un équipement de supermarché pour attirer les attaquants. Beaucoup de petits commerces et d'ateliers ont des objets connectés sans personne pour surveiller les attaques. Le boîtier attire les curieux, observe leurs manières d'agir et signale celles qui sortent de l'ordinaire. C'est le moment parce que ces objets se multiplient et que les attaques sont souvent automatisées.",
