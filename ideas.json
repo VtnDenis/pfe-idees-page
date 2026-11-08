@@ -1,5 +1,50 @@
 [
   {
+    "titre": "Le leurre qui fait semblant d'être un frigo connecté",
+    "L'accroche": "Un petit boîtier qui joue le rôle d'un appareil industriel mal protégé pour attirer les pirates et apprendre leurs méthodes.",
+    "Le résumé": "Les objets connectés mal protégés sont devenus la porte d'entrée préférée des attaquants. Un projet récent vient de montrer qu'un simple boîtier imitant un contrôleur de frigo de supermarché suffit à piéger des intrus. L'idée est de construire cet appareil leurre, de le laisser se faire attaquer, et d'apprendre automatiquement les schémas d'intrusion pour prévenir les vrais risques. C'est utile maintenant car les petites entreprises s'équipent en capteurs connectés sans avoir personne pour les surveiller.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel courant et une petite carte électronique.",
+    "Cas d'usage": "Le gérant d'une fromagerie voit sur son téléphone à 8 h que quelqu'un a tenté de changer à distance la température de sa chambre froide pendant la nuit. Le technicien qui installe des équipements connectés sait déjà quels types d'attaques visent ses clients avant même la première vraie attaque.",
+    "Pour qui": "Un artisan ou petit patron de PME qui a installé des équipements connectés sans avoir d'informaticien dédié.",
+    "D'où ça vient": "\"Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller\"",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des honeypots IoT/industriels existent, mais aucun produit, projet open source ou article abouti spécifiquement dédié à un faux contrôleur de frigo de supermarché n’apparaît dans les résultats.",
+      "LIEN": "https://fr.wikipedia.org/wiki/Réfrigérateur_connecté"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "Le bandeau qui devine ton attention sans rien partager",
+    "L'accroche": "Un petit appareil posé sur la tête qui devine si l'on est concentré ou fatigué, sans jamais envoyer la moindre donnée sur Internet.",
+    "Le résumé": "Les casques grand public qui lisent l'activité cérébrale inquiètent de plus en plus, car les fabricants récoltent ces données pour entraîner leurs modèles. On propose l'inverse : un objet qui fait tout le calcul sur place et efface l'information brute aussitôt. L'utilisateur voit seulement son état, la mesure ne quitte jamais l'appareil. C'est le moment car ces technologies entrent dans les foyers alors que les règles sur les données personnelles se durcissent.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de capteurs et une petite carte électronique.",
+    "Cas d'usage": "Une étudiante voit son bandeau passer au rouge après deux heures de révision sans pause, alors qu'elle ne s'en rendait pas compte. Un conducteur de poids lourd reçoit une alerte de fatigue quelques minutes avant que ses paupières ne commencent à fermer.",
+    "Pour qui": "Une personne qui passe de longues heures sur une tâche mentale exigeante et veut un retour discret, y compris hors de chez elle.",
+    "D'où ça vient": "\"Consumer brain wave headsets threaten privacy\"",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-08"
+  },
+  {
+    "titre": "Le détecteur qui entend les câbles s'abîmer avant la panne",
+    "L'accroche": "Un petit boîtier posé près d'un câble électrique qui « écoute » ses décharges secrètes et prévient avant la panne.",
+    "Le résumé": "Quand un câble électrique vieillit, il émet des micro-étincelles invisibles bien avant de tomber en panne. Une technique photographique ancienne a montré récemment qu'on peut capturer ces décharges avec peu de matériel. L'idée est de transformer cette curiosité en outil de maintenance qui surveille un câble et prévient son propriétaire. C'est utile car les pannes électriques coûtent cher et arrivent presque toujours sans prévenir.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de composants électroniques courants.",
+    "Cas d'usage": "Le responsable d'un atelier voit son téléphone vibrer : « câble de la presse n° 3 à changer sous trois semaines ». Un particulier apprend que l'alimentation de son garage commence à fatiguer, avant que le disjoncteur ne saute en pleine nuit.",
+    "Pour qui": "Un responsable de maintenance dans une petite usine, ou un propriétaire de bâtiment équipé de câbles anciens.",
+    "D'où ça vient": "\"Kirlian Photography: Building Your Own Equipment\"",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des détecteurs de décharges partielles/couronne et systèmes de surveillance de câbles existent, mais pas ce boîtier bas coût exploitant une ancienne technique photographique pour entendre les micro-étincelles avant panne.",
+      "LIEN": "https://blog.hvhipot.com/fr/2026/08/26/le-detective-qui-revele-les-defauts-des-cables/"
+    },
+    "jour": "2026-11-08"
+  },
+  {
     "titre": "Le compagnon qui surveille tes yeux",
     "L'accroche": "Une petite caméra posée sur le bureau qui voit si tu clignes assez les yeux, te prévient avant la fatigue et fonctionne sans Internet.",
     "Le résumé": "On passe des heures devant un écran sans penser à ses yeux, et le mal de tête arrive avant qu'on ne s'en rende compte. Un site vient de proposer un compagnon hors ligne pour surveiller son rythme de clignement, mais c'est une simple application sur l'ordinateur. L'idée : un boîtier autonome avec caméra qui observe le visage, apprend à repérer la fatigue en temps réel et te rappelle de faire une pause — le tout en local, sans rien envoyer nulle part. C'est le moment car la reconnaissance visuelle tient désormais dans un objet de bureau peu coûteux.",
