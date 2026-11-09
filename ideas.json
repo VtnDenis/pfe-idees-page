@@ -1,5 +1,50 @@
 [
   {
+    "titre": "La salle serveur qui respire toute seule",
+    "L'accroche": "Un petit boîtier qui prévoit la chaleur d'une salle serveur et fait tourner les ventilateurs juste ce qu'il faut.",
+    "Le résumé": "Les data centers consomment énormément d'électricité, et leur construction fait débat en Europe. Pourtant, les petites salles serveur des mairies ou des associations n'ont pas de système intelligent pour se refroidir. Ce boîtier mesure la température, apprend les habitudes de chauffe et n'actionne les ventilateurs que lorsque c'est nécessaire. Il permet d'économiser de l'énergie sans risquer la panne. C'est le moment car l'Europe cherche à réduire l'impact des centres de données.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le responsable informatique d'une petite mairie voit sa facture d'électricité baisser sans que le serveur ne surchauffe. Pendant une canicule, le boîtier anticipe la montée en température et refroidit juste avant que le matériel ne ralentisse.",
+    "Pour qui": "Le responsable informatique d'une petite commune, d'une association ou d'une PME qui gère une salle serveur.",
+    "D'où ça vient": "\"La contestation contre les data centers monte en Europe\".",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-09"
+  },
+  {
+    "titre": "Le garde du corps du réseau de votre voiture",
+    "L'accroche": "Un boîtier qui écoute les signaux internes d'une voiture et alerte dès qu'un intrus tente de la contrôler.",
+    "Le résumé": "Des chercheurs ont montré qu'on peut déverrouiller et démarrer de nombreuses voitures à distance en exploitant leurs réseaux internes. Les constructeurs ajoutent des protections, mais les véhicules anciens ou peu équipés restent vulnérables. Ce boîtier se branche sur le réseau de la voiture, apprend le comportement normal et signale toute commande inhabituelle. Il permet aux garagistes et aux flottes de détecter une attaque avant que le véhicule ne soit volé. C'est le moment car la sécurité des véhicules connectés devient un enjeu grand public.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Le garagiste voit sur son téléphone qu'on tente de forcer la voiture d'un client stationnée dehors. Le gestionnaire d'une flotte de camionnettes reçoit une alerte quand un employé mal intentionné branche un boîtier pirate.",
+    "Pour qui": "Les garagistes indépendants et les petites flottes de véhicules.",
+    "D'où ça vient": "\"Unlocking any car from X brand in most of the world\".",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Des IDS/pare-feux CAN automobiles et prototypes académiques existent (Argus, Upstream, recherches sur détection d'intrusion CAN), mais pas exactement ce boîtier aftermarket grand public pour véhicules anciens.",
+      "LIEN": "https://www.argus.auto/"
+    },
+    "jour": "2026-11-09"
+  },
+  {
+    "titre": "L'assistant qui écoute sans espionner",
+    "L'accroche": "Un petit objet qui comprend quelques phrases et rend service à la maison, sans envoyer vos paroles sur Internet.",
+    "Le résumé": "Les assistants vocaux du marché envoient nos voix à des serveurs distants, ce qui inquiète de plus en plus. Des alternatives locales commencent à voir le jour sur de petits ordinateurs. Cet objet écoute en continu, reconnaît des commandes simples et répond ou alerte un proche, le tout sur place. Il rend service aux personnes âgées ou isolées tout en protégeant leur intimité. C'est le moment car le public cherche des assistants plus respectueux de la vie privée.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel.",
+    "Cas d'usage": "Une personne âgée dit « j'ai mal » et l'objet prévient immédiatement son fils sans passer par le cloud. L'aidant à domicile voit la liste des demandes de la journée sans avoir accès aux conversations privées.",
+    "Pour qui": "Les personnes âgées vivant seules et leurs proches aidants.",
+    "D'où ça vient": "\"Goodbye Claude, hello Pi\".",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Le concept d’assistant vocal local et privé existe déjà (Swisper, Confer, Rhasspy/Home Assistant Voice), mais pas exactement ce mini-objet pédagogique clé en main.",
+      "LIEN": "https://swisper.ai/fr/resources/ai-assistant-no-one-can-spy-on"
+    },
+    "jour": "2026-11-09"
+  },
+  {
     "titre": "Un nez citoyen autour des data centers",
     "L'accroche": "Un petit boîtier autonome posé près des centres de données pour mesurer objectivement ce qu'on ressent autour d'eux — bruit, chaleur, poussière — et savoir si les plaintes des riverains sont fondées.",
     "Le résumé": "Partout en Europe, des habitants manifestent contre la construction de nouveaux centres de données et demandent un moratoire. Le problème, c'est qu'aujourd'hui les riverains n'ont que leurs impressions à opposer aux exploitants. Ce boîtier relève en continu ce qui se passe sur le terrain et repère de lui-même les épisodes anormaux. Il donne enfin une preuve chiffrée aux débats locaux.",
