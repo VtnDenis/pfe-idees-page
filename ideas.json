@@ -1,5 +1,50 @@
 [
   {
+    "titre": "La voiturette qui rejoue les piétons imprévisibles",
+    "L'accroche": "Une voiturette miniature anticipe plusieurs trajectoires possibles d'un piéton et choisit en direct de ralentir ou de s'arrêter.",
+    "Le résumé": "Les travaux sur l'évaluation des véhicules autonomes montrent qu'un scénario figé ne suffit pas : il faut faire varier les acteurs et observer la réaction. Le problème est qu'une voiturette de démonstration doit réagir à un piéton qui change de direction sans embarquer un système lourd. Côté Data & IA, l'équipe construit des scénarios variés et une petite prédiction de mouvement à partir des données de capteurs ; côté Systèmes embarqués, elle fait réagir la voiturette en temps réel et déclenche l'arrêt d'urgence. Le prototype est une voiturette qui ralentit ou s'arrête quand une personne coupe sa trajectoire, et qui rejoue plusieurs variantes pour montrer que la décision tient. C'est le moment car les petits véhicules programmables et les données de simulation gratuites permettent de tester cela sans budget lourd.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel et une piste en carton.",
+    "Cas d'usage": "Dans un couloir d'école, la voiturette voit un élève surgir entre deux cartons et s'arrête avant de le toucher. Sur un parking, elle rejoue dix fois le même passage avec un piéton qui marche plus ou moins vite et montre qu'elle ne fonce jamais.",
+    "Pour qui": "Une équipe pédagogique ou un club robotique qui veut démontrer la sécurité d'un véhicule autonome miniature.",
+    "D'où ça vient": "« Scenario Orchestration for Closed-loop Policy Evaluation of Autonomous Driving » ; « FlowMoP: Stochastic Multi-Person Motion Prediction ».",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "Le concept de mini-véhicule autonome anticipant des trajectoires de piétons existe dans des démos et travaux de recherche, mais aucun produit/projet open source/startup exact ne ressort des résultats fournis.",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-09"
+  },
+  {
+    "titre": "Le bras qui apprend à attraper ce qu'il voit",
+    "L'accroche": "Un petit bras robotisé repère un objet posé devant lui et ajuste sa prise en temps réel, même si l'objet n'était pas dans ses exemples d'entraînement.",
+    "Le résumé": "L'actualité montre que des modèles généraux peuvent piloter des manipulateurs plus sûrement que des politiques spécialisées. Le problème est qu'un robot de projet étudiant ne peut pas embarquer un très gros modèle et doit rester réactif. L'idée est double : côté Data & IA, entraîner et évaluer un petit modèle de perception et de choix de prise avec des images gratuites et quelques objets ; côté Systèmes embarqués, faire tourner ce modèle sur un petit calculateur et commander les actionneurs en temps réel avec des arrêts de sécurité. Le prototype est un petit bras à pince qui attrape une balle, un cube ou une cuillère et s'arrête si l'objet est mal placé. C'est le moment car les modèles légers et les calculateurs embarqués abordables rendent cette démonstration possible en dix semaines.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel et de la récupération pour le bras.",
+    "Cas d'usage": "Dans un atelier, le bras attrape une pièce mal orientée sans qu'on ait à la repositionner à la main. À la maison, il range trois types d'objets différents sur une étagère et s'arrête net si un doigt passe devant.",
+    "Pour qui": "Un étudiant ou un enseignant qui veut montrer un robot capable d'agir, pas seulement un écran qui affiche des scores.",
+    "D'où ça vient": "« On Agentic Manipulation Policies ».",
+    "verdict": {
+      "VERDICT": "RIEN TROUVÉ",
+      "RAISON": "aucune recherche exploitable (moteur indisponible).",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-09"
+  },
+  {
+    "titre": "La caméra qui prévient malgré le flou",
+    "L'accroche": "Une petite caméra embarquée déclenche une alerte quand une personne entre dans une zone, même si l'image est floue ou que la personne bouge vite.",
+    "Le résumé": "L'actualité montre des progrès pour reconnaître des formes malgré un flou inconnu et des changements d'échelle. Le problème est que les caméras de terrain voient souvent des images nettes seulement en laboratoire ; derrière une vitre ou par mauvais temps, le flou fausse la détection. Côté Data & IA, l'équipe entraîne et teste un petit détecteur sur des images gratuites et des dégradations simulées ; côté Systèmes embarqués, elle fait tourner la détection sur un petit calculateur et gère la capture, l'alerte et la mise en veille pour tenir la consommation. Le prototype est une caméra fixe qui allume un signal et envoie une alerte locale quand une personne approche, avec un test en conditions floues. C'est le moment car les petits calculateurs et les caméras abordables permettent de faire tenir cette démonstration dans un projet de dix semaines.",
+    "Faisable ?": "Oui, avec quelques dizaines d'euros de matériel, une caméra simple et un petit calculateur.",
+    "Cas d'usage": "Le gardien d'un local voit sur son téléphone qu'une silhouette approche de la porte, même par temps de pluie et avec une image floue. Un maraîcher est prévenu qu'une personne entre dans son champ la nuit, sans avoir à regarder un flux en permanence.",
+    "Pour qui": "Un particulier ou un petit commerce qui veut une alerte locale simple, sans abonnement et sans envoyer les images au cloud.",
+    "D'où ça vient": "« Graded convolutional networks: scale invariance without the scale and robustness to unknown blur ».",
+    "verdict": {
+      "VERDICT": "PROCHE",
+      "RAISON": "La détection d'objets/personnes robuste au flou de mouvement existe en recherche, mais aucun produit ou startup grand public ne correspond exactement à cette accroche.",
+      "LIEN": "—"
+    },
+    "jour": "2026-11-09"
+  },
+  {
     "titre": "La salle serveur qui respire toute seule",
     "L'accroche": "Un petit boîtier qui prévoit la chaleur d'une salle serveur et fait tourner les ventilateurs juste ce qu'il faut.",
     "Le résumé": "Les data centers consomment énormément d'électricité, et leur construction fait débat en Europe. Pourtant, les petites salles serveur des mairies ou des associations n'ont pas de système intelligent pour se refroidir. Ce boîtier mesure la température, apprend les habitudes de chauffe et n'actionne les ventilateurs que lorsque c'est nécessaire. Il permet d'économiser de l'énergie sans risquer la panne. C'est le moment car l'Europe cherche à réduire l'impact des centres de données.",
